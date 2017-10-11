@@ -22,7 +22,7 @@ agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 328 360 496 376)
+	(rect 360 168 528 184)
 	(text "INPUT" (rect 125 0 158 10)(font "Arial" (font_size 6)))
 	(text "ADC_DA[13..0]" (rect 5 0 87 13)(font "Intel Clear" ))
 	(pt 168 8)
@@ -38,7 +38,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 328 384 496 400)
+	(rect 360 192 528 208)
 	(text "INPUT" (rect 125 0 158 10)(font "Arial" (font_size 6)))
 	(text "ADC_DB[13..0]" (rect 5 0 88 13)(font "Intel Clear" ))
 	(pt 168 8)
@@ -70,7 +70,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -320 264 -144 280)
+	(rect -288 72 -112 88)
 	(text "INPUT" (rect 133 0 166 10)(font "Arial" (font_size 6)))
 	(text "CLOCK_50_B7A" (rect 5 0 92 13)(font "Intel Clear" ))
 	(pt 176 8)
@@ -86,7 +86,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 952 392 1120 408)
+	(rect 1008 400 1176 416)
 	(text "INPUT" (rect 125 0 158 10)(font "Arial" (font_size 6)))
 	(text "UART_RX" (rect 5 0 54 13)(font "Intel Clear" ))
 	(pt 168 8)
@@ -102,7 +102,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 408 232 584 248)
+	(rect 440 40 616 56)
 	(text "OUTPUT" (rect 1 0 43 10)(font "Arial" (font_size 6)))
 	(text "DAC_WRT_B" (rect 90 0 156 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -118,7 +118,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 408 256 584 272)
+	(rect 440 64 616 80)
 	(text "OUTPUT" (rect 1 0 43 10)(font "Arial" (font_size 6)))
 	(text "DAC_WRT_A" (rect 90 0 156 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -134,7 +134,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 408 312 584 328)
+	(rect 440 120 616 136)
 	(text "OUTPUT" (rect 1 0 43 10)(font "Arial" (font_size 6)))
 	(text "DAC_CLK_A" (rect 90 0 152 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -150,7 +150,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 408 288 584 304)
+	(rect 440 96 616 112)
 	(text "OUTPUT" (rect 1 0 43 10)(font "Arial" (font_size 6)))
 	(text "DAC_CLK_B" (rect 90 0 152 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -166,7 +166,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect -224 168 -48 184)
+	(rect -192 -24 -16 -8)
 	(text "OUTPUT" (rect 1 0 43 10)(font "Arial" (font_size 6)))
 	(text "DAC_MODE" (rect 90 0 153 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -182,7 +182,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect -224 200 -48 216)
+	(rect -192 8 -16 24)
 	(text "OUTPUT" (rect 1 0 43 10)(font "Arial" (font_size 6)))
 	(text "ADC_OEB_A" (rect 90 0 161 11)(font "Arial" ))
 	(pt 0 8)
@@ -198,7 +198,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect -224 216 -48 232)
+	(rect -192 24 -16 40)
 	(text "OUTPUT" (rect 1 0 43 10)(font "Arial" (font_size 6)))
 	(text "ADC_OEB_B" (rect 90 0 157 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -214,7 +214,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 408 448 584 464)
+	(rect 440 256 616 272)
 	(text "OUTPUT" (rect 1 0 43 10)(font "Arial" (font_size 6)))
 	(text "DAC_DB[13..0]" (rect 90 0 173 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -230,7 +230,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 408 424 584 440)
+	(rect 440 232 616 248)
 	(text "OUTPUT" (rect 1 0 43 10)(font "Arial" (font_size 6)))
 	(text "DAC_DA[13..0]" (rect 90 0 172 11)(font "Arial" ))
 	(pt 0 8)
@@ -310,7 +310,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 32 376 208 392)
+	(rect 64 184 240 200)
 	(text "OUTPUT" (rect 1 0 43 10)(font "Arial" (font_size 6)))
 	(text "ADC_CLK_B" (rect 90 0 158 11)(font "Arial" ))
 	(pt 0 8)
@@ -326,7 +326,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 32 400 208 416)
+	(rect 64 208 240 224)
 	(text "OUTPUT" (rect 1 0 43 10)(font "Arial" (font_size 6)))
 	(text "ADC_CLK_A" (rect 90 0 152 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -342,7 +342,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 1192 600 1368 616)
+	(rect 1192 584 1368 600)
 	(text "OUTPUT" (rect 1 0 43 10)(font "Arial" (font_size 6)))
 	(text "UART_TX" (rect 90 0 140 11)(font "Arial" ))
 	(pt 0 8)
@@ -357,7 +357,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect -168 112 -120 144)
+	(rect -136 -80 -88 -48)
 	(text "NOT" (rect 1 0 23 10)(font "Arial" (font_size 6)))
 	(text "inst5" (rect 3 21 30 34)(font "Intel Clear" ))
 	(port
@@ -407,7 +407,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect -328 64 -216 112)
+	(rect -296 -128 -184 -80)
 	(text "constant_1" (rect 25 0 106 16)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 33 30 44)(font "Arial" ))
 	(port
@@ -552,7 +552,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect -248 336 -168 416)
+	(rect -216 144 -136 224)
 	(text "oneChannelMux" (rect 1 0 123 16)(font "Arial" (font_size 10)))
 	(text "inst4" (rect 8 65 36 78)(font "Intel Clear" ))
 	(port
@@ -659,7 +659,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 56 72 216 256)
+	(rect 88 -120 248 64)
 	(text "lpm_pll" (rect 60 -1 110 15)(font "Arial" (font_size 10)))
 	(text "pll_100" (rect 8 168 50 179)(font "Arial" ))
 	(port
@@ -730,7 +730,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 1144 392 1320 472)
+	(rect 1200 400 1376 480)
 	(text "acquireSwitch" (rect 5 0 84 11)(font "Arial" ))
 	(text "inst3" (rect 8 64 37 75)(font "Arial" ))
 	(port
@@ -930,39 +930,8 @@ agreement for further details.
 	)
 )
 (connector
-	(text "ADC_DB[13..0]" (rect 690 -48 773 -35)(font "Intel Clear" ))
-	(pt 752 -32)
-	(pt 680 -32)
-	(bus)
-)
-(connector
-	(pt 1152 0)
-	(pt 1104 0)
-)
-(connector
 	(pt 1016 80)
 	(pt 1008 80)
-)
-(connector
-	(pt 1104 80)
-	(pt 1064 80)
-)
-(connector
-	(pt 1104 0)
-	(pt 1104 80)
-)
-(connector
-	(pt 1088 -32)
-	(pt 1088 -16)
-)
-(connector
-	(pt 968 -32)
-	(pt 1088 -32)
-)
-(connector
-	(text "trigger" (rect 1042 -32 1083 -19)(font "Intel Clear" ))
-	(pt 1152 -16)
-	(pt 1088 -16)
 )
 (connector
 	(pt 1152 -32)
@@ -973,189 +942,9 @@ agreement for further details.
 	(pt 1112 -96)
 )
 (connector
-	(pt 976 -96)
-	(pt 976 -104)
-)
-(connector
-	(text "out2[13..0]" (rect 968 -32 1032 -19)(font "Intel Clear" ))
-	(pt 968 -16)
-	(pt 1008 -16)
-	(bus)
-)
-(connector
 	(text "ADC_CLK" (rect 986 -112 1036 -99)(font "Intel Clear" ))
 	(pt 1112 -96)
 	(pt 976 -96)
-)
-(connector
-	(text "g" (rect -6 168 3 181)(font "Intel Clear" ))
-	(pt 56 184)
-	(pt -16 184)
-)
-(connector
-	(pt 312 296)
-	(pt 408 296)
-)
-(connector
-	(pt 312 320)
-	(pt 408 320)
-)
-(connector
-	(pt 256 184)
-	(pt 256 304)
-)
-(connector
-	(pt 216 184)
-	(pt 256 184)
-)
-(connector
-	(pt 256 304)
-	(pt 312 304)
-)
-(connector
-	(text "ADC_CLK" (rect 226 128 276 141)(font "Intel Clear" ))
-	(pt 216 144)
-	(pt 328 144)
-)
-(connector
-	(text "ADC_CLK" (rect 322 224 372 237)(font "Intel Clear" ))
-	(pt 312 240)
-	(pt 408 240)
-)
-(connector
-	(text "ADC_CLK" (rect 322 248 372 261)(font "Intel Clear" ))
-	(pt 312 264)
-	(pt 408 264)
-)
-(connector
-	(text "CLOCK_50" (rect -22 128 35 141)(font "Intel Clear" ))
-	(pt -32 144)
-	(pt 56 144)
-)
-(connector
-	(pt 312 296)
-	(pt 312 304)
-)
-(connector
-	(pt 312 304)
-	(pt 312 320)
-)
-(connector
-	(pt 32 384)
-	(pt -24 384)
-)
-(connector
-	(pt 32 408)
-	(pt -24 408)
-)
-(connector
-	(text "ADC_CLK" (rect -302 360 -252 373)(font "Intel Clear" ))
-	(pt -248 376)
-	(pt -312 376)
-)
-(connector
-	(text "g" (rect -278 376 -269 389)(font "Intel Clear" ))
-	(pt -312 392)
-	(pt -248 392)
-)
-(connector
-	(text "running" (rect -78 376 -32 389)(font "Intel Clear" ))
-	(pt -80 392)
-	(pt -24 392)
-)
-(connector
-	(text "running" (rect -166 368 -120 381)(font "Intel Clear" ))
-	(pt -80 384)
-	(pt -168 384)
-)
-(connector
-	(pt -80 384)
-	(pt -80 392)
-)
-(connector
-	(text "acquire" (rect -302 448 -259 461)(font "Intel Clear" ))
-	(pt -304 464)
-	(pt -208 464)
-)
-(connector
-	(text "ADC_DA[13..0]" (rect 496 352 578 365)(font "Intel Clear" ))
-	(pt 496 368)
-	(pt 552 368)
-	(bus)
-)
-(connector
-	(text "ADC_DB[13..0]" (rect 496 376 579 389)(font "Intel Clear" ))
-	(pt 496 392)
-	(pt 552 392)
-	(bus)
-)
-(connector
-	(text "ADC_DB[13..0]" (rect 322 416 405 429)(font "Intel Clear" ))
-	(pt 336 432)
-	(pt 408 432)
-	(bus)
-)
-(connector
-	(text "out[13..0]" (rect 330 440 387 453)(font "Intel Clear" ))
-	(pt 408 456)
-	(pt 336 456)
-	(bus)
-)
-(connector
-	(pt -24 384)
-	(pt -24 392)
-)
-(connector
-	(pt -24 392)
-	(pt -24 408)
-)
-(connector
-	(pt -208 416)
-	(pt -208 464)
-)
-(connector
-	(pt -200 88)
-	(pt -200 128)
-)
-(connector
-	(pt -200 128)
-	(pt -168 128)
-)
-(connector
-	(pt -224 224)
-	(pt -280 224)
-)
-(connector
-	(pt -224 208)
-	(pt -280 208)
-)
-(connector
-	(text "v" (rect -278 160 -271 173)(font "Intel Clear" ))
-	(pt -224 176)
-	(pt -280 176)
-)
-(connector
-	(text "g" (rect -310 200 -301 213)(font "Intel Clear" ))
-	(pt -280 216)
-	(pt -312 216)
-)
-(connector
-	(text "CLOCK_50" (rect -134 256 -77 269)(font "Intel Clear" ))
-	(pt -144 272)
-	(pt -80 272)
-)
-(connector
-	(pt -280 208)
-	(pt -280 216)
-)
-(connector
-	(pt -280 216)
-	(pt -280 224)
-)
-(connector
-	(text "trigger" (rect 690 216 731 229)(font "Intel Clear" ))
-	(pt 680 232)
-	(pt 800 232)
 )
 (connector
 	(text "PH[31..0]" (rect 1194 120 1249 133)(font "Intel Clear" ))
@@ -1174,11 +963,6 @@ agreement for further details.
 	(pt 1352 -32)
 	(pt 1440 -32)
 	(bus)
-)
-(connector
-	(text "running" (rect 674 184 720 197)(font "Intel Clear" ))
-	(pt 800 200)
-	(pt 680 200)
 )
 (connector
 	(pt 1048 248)
@@ -1209,16 +993,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "CLK_1MHz" (rect 1034 424 1093 437)(font "Intel Clear" ))
-	(pt 1024 440)
-	(pt 1144 440)
-)
-(connector
-	(text "acquire" (rect 1330 408 1373 421)(font "Intel Clear" ))
-	(pt 1320 424)
-	(pt 1376 424)
-)
-(connector
 	(text "CLOCK_50" (rect 666 440 723 453)(font "Intel Clear" ))
 	(pt 656 456)
 	(pt 744 456)
@@ -1234,71 +1008,327 @@ agreement for further details.
 	(pt 984 456)
 )
 (connector
-	(pt 1136 424)
-	(pt 1136 400)
-)
-(connector
-	(pt 1144 424)
-	(pt 1136 424)
-)
-(connector
-	(pt 1120 400)
-	(pt 1136 400)
-)
-(connector
-	(text "CLK_1MHz" (rect 754 576 813 589)(font "Intel Clear" ))
-	(pt 744 592)
-	(pt 888 592)
-)
-(connector
 	(text "waveForm[0..31][13..0]" (rect 744 592 879 605)(font "Intel Clear" ))
 	(pt 744 608)
 	(pt 888 608)
 	(bus)
 )
 (connector
-	(text "acquire" (rect 746 608 789 621)(font "Intel Clear" ))
-	(pt 744 624)
+	(pt 288 -8)
+	(pt 288 112)
+)
+(connector
+	(pt 248 -8)
+	(pt 288 -8)
+)
+(connector
+	(pt 288 112)
+	(pt 344 112)
+)
+(connector
+	(text "ADC_CLK" (rect 258 -64 308 -51)(font "Intel Clear" ))
+	(pt 248 -48)
+	(pt 360 -48)
+)
+(connector
+	(text "running" (rect -46 184 0 197)(font "Intel Clear" ))
+	(pt -48 200)
+	(pt 8 200)
+)
+(connector
+	(text "running" (rect -134 176 -88 189)(font "Intel Clear" ))
+	(pt -48 192)
+	(pt -136 192)
+)
+(connector
+	(pt -48 192)
+	(pt -48 200)
+)
+(connector
+	(text "acquire" (rect -270 256 -227 269)(font "Intel Clear" ))
+	(pt -272 272)
+	(pt -176 272)
+)
+(connector
+	(text "ADC_DA[13..0]" (rect 528 160 610 173)(font "Intel Clear" ))
+	(pt 528 176)
+	(pt 584 176)
+	(bus)
+)
+(connector
+	(text "ADC_DB[13..0]" (rect 528 184 611 197)(font "Intel Clear" ))
+	(pt 528 200)
+	(pt 584 200)
+	(bus)
+)
+(connector
+	(pt -168 -104)
+	(pt -168 -64)
+)
+(connector
+	(text "g" (rect -278 8 -269 21)(font "Intel Clear" ))
+	(pt -248 24)
+	(pt -280 24)
+)
+(connector
+	(text "CLOCK_50" (rect -102 64 -45 77)(font "Intel Clear" ))
+	(pt -112 80)
+	(pt -48 80)
+)
+(connector
+	(text "g" (rect -62 -80 -53 -67)(font "Intel Clear" ))
+	(pt -88 -64)
+	(pt -40 -64)
+)
+(connector
+	(pt -168 -64)
+	(pt -136 -64)
+)
+(connector
+	(text "ADC_CLK" (rect -270 168 -220 181)(font "Intel Clear" ))
+	(pt -280 184)
+	(pt -216 184)
+)
+(connector
+	(text "g" (rect -246 184 -237 197)(font "Intel Clear" ))
+	(pt -280 200)
+	(pt -216 200)
+)
+(connector
+	(text "ADC_CLK" (rect 354 32 404 45)(font "Intel Clear" ))
+	(pt 344 48)
+	(pt 440 48)
+)
+(connector
+	(text "ADC_CLK" (rect 354 56 404 69)(font "Intel Clear" ))
+	(pt 344 72)
+	(pt 440 72)
+)
+(connector
+	(pt 344 128)
+	(pt 440 128)
+)
+(connector
+	(pt 344 104)
+	(pt 440 104)
+)
+(connector
+	(pt -248 16)
+	(pt -192 16)
+)
+(connector
+	(pt -248 32)
+	(pt -192 32)
+)
+(connector
+	(text "out[13..0]" (rect 362 248 419 261)(font "Intel Clear" ))
+	(pt 368 264)
+	(pt 440 264)
+	(bus)
+)
+(connector
+	(text "ADC_DB[13..0]" (rect 354 224 437 237)(font "Intel Clear" ))
+	(pt 368 240)
+	(pt 440 240)
+	(bus)
+)
+(connector
+	(pt 8 192)
+	(pt 64 192)
+)
+(connector
+	(pt 8 216)
+	(pt 64 216)
+)
+(connector
+	(pt 344 104)
+	(pt 344 112)
+)
+(connector
+	(pt 344 112)
+	(pt 344 128)
+)
+(connector
+	(pt 8 192)
+	(pt 8 200)
+)
+(connector
+	(pt 8 200)
+	(pt 8 216)
+)
+(connector
+	(pt -248 16)
+	(pt -248 24)
+)
+(connector
+	(pt -248 24)
+	(pt -248 32)
+)
+(connector
+	(pt -184 -104)
+	(pt -168 -104)
+)
+(connector
+	(text "v" (rect -62 -120 -55 -107)(font "Intel Clear" ))
+	(pt -168 -104)
+	(pt -40 -104)
+)
+(connector
+	(pt -176 224)
+	(pt -176 272)
+)
+(connector
+	(pt 1192 432)
+	(pt 1192 408)
+)
+(connector
+	(pt 1200 432)
+	(pt 1192 432)
+)
+(connector
+	(text "CLK_1MHz" (rect 1090 432 1149 445)(font "Intel Clear" ))
+	(pt 1080 448)
+	(pt 1200 448)
+)
+(connector
+	(text "acquire" (rect 1386 416 1429 429)(font "Intel Clear" ))
+	(pt 1376 432)
+	(pt 1432 432)
+)
+(connector
+	(pt 1176 408)
+	(pt 1192 408)
+)
+(connector
+	(pt 880 592)
+	(pt 880 584)
+)
+(connector
+	(pt 888 592)
+	(pt 880 592)
+)
+(connector
+	(text "CLK_1MHz" (rect 754 568 813 581)(font "Intel Clear" ))
+	(pt 880 584)
+	(pt 744 584)
+)
+(connector
+	(pt 880 624)
+	(pt 880 632)
+)
+(connector
 	(pt 888 624)
+	(pt 880 624)
 )
 (connector
-	(pt -216 88)
-	(pt -200 88)
+	(text "acquire" (rect 746 616 789 629)(font "Intel Clear" ))
+	(pt 880 632)
+	(pt 744 632)
 )
 (connector
-	(text "v" (rect -94 72 -87 85)(font "Intel Clear" ))
-	(pt -200 88)
-	(pt -72 88)
+	(pt 792 232)
+	(pt 792 240)
 )
 (connector
-	(text "g" (rect -94 112 -85 125)(font "Intel Clear" ))
-	(pt -120 128)
-	(pt -72 128)
+	(pt 800 232)
+	(pt 792 232)
 )
 (connector
-	(pt 1184 592)
-	(pt 1184 608)
+	(text "trigger" (rect 690 224 731 237)(font "Intel Clear" ))
+	(pt 792 240)
+	(pt 680 240)
+)
+(connector
+	(pt 792 200)
+	(pt 792 192)
+)
+(connector
+	(pt 800 200)
+	(pt 792 200)
+)
+(connector
+	(text "running" (rect 674 176 720 189)(font "Intel Clear" ))
+	(pt 792 192)
+	(pt 680 192)
+)
+(connector
+	(pt 1152 0)
+	(pt 1112 0)
+)
+(connector
+	(pt 1064 80)
+	(pt 1112 80)
+)
+(connector
+	(pt 1112 0)
+	(pt 1112 80)
+)
+(connector
+	(pt 968 -32)
+	(pt 1080 -32)
+)
+(connector
+	(pt 1080 -32)
+	(pt 1080 -16)
+)
+(connector
+	(text "trigger" (rect 1042 -32 1083 -19)(font "Intel Clear" ))
+	(pt 1080 -16)
+	(pt 1152 -16)
+)
+(connector
+	(pt 968 -16)
+	(pt 976 -16)
+	(bus)
+)
+(connector
+	(pt 976 -16)
+	(pt 976 0)
+	(bus)
+)
+(connector
+	(text "out2[13..0]" (rect 1000 -16 1064 -3)(font "Intel Clear" ))
+	(pt 976 0)
+	(pt 1040 0)
+	(bus)
+)
+(connector
+	(text "ADC_DB[13..0]" (rect 666 -48 749 -35)(font "Intel Clear" ))
+	(pt 752 -32)
+	(pt 656 -32)
+	(bus)
+)
+(connector
+	(text "CLOCK_50" (rect 18 -64 75 -51)(font "Intel Clear" ))
+	(pt 88 -48)
+	(pt 8 -48)
+)
+(connector
+	(text "g" (rect 18 -24 27 -11)(font "Intel Clear" ))
+	(pt 88 -8)
+	(pt 8 -8)
+)
+(connector
+	(text "v" (rect -278 -32 -271 -19)(font "Intel Clear" ))
+	(pt -192 -16)
+	(pt -280 -16)
 )
 (connector
 	(pt 1168 592)
-	(pt 1184 592)
+	(pt 1192 592)
 )
-(connector
-	(pt 1184 608)
-	(pt 1192 608)
-)
-(junction (pt 312 304))
-(junction (pt -24 392))
-(junction (pt -200 88))
-(junction (pt -280 216))
+(junction (pt 344 112))
+(junction (pt 8 200))
+(junction (pt -248 24))
+(junction (pt -168 -104))
 (text "1MHz clock for UART" (rect 744 360 922 380)(font "Intel Clear" (color 0 0 0)(font_size 11)(bold)))
 (text "Sends the waveform to UART_TX" (rect 896 536 1199 557)(font "Intel Clear" (color 0 0 0)(font_size 12)(bold)))
-(text "Start to acquire when UART_RX recives a message" (rect 1104 368 1489 386)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
+(text "Start to acquire when UART_RX recives a message" (rect 1152 376 1537 394)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
 (text "Generates a trigger" (rect 800 -88 951 -70)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
 (text "Increments counter when triggerin = 1" (rect 1136 -88 1426 -70)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
 (text "Generates a waveform and pulseheight" (rect 800 144 1099 162)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
-(text "DAC: 150MHz" (rect 144 288 247 306)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
-(text "ADC/DAC clock. ADC: 40MHz" (rect 40 264 261 282)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
-(rectangle (rect 648 360 1432 736))
-(rectangle (rect -336 48 592 496))
+(text "DAC: 150MHz" (rect 176 96 279 114)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
+(text "ADC/DAC clock. ADC: 40MHz" (rect 72 72 293 90)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
+(rectangle (rect 648 360 1600 736))
+(rectangle (rect -304 -144 624 336))
 (rectangle (rect 648 -144 1600 336))

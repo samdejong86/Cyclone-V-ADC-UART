@@ -16,7 +16,7 @@ set_ser.timeout=1
 set_ser.open()
 
 #send a message (can be anything)
-message="ds" 
+message="d" 
 set_ser.write(message.encode('utf-8'))
 
 #recieve a response
