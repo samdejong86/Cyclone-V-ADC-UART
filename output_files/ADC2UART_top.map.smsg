@@ -1,0 +1,6 @@
+Warning (10268): Verilog HDL information at simple_counter.v(12): always construct contains both blocking and non-blocking assignments File: /home/srdejong/CycloneV_ADC_2_UART/simple_counter.v Line: 12
+Warning (10268): Verilog HDL information at trigger.v(14): always construct contains both blocking and non-blocking assignments File: /home/srdejong/CycloneV_ADC_2_UART/trigger.v Line: 14
+Warning (10268): Verilog HDL information at signalOut.v(24): always construct contains both blocking and non-blocking assignments File: /home/srdejong/CycloneV_ADC_2_UART/signalOut.v Line: 24
+Warning (10268): Verilog HDL information at signalOut_waveform.sv(26): always construct contains both blocking and non-blocking assignments File: /home/srdejong/CycloneV_ADC_2_UART/signalOut_waveform.sv Line: 26
+Warning (10268): Verilog HDL information at signalToUART.sv(20): always construct contains both blocking and non-blocking assignments File: /home/srdejong/CycloneV_ADC_2_UART/signalToUART.sv Line: 20
+Warning (10268): Verilog HDL information at acquireSwitch.v(10): always construct contains both blocking and non-blocking assignments File: /home/srdejong/CycloneV_ADC_2_UART/acquireSwitch.v Line: 10

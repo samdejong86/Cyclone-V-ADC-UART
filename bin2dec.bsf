@@ -1,0 +1,112 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 224 272)
+	(text "bin2dec" (rect 5 0 43 11)(font "Arial" ))
+	(text "inst" (rect 8 192 25 203)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "in[31..0]" (rect 0 0 40 11)(font "Arial" ))
+		(text "in[31..0]" (rect 21 27 61 38)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "d0[6..0]" (rect 0 0 37 11)(font "Arial" ))
+		(text "d0[6..0]" (rect 108 27 145 38)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(port
+		(pt 160 48)
+		(output)
+		(text "d1[6..0]" (rect 0 0 37 11)(font "Arial" ))
+		(text "d1[6..0]" (rect 108 43 145 54)(font "Arial" ))
+		(line (pt 160 48)(pt 144 48)(line_width 3))
+	)
+	(port
+		(pt 160 64)
+		(output)
+		(text "d2[6..0]" (rect 0 0 37 11)(font "Arial" ))
+		(text "d2[6..0]" (rect 108 59 145 70)(font "Arial" ))
+		(line (pt 160 64)(pt 144 64)(line_width 3))
+	)
+	(port
+		(pt 160 80)
+		(output)
+		(text "d3[6..0]" (rect 0 0 37 11)(font "Arial" ))
+		(text "d3[6..0]" (rect 108 75 145 86)(font "Arial" ))
+		(line (pt 160 80)(pt 144 80)(line_width 3))
+	)
+	(port
+		(pt 160 96)
+		(output)
+		(text "d4[6..0]" (rect 0 0 37 11)(font "Arial" ))
+		(text "d4[6..0]" (rect 108 91 145 102)(font "Arial" ))
+		(line (pt 160 96)(pt 144 96)(line_width 3))
+	)
+	(port
+		(pt 160 112)
+		(output)
+		(text "d5[6..0]" (rect 0 0 37 11)(font "Arial" ))
+		(text "d5[6..0]" (rect 108 107 145 118)(font "Arial" ))
+		(line (pt 160 112)(pt 144 112)(line_width 3))
+	)
+	(port
+		(pt 160 128)
+		(output)
+		(text "d6[6..0]" (rect 0 0 37 11)(font "Arial" ))
+		(text "d6[6..0]" (rect 108 123 145 134)(font "Arial" ))
+		(line (pt 160 128)(pt 144 128)(line_width 3))
+	)
+	(port
+		(pt 160 144)
+		(output)
+		(text "d7[6..0]" (rect 0 0 37 11)(font "Arial" ))
+		(text "d7[6..0]" (rect 108 139 145 150)(font "Arial" ))
+		(line (pt 160 144)(pt 144 144)(line_width 3))
+	)
+	(port
+		(pt 160 160)
+		(output)
+		(text "d8[6..0]" (rect 0 0 37 11)(font "Arial" ))
+		(text "d8[6..0]" (rect 108 155 145 166)(font "Arial" ))
+		(line (pt 160 160)(pt 144 160)(line_width 3))
+	)
+	(port
+		(pt 160 176)
+		(output)
+		(text "d9[6..0]" (rect 0 0 37 11)(font "Arial" ))
+		(text "d9[6..0]" (rect 108 171 145 182)(font "Arial" ))
+		(line (pt 160 176)(pt 144 176)(line_width 3))
+	)
+	(drawing
+		(text "Converts " (rect 24 64 78 79)(font "Intel Clear" (font_size 8)))
+		(text "counter into" (rect 24 80 93 95)(font "Intel Clear" (font_size 8)))
+		(text "decimal display" (rect 24 96 113 111)(font "Intel Clear" (font_size 8)))
+		(text "for 6 segment" (rect 24 112 104 127)(font "Intel Clear" (font_size 8)))
+		(text "displays" (rect 24 128 71 143)(font "Intel Clear" (font_size 8)))
+		(rectangle (rect 16 16 144 192))
+	)
+)
