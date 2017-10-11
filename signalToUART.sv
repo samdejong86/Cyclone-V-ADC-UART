@@ -38,10 +38,7 @@ always @(posedge clk) begin
 		else if(whichByte==1)
 				UART=waveform[waveformCounter][byteCounter-1];  //second byte is bits 0-7 of the ADC value
 		else if(whichByte==2) begin                           
-			if(byteCounter==6) 
-				UART=1;
-			else
-				UART=waveformCounter[byteCounter-1];				//third byte is the time (or array index)
+			UART=waveformCounter[byteCounter-1];				//third byte is the time (or array index)
 		end
 		else 
 			UART=0;

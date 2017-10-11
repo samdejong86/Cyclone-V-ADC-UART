@@ -38,8 +38,9 @@ for c in line:
     elif i%3==1:
         ADC=lastC+c #add bit shifted x to y
     elif i%3==2:
-        xx.append((c-32)*25) 
+        xx.append(c*25) 
         yy.append(ADC)
+        print(str(c)+" "+str(ADC))
     i=i+1
     
 #close serial port
