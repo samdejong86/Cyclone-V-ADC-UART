@@ -6,7 +6,7 @@ input triggerIn;
 input clk;
 output reg [13:0] result;
 output reg longTrigger;
-reg [4:0] counter=0;
+reg [5:0] counter=0;
 
 reg [13:0] Delay0;
 reg [13:0] Delay1;
@@ -34,8 +34,8 @@ always @(posedge clk) begin
 	Delay5<=ADC_IN;
 
 
-	if(triggerIn==1||(counter<=31&&counter>0)) begin  //if a trigger is recieved, start the counter, and keep counting after trigger = 0
-		counter <= counter + 1;
+	if(triggerIn==1||(counter!=0)) begin  //if a trigger is recieved, start the counter, and keep counting after trigger = 0
+		counter <= counter + 6'b1;
 		result = Delay0;
 		waveform[counter] = Delay0; //fill the waveform
 	end
@@ -63,6 +63,8 @@ always @(posedge clk) begin
 	if(counter==30)
 		pulseHeight=tempPulse-pedistal;  //output the pulseheight
 	
+	if(counter==31)
+		counter<=0;
 	
 	
 end

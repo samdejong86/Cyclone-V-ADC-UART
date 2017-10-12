@@ -10,7 +10,7 @@ reg [10:0] counter=0;
 always @(posedge clk) begin
 
 	if(UART_RX==0||counter!=0) begin
-		counter <= counter+1;
+		counter <= counter+11'b1;
 		acquire=0;
 	end
 	else 

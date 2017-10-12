@@ -8,9 +8,9 @@ output reg UART;
 
 //some debugging outputs
 output reg [10:0] bitCounter=0;
-output reg [7:0] waveformCounter=0;
-output reg [4:0] byteCounter=0;
-output reg [1:0] whichByte;
+output reg [10:0] waveformCounter=0;
+output reg [10:0] byteCounter=0;
+output reg [10:0] whichByte;
 output reg [13:0] sample;
 output reg startStop;
 
@@ -47,10 +47,10 @@ always @(posedge clk) begin
 		else 
 			done=1;   //the waveform has been sent
 			
-		bitCounter<=bitCounter+1;				//increment the bit counter
-		waveformCounter<=bitCounter/30;		//0-32 - waveform index
-		byteCounter<=(bitCounter%30)%10;    //0-9 - counts the bits in the current byte.
-		whichByte<=bitCounter%30/10;  		//0-2 - counts the bytes in the current waveform.
+		bitCounter<=bitCounter+11'b1;;					//increment the bit counter
+		waveformCounter<=bitCounter/(11'd30);		//0-32 - waveform index 7'b11110 = 30  
+		byteCounter<=(bitCounter%11'd30)%11'd10;  //0-9 - counts the bits in the current byte. 7'b1010=10
+		whichByte<=bitCounter%11'd30/11'd10;  		//0-2 - counts the bytes in the current waveform.
 	end
 	else if(acquire==1) begin	//when acqure goes to 1, reset variables
 		done=0;

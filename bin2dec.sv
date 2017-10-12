@@ -86,7 +86,7 @@ always @(in) begin
 		if (i==10)
 			break;
 		
-		i = i + 1;
+		i = i + 5'b1;
 		num = num / 10;
 		
 		

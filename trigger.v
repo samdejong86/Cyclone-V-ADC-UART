@@ -2,12 +2,8 @@
 module trigger(ADC_IN, trigger, outPulse);
 
 input		    [13:0]		ADC_IN;
-output		 [13:0]		outPulse;
-reg			 [13:0]     outPulse;
-
-output		 trigger;
-reg 			 trigger;
-reg [31:0] multiplier = 10;
+output reg 	 [13:0]		outPulse;
+output reg		 			trigger;
 
 //assign ADC_DB = ADC_IN;
 
@@ -15,7 +11,7 @@ always @(ADC_IN) begin
 	
 	if(ADC_IN>8190) begin
 		trigger <= 1;
-		outPulse = (ADC_IN-8000)*multiplier;
+		outPulse = (ADC_IN-14'd8000)*14'd10;
 	end
 	
 	else begin
