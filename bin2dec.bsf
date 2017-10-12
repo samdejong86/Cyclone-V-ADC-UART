@@ -27,9 +27,16 @@ agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
 		(text "in[31..0]" (rect 0 0 29 12)(font "Arial" ))
-		(text "in[31..0]" (rect 21 27 50 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "in[31..0]" (rect 21 43 50 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 160 32)

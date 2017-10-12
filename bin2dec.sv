@@ -1,5 +1,6 @@
-module bin2dec (in, d0, d1, d2, d3, d4, d5, d6, d7, d8, d9);
+module bin2dec (clk, in, d0, d1, d2, d3, d4, d5, d6, d7, d8, d9);
 
+input clk;
 input [31:0] in;
 output [6:0] d0;
 output [6:0] d1;
@@ -17,7 +18,7 @@ reg [4:0] i;
 reg [31:0] digit;
 reg [6:0] thisDigit;
 
-always @(in) begin
+always @(posedge clk) begin
 	num=in;
 	i=0;
 	
@@ -38,7 +39,7 @@ always @(in) begin
 	
 	
 	while (num >= 1) begin
-		digit = num % 10;
+		digit <= num % 10;
 		
 		if (digit==1)
 			thisDigit=6;
