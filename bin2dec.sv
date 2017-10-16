@@ -1,7 +1,7 @@
 module bin2dec (clk, in, d0, d1, d2, d3, d4, d5, d6, d7, d8, d9);
 
 input clk;
-input [31:0] in;
+input [13:0] in;
 output [6:0] d0;
 output [6:0] d1;
 output [6:0] d2;
@@ -13,12 +13,12 @@ output [6:0] d7;
 output [6:0] d8;
 output [6:0] d9;
 
-reg [31:0] num;
+reg [13:0] num;
 reg [4:0] i;
-reg [31:0] digit;
+reg [6:0] digit;
 reg [6:0] thisDigit;
 
-always @(posedge clk) begin
+always @(in) begin
 	num=in;
 	i=0;
 	
@@ -38,7 +38,7 @@ always @(posedge clk) begin
 	
 	
 	
-	while (num >= 1) begin
+	while (num >= 0) begin
 		digit <= num % 10;
 		
 		if (digit==1)

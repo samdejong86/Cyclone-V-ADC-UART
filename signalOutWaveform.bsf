@@ -62,8 +62,8 @@ agreement for further details.
 	(port
 		(pt 248 64)
 		(output)
-		(text "pulseHeight[31..0]" (rect 0 0 68 12)(font "Arial" ))
-		(text "pulseHeight[31..0]" (rect 159 59 227 71)(font "Arial" ))
+		(text "pulseHeight[13..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "pulseHeight[13..0]" (rect 159 59 227 71)(font "Arial" ))
 		(line (pt 248 64)(pt 232 64)(line_width 3))
 	)
 	(port

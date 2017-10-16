@@ -15,7 +15,7 @@ reg [13:0] Delay3;
 reg [13:0] Delay4;
 reg [13:0] Delay5;
 
-output reg [31:0] pulseHeight;
+output reg [13:0] pulseHeight;
 reg [13:0] tempPulse;
 reg [13:0] pedistal;
 
