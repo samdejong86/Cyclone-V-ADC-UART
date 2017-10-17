@@ -2,6 +2,7 @@
 
 import serial
 import matplotlib.pyplot as plt
+import numpy as np
 
 #set the serial port settings
 set_ser = serial.Serial()
@@ -32,17 +33,24 @@ yy=[]
 # xyz
 # where xy is the ADC counts, z is the time.
 
-for c in line:
-    if i%3==0:        
-        lastC=c<<8  #bit shift 'x' by 8
+pulseHeight=0
+
+for i in range(99):
+    if i==96:
+        pulseHeight=(line[i]<<16)+(line[i+1]<<8)+line[i+2]
+        break;
+    elif i%3==0:        
+        lastC=line[i]<<8  #bit shift 'x' by 8
     elif i%3==1:
-        ADC=lastC+c #add bit shifted x to y
+        ADC=lastC+line[i] #add bit shifted x to y
     elif i%3==2:
-        xx.append(c*25) 
+        xx.append(line[i]*25) 
         yy.append(ADC)
-        print(str(c)+" "+str(ADC))
-    i=i+1
-    
+        print(str(line[i])+" "+str(ADC))
+
+
+print(pulseHeight/1000.)
+
 #close serial port
 set_ser.close()
 

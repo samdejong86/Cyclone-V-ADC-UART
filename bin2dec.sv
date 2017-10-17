@@ -39,7 +39,7 @@ always @(in) begin
 	
 	
 	while (num >= 0) begin
-		digit <= num % 10;
+		digit <= num % 7'd10;
 		
 		if (digit==1)
 			thisDigit=6;
@@ -88,7 +88,7 @@ always @(in) begin
 			break;
 		
 		i = i + 5'b1;
-		num = num / 10;
+		num = num / 14'd10;
 		
 		
 	end

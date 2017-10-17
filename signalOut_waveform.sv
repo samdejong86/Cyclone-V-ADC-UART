@@ -1,5 +1,5 @@
 //delays the signam by 6 clock ticks. creates a waveform 32 samples long from the delayed waveform
-module signalOutWaveform(clk, ADC_IN, triggerIn, result, longTrigger, pulseHeight, waveform);
+module signalOutWaveform(clk, ADC_IN, triggerIn, result, longTrigger, pulseHeight, waveform, OFCdata, OFCsampleNum);
 
 input [13:0] ADC_IN;
 input triggerIn;
@@ -17,9 +17,11 @@ reg [13:0] Delay5;
 
 output reg [13:0] pulseHeight;
 reg [13:0] tempPulse;
-reg [13:0] pedistal;
+reg [13:0] pedistal=0;
 
 output reg [13:0] waveform [32];
+output reg [13:0] OFCdata;
+output reg [2:0] OFCsampleNum;
 
 
 
@@ -38,10 +40,21 @@ always @(posedge clk) begin
 		counter <= counter + 6'b1;
 		result = Delay0;
 		waveform[counter] = Delay0; //fill the waveform
+		if(counter<5) begin
+			OFCdata=Delay5;
+			OFCsampleNum=OFCsampleNum+3'b1;
+		end
+		else begin
+			OFCdata=0;
+			OFCsampleNum=0;
+		end
 	end
 	else begin	
 		result = 0;
 		counter <= 0;
+		
+		OFCdata=0;
+		OFCsampleNum=0;
 	end
 	
 	

@@ -33,6 +33,9 @@ def Read_Two_Column_File(file_name):
 #read the ATLAS pulse from the file
 x_pulse, y_pulse = Read_Two_Column_File('ATLASCalib.dat')
 
+OFC = [-0.772, 0.134, 0.814, 0.277, -0.401]
+
+
 
 #set the serial port settings
 set_ser = serial.Serial()
@@ -51,11 +54,11 @@ fig = plt.figure()
 ax = plt.axes(xlim=(0, 800), ylim=(8000, 8800))
 
 
-
-plotlays, plotcols = [2], ["black","red"]
+plotlays, plotcols, plotstyle, linw = [3], ["black","red", "black", "red"], ['', 'o','o', '+'], [2,0,0,0]
+#plotlays, plotcols, plotstyle, linw = [2], ["black","red"], ['', 'o'], [2,0]
 lines = []
-for index in range(2):
-    lobj = ax.plot([],[],lw=2,color=plotcols[index])[0]
+for index in range(4):
+    lobj = ax.plot([],[],lw=linw[index], marker=plotstyle[index],color=plotcols[index])[0]
     lines.append(lobj)
 
 
@@ -82,21 +85,34 @@ def animate(i):
     #loop over response. response looks like:
     # xyz
     # where xy is the ADC counts, z is the time.
+    
+    fpgaPulseHeight=0
 
-    for c in data:
-        if n%3==0:
-            lastC=c<<8  #bit shift 'x' by 8
-        elif n%3==1:
-            ADC=lastC+c #add bit shifted x to y
-        elif n%3==2:
-            x.append(c*25) 
+    for i in range(99):
+        if i==96:
+            fpgaPulseHeight=(data[i]<<16)+(data[i+1]<<8)+data[i+2]
+            break;
+        elif i%3==0:        
+            lastC=data[i]<<8  #bit shift 'x' by 8
+        elif i%3==1:
+            ADC=lastC+data[i] #add bit shifted x to y
+        elif i%3==2:
+            x.append(data[i]*25) 
             y.append(ADC)
-        n=n+1
+        
+    
     
     peakLoc=y.index(max(y))  #index of maximum
     maximum=y[peakLoc];      #value of maximum
     pedistal = (y[0]+y[1]+y[3]+y[4])/4 #pedistal
     
+    OFCdata = [y[peakLoc-2], y[peakLoc-1], y[peakLoc], y[peakLoc+1], y[peakLoc+2]] 
+    OFCdata = np.subtract(OFCdata, pedistal)
+
+    PulseHeight = np.sum(np.multiply(OFCdata, OFC))
+
+    #print(PulseHeight)
+
     mx=float(maximum-pedistal)/0.906592
        
     #plot the ATLAS pulse from ATLASCalib.dat, adjusted to the same max and pedistal value as the data from the FPGA
@@ -106,7 +122,8 @@ def animate(i):
     
     lines[0].set_data(x2,y2)
     lines[1].set_data(x,y)
-
+    lines[2].set_data(10,PulseHeight+y[peakLoc-2])
+    lines[3].set_data(100,fpgaPulseHeight/1000.+y[peakLoc-2])
        
 
     return lines
