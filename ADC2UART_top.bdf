@@ -596,35 +596,6 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 16 -112 232 -32)
-	(text "trigger" (rect 5 0 43 11)(font "Arial" ))
-	(text "inst10" (rect 8 64 43 75)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "ADC_IN[13..0]" (rect 0 0 77 11)(font "Arial" ))
-		(text "ADC_IN[13..0]" (rect 21 27 98 38)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 216 32)
-		(output)
-		(text "trigger" (rect 0 0 38 11)(font "Arial" ))
-		(text "trigger" (rect 163 27 201 38)(font "Arial" ))
-		(line (pt 216 32)(pt 200 32))
-	)
-	(port
-		(pt 216 48)
-		(output)
-		(text "outPulse[13..0]" (rect 0 0 86 11)(font "Arial" ))
-		(text "outPulse[13..0]" (rect 123 43 209 54)(font "Arial" ))
-		(line (pt 216 48)(pt 200 48)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 200 64))
-	)
-)
-(symbol
 	(rect 80 -528 112 -512)
 	(text "VCC" (rect 7 0 28 10)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 5 25 16)(font "Arial" )(invisible))
@@ -1082,6 +1053,35 @@ agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 200 96))
+	)
+)
+(symbol
+	(rect 16 -112 232 -32)
+	(text "trigger" (rect 5 0 43 11)(font "Arial" ))
+	(text "inst10" (rect 8 64 43 75)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "ADC_IN[13..0]" (rect 0 0 77 11)(font "Arial" ))
+		(text "ADC_IN[13..0]" (rect 21 27 98 38)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "trigger" (rect 0 0 38 11)(font "Arial" ))
+		(text "trigger" (rect 163 27 195 38)(font "Arial" ))
+		(line (pt 216 32)(pt 200 32))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "outPulse[13..0]" (rect 0 0 86 11)(font "Arial" ))
+		(text "outPulse[13..0]" (rect 123 43 195 54)(font "Arial" ))
+		(line (pt 216 48)(pt 200 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 64))
 	)
 )
 (connector
