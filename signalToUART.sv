@@ -4,7 +4,7 @@ module signalToUART(clk, waveform, acquire, PulseHeight, UART, startStop, bitCou
 input [13:0] waveform [32];
 input clk;
 input acquire;
-input [31:0] PulseHeight;
+input [15:0] PulseHeight;
 output reg UART;
 
 //some debugging outputs
@@ -60,12 +60,9 @@ always @(posedge clk) begin
 				startStop=1;
 			end			
 			else if(whichByte==0)
-				UART=PulseHeight[byteCounter+15];
-			else if(whichByte==1) 
 				UART=PulseHeight[byteCounter+7];
-			else if(whichByte==2) 
-				UART=PulseHeight[byteCounter-1];
-			
+			else if(whichByte==1) 
+				UART=PulseHeight[byteCounter-1];			
 		end
 		
 		else 

@@ -88,17 +88,14 @@ def animate(i):
     
     fpgaPulseHeight=0
 
-    for i in range(99):
-        if i==96:
-            fpgaPulseHeight=(data[i]<<16)+(data[i+1]<<8)+data[i+2]
+    for i in range(33):
+        if i==32:
+            fpgaPulseHeight=(data[3*i]<<8)+(data[3*i+1])
             break;
-        elif i%3==0:        
-            lastC=data[i]<<8  #bit shift 'x' by 8
-        elif i%3==1:
-            ADC=lastC+data[i] #add bit shifted x to y
-        elif i%3==2:
-            x.append(data[i]*25) 
-            y.append(ADC)
+        else:
+            x.append(data[3*i+2]*25)
+            y.append((data[3*i]<<8)+data[3*i+1])
+
         
     
     
@@ -123,7 +120,7 @@ def animate(i):
     lines[0].set_data(x2,y2)
     lines[1].set_data(x,y)
     lines[2].set_data(10,PulseHeight+y[peakLoc-2])
-    lines[3].set_data(100,fpgaPulseHeight/1000.+y[peakLoc-2])
+    lines[3].set_data(100,fpgaPulseHeight+y[peakLoc-2])
        
 
     return lines

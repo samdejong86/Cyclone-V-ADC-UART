@@ -21,7 +21,7 @@ message="d"
 set_ser.write(message.encode('utf-8'))
 
 #recieve a response
-line=set_ser.read(5000)
+data=set_ser.read(5000)
 
 i=0
 lastC=0
@@ -33,23 +33,19 @@ yy=[]
 # xyz
 # where xy is the ADC counts, z is the time.
 
-pulseHeight=0
+fpgaPulseHeight=0
 
-for i in range(99):
-    if i==96:
-        pulseHeight=(line[i]<<16)+(line[i+1]<<8)+line[i+2]
+
+for i in range(33):
+    if i==32:
+        fpgaPulseHeight=(data[3*i]<<8)+(data[3*i+1])
         break;
-    elif i%3==0:        
-        lastC=line[i]<<8  #bit shift 'x' by 8
-    elif i%3==1:
-        ADC=lastC+line[i] #add bit shifted x to y
-    elif i%3==2:
-        xx.append(line[i]*25) 
-        yy.append(ADC)
-        print(str(line[i])+" "+str(ADC))
+    else:
+        xx.append(data[3*i+2]*25)
+        yy.append((data[3*i]<<8)+data[3*i+1])
 
 
-print(pulseHeight/1000.)
+print(fpgaPulseHeight)
 
 #close serial port
 set_ser.close()

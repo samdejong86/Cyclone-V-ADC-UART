@@ -48,8 +48,8 @@ agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "PulseHeight[31..0]" (rect 0 0 69 12)(font "Arial" ))
-		(text "PulseHeight[31..0]" (rect 21 75 90 87)(font "Arial" ))
+		(text "PulseHeight[15..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "PulseHeight[15..0]" (rect 21 75 90 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
