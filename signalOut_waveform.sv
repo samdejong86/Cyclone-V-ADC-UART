@@ -1,5 +1,5 @@
 //delays the signam by 6 clock ticks. creates a waveform 32 samples long from the delayed waveform
-module signalOutWaveform(clk, signal, triggerIn, result, longTrigger, pulseHeight);
+module signalOutWaveform(clk, triggerIn, signal, result, longTrigger, pulseHeight);
 
 input [13:0] signal;
 input triggerIn;

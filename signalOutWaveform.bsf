@@ -34,16 +34,16 @@ agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "signal[13..0]" (rect 0 0 44 12)(font "Arial" ))
-		(text "signal[13..0]" (rect 21 43 65 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "triggerIn" (rect 0 0 31 12)(font "Arial" ))
+		(text "triggerIn" (rect 21 43 52 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "triggerIn" (rect 0 0 31 12)(font "Arial" ))
-		(text "triggerIn" (rect 21 59 52 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
+		(text "signal[13..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "signal[13..0]" (rect 21 59 65 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 216 32)
