@@ -13,8 +13,8 @@ output reg [13:0] OFCdata;
 reg [2:0] OFCsample;
 
 output reg [31:0] temp;
-reg [31:0] OFCcoefficients [5] = '{32'd809500, 32'd140508, 32'd853540, 32'd290454, 32'd420478}; //OFC coefficients, left shifted by 20
-reg addOrSubtract [5] = 					 '{1,			0,			0,			0,			1};
+reg [31:0] OFCcoefficients [5] = '{32'd809500, 32'd140508, 32'd853540, 32'd290454, 32'd420478}; //OFC coefficients, left shifted by 20 bits
+reg addOrSubtract [5] = 					'{1'b1,		  1'b0,		  1'b0,		  1'b0,		  1'b1};
 reg [13:0] pedistal;
 
 always @(posedge clk) begin
