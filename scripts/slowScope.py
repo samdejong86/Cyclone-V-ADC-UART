@@ -54,18 +54,24 @@ fig = plt.figure()
 ax = plt.axes(xlim=(0, 800), ylim=(8000, 8800))
 
 
-plotlays, plotcols, plotstyle, linw = [3], ["black","red", "black", "red"], ['', 'o','o', '+'], [2,0,0,0]
+plotlays, plotcols, plotstyle, linw = [2], ["black","red"], ['', 'o'], [2,0]
 #plotlays, plotcols, plotstyle, linw = [2], ["black","red"], ['', 'o'], [2,0]
 lines = []
-for index in range(4):
+for index in range(2):
     lobj = ax.plot([],[],lw=linw[index], marker=plotstyle[index],color=plotcols[index])[0]
     lines.append(lobj)
 
+time_text = ax.text(0.02, 0.95, '', transform=ax.transAxes)
+energy_text = ax.text(0.02, 0.90, '', transform=ax.transAxes)
+lines.append(time_text)
+lines.append(energy_text)
 
 # initialization function: plot the background of each frame
 def init():
-    for line in lines:
-        line.set_data([],[])
+    for i in range(2):
+        lines[i].set_data([],[])
+    lines[2].set_text(" ")
+    lines[3].set_text(" ")
     return lines
 
 x,y = [],[]
@@ -118,10 +124,10 @@ def animate(i):
 
     
     lines[0].set_data(x2,y2)
-    lines[1].set_data(x,y)
-    lines[2].set_data(10,PulseHeight+y[peakLoc-2])
-    lines[3].set_data(100,fpgaPulseHeight+y[peakLoc-2])
-       
+    lines[1].set_data(x,y)       
+    lines[2].set_text('FPGA result   = '+str(fpgaPulseHeight))
+    lines[3].set_text('Python result = '+str(PulseHeight))
+
 
     return lines
 
@@ -130,9 +136,10 @@ anim = animation.FuncAnimation(fig, animate, init_func=init,
                                frames=800, interval=20, blit=True)
 
 
-
 plt.xlabel("Time (ns)")
 plt.ylabel("ADC counts (AU)")
 plt.show()
 
 set_ser.close()
+
+
