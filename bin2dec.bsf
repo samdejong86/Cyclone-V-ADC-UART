@@ -34,8 +34,8 @@ agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "in[15..0]" (rect 0 0 29 12)(font "Arial" ))
-		(text "in[15..0]" (rect 21 43 50 55)(font "Arial" ))
+		(text "in[13..0]" (rect 0 0 29 12)(font "Arial" ))
+		(text "in[13..0]" (rect 21 43 50 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port

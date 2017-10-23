@@ -36,18 +36,11 @@ yy=[]
 fpgaPulseHeight=0
 Pedistal=0
 
-for i in range(34):
-    if i==33:
-        Pedistal=(data[3*i]<<8)+(data[3*i+1])
-    elif i==32:
-        fpgaPulseHeight=(data[3*i]<<8)+(data[3*i+1])
-    else:
-        xx.append(data[3*i+2]*25)
-        yy.append((data[3*i]<<8)+data[3*i+1])
+for i in range(32):
+    xx.append(data[3*i+2]*25)
+    yy.append((data[3*i]<<8)+data[3*i+1])
 
 
-print(fpgaPulseHeight)
-print(Pedistal)
 
 #close serial port
 set_ser.close()
