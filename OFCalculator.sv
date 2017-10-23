@@ -1,4 +1,4 @@
-module OFCalculator(clk, triggerIn, signal,  PulseHeight, temp, OFCdata);
+module OFCalculator(clk, triggerIn, signal,  PulseHeight, temp, OFCdata, outTrig);
 
 
 input triggerIn;
@@ -6,6 +6,7 @@ input clk;
 input [13:0] signal;
 
 output reg [15:0] PulseHeight;
+output reg outTrig;
 
 reg [2:0] counter=0;
 
@@ -23,11 +24,13 @@ always @(posedge clk) begin
 		counter <= counter + 6'b1;
 		OFCdata=signal;
 		OFCsample=OFCsample+3'b1;
+		outTrig<=1;
 	end
 	else begin	
 		counter<=0;	
 		OFCdata=0;
 		OFCsample=0;
+		outTrig<=0;
 	end
 
 	if(OFCsample==1)begin

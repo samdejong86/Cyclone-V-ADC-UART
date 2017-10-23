@@ -1,12 +1,12 @@
 //delays the signam by 6 clock ticks. creates a waveform 32 samples long from the delayed waveform
-module signalOutWaveform(clk, triggerIn, signal, result, longTrigger, pulseHeight);
+module signalOutWaveform(clk, triggerIn, signal, result, longTrigger, pulseHeight, counter);
 
 input [13:0] signal;
 input triggerIn;
 input clk;
 output reg [13:0] result;
 output reg longTrigger;
-reg [5:0] counter=0;
+output reg [6:0] counter=0;
 
 
 output reg [13:0] pulseHeight;
@@ -33,7 +33,7 @@ always @(posedge clk) begin
 	if(counter==30)
 		pulseHeight=tempPulse-pedistal;  //output the pulseheight
 	
-	if(counter==31)
+	if(counter==41)
 		counter<=0;
 	
 	

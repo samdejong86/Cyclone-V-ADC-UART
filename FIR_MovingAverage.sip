@@ -1,0 +1,25 @@
+set_global_assignment -entity "FIR_MovingAverage" -library "lib_FIR_MovingAverage" -name IP_TOOL_NAME "altera_fir_compiler_ii"
+set_global_assignment -entity "FIR_MovingAverage" -library "lib_FIR_MovingAverage" -name IP_TOOL_VERSION "16.1"
+set_global_assignment -entity "FIR_MovingAverage" -library "lib_FIR_MovingAverage" -name IP_TOOL_ENV "mwpim"
+set_global_assignment -library "lib_FIR_MovingAverage" -name SPD_FILE [file join $::quartus(sip_path) "FIR_MovingAverage.spd"]
+
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/dspba_library_package.vhd"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/dspba_library.vhd"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/auk_dspip_math_pkg_hpfir.vhd"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/auk_dspip_lib_pkg_hpfir.vhd"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/auk_dspip_roundsat_hpfir.vhd"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/FIR_MovingAverage_rtl_core.vhd"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/FIR_MovingAverage_ast.vhd"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/FIR_MovingAverage.vhd"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/FIR_MovingAverage_nativelink.tcl"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/FIR_MovingAverage_msim.tcl"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/FIR_MovingAverage_tb.vhd"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/FIR_MovingAverage_mlab.m"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/FIR_MovingAverage_model.m"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/FIR_MovingAverage_coef_int.txt"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/FIR_MovingAverage_input.txt"]
+set_global_assignment -library "lib_FIR_MovingAverage" -name MISC_FILE [file join $::quartus(sip_path) "FIR_MovingAverage_sim/FIR_MovingAverage_param.txt"]

@@ -34,18 +34,20 @@ yy=[]
 # where xy is the ADC counts, z is the time.
 
 fpgaPulseHeight=0
+Pedistal=0
 
-
-for i in range(33):
-    if i==32:
+for i in range(34):
+    if i==33:
+        Pedistal=(data[3*i]<<8)+(data[3*i+1])
+    elif i==32:
         fpgaPulseHeight=(data[3*i]<<8)+(data[3*i+1])
-        break;
     else:
         xx.append(data[3*i+2]*25)
         yy.append((data[3*i]<<8)+data[3*i+1])
 
 
 print(fpgaPulseHeight)
+print(Pedistal)
 
 #close serial port
 set_ser.close()

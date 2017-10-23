@@ -16,7 +16,7 @@ always @(posedge clk) begin
 	else 
 		acquire=1;
 
-	if(counter>1004)
+	if(counter>1050)
 		counter<=0;
 
 

@@ -1,7 +1,7 @@
 module bin2dec (clk, in, d0, d1, d2, d3, d4, d5, d6, d7, d8, d9);
 
 input clk;
-input [13:0] in;
+input [15:0] in;
 output [6:0] d0;
 output [6:0] d1;
 output [6:0] d2;
@@ -13,7 +13,7 @@ output [6:0] d7;
 output [6:0] d8;
 output [6:0] d9;
 
-reg [13:0] num;
+reg [15:0] num;
 reg [4:0] i;
 reg [6:0] digit;
 reg [6:0] thisDigit;
@@ -38,57 +38,71 @@ always @(in) begin
 	
 	
 	
-	while (num >= 0) begin
-		digit <= num % 7'd10;
+	while (num >= 1) begin
+		digit = num % 7'd10;
 		
-		if (digit==1)
+		if (digit==1) begin
 			thisDigit=6;
-		else if (digit==2)
+		end
+		else if (digit==2) begin
 			thisDigit=91;
-		else if (digit==3)
-			thisDigit=79;
-		else if (digit==4)
-			thisDigit=102;
-		else if (digit==5)
-			thisDigit=109;
-		else if (digit==6)
-			thisDigit=125;
-		else if (digit==7)
-			thisDigit=7;
-		else if (digit==8)
-			thisDigit=127;
-		else if (digit==9)
-			thisDigit=111;
-		else if(digit==0)
-			thisDigit=63;
+		end
+		else if (digit==3) begin
+			thisDigit=79;			
+		end
+		else if (digit==4) begin
+			thisDigit=102;		
+		end
+		else if (digit==5) begin
+			thisDigit=109;		
+		end
+		else if (digit==6) begin
+			thisDigit=125;	
+		end
+		else if (digit==7) begin
+			thisDigit=7;		
+		end
+		else if (digit==8) begin
+			thisDigit=127;		
+		end
+		else if (digit==9) begin
+			thisDigit=111;		
+		end
+		else if(digit==0) begin
+			thisDigit=63;		
+		end
 		
-		if (i==0)
+		if(i==0)
 			d0=~thisDigit;
-		else if (i==1)
+		else if(i==1)
 			d1=~thisDigit;
-		else if (i==2)
+		else if(i==2)
 			d2=~thisDigit;
-		else if (i==3)
+		else if(i==3)
 			d3=~thisDigit;
-		else if (i==4)
+		else if(i==4)
 			d4=~thisDigit;
-		else if (i==5)
+		else if(i==5)
 			d5=~thisDigit;
-		else if (i==6)
+		else if(i==6)
 			d6=~thisDigit;
-		else if (i==7)
+		else if(i==7)
 			d7=~thisDigit;
-		else if (i==8)
+		else if(i==8)
 			d8=~thisDigit;
-		else if (i==9)
+		else if(i==9)
 			d9=~thisDigit;
+			
+		
+		
+		
 		
 		
 		if (i==10)
 			break;
 		
 		i = i + 5'b1;
-		num = num / 14'd10;
+		num = num / 10;
 		
 		
 	end

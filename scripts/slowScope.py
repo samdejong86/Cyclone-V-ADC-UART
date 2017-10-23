@@ -36,7 +36,6 @@ x_pulse, y_pulse = Read_Two_Column_File('ATLASCalib.dat')
 OFC = [-0.772, 0.134, 0.814, 0.277, -0.401]
 
 
-
 #set the serial port settings
 set_ser = serial.Serial()
 set_ser.port="/dev/ttyUSB1"          #the location of the USB port 
@@ -51,7 +50,7 @@ set_ser.open()
 
 # First set up the figure, the axis, and the plot element we want to animate
 fig = plt.figure()
-ax = plt.axes(xlim=(0, 800), ylim=(8000, 8800))
+ax = plt.axes(xlim=(0, 800), ylim=(-100, 500))
 
 
 plotlays, plotcols, plotstyle, linw = [2], ["black","red"], ['', 'o'], [2,0]
@@ -93,11 +92,13 @@ def animate(i):
     # where xy is the ADC counts, z is the time.
     
     fpgaPulseHeight=0
+    pedistal=0
 
-    for i in range(33):
-        if i==32:
+    for i in range(34):
+        if i==33:
+            pedistal=(data[3*i]<<8)+(data[3*i+1])
+        elif i==32:
             fpgaPulseHeight=(data[3*i]<<8)+(data[3*i+1])
-            break;
         else:
             x.append(data[3*i+2]*25)
             y.append((data[3*i]<<8)+data[3*i+1])
@@ -107,10 +108,12 @@ def animate(i):
     
     peakLoc=y.index(max(y))  #index of maximum
     maximum=y[peakLoc];      #value of maximum
-    pedistal = (y[0]+y[1]+y[3]+y[4])/4 #pedistal
+    #pedistal = (y[0]+y[1]+y[3]+y[4])/4 #pedistal
     
+    y = np.subtract(y, pedistal)
+
     OFCdata = [y[peakLoc-2], y[peakLoc-1], y[peakLoc], y[peakLoc+1], y[peakLoc+2]] 
-    OFCdata = np.subtract(OFCdata, pedistal)
+    #OFCdata = np.subtract(OFCdata)
 
     PulseHeight = np.sum(np.multiply(OFCdata, OFC))
 
@@ -120,7 +123,7 @@ def animate(i):
        
     #plot the ATLAS pulse from ATLASCalib.dat, adjusted to the same max and pedistal value as the data from the FPGA
     x2=np.add(np.divide(x_pulse,1e-9),x[peakLoc]-73.81072) 
-    y2=np.add(np.multiply(y_pulse, mx), pedistal)
+    y2=np.multiply(y_pulse, mx)
 
     
     lines[0].set_data(x2,y2)
