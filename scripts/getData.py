@@ -21,7 +21,7 @@ message="d"
 set_ser.write(message.encode('utf-8'))
 
 #recieve a response
-data=set_ser.read(5000)
+data=set_ser.read(15000)
 
 i=0
 lastC=0
@@ -36,11 +36,10 @@ yy=[]
 fpgaPulseHeight=0
 Pedistal=0
 
-for i in range(64):
-    xx.append(data[3*i+2]/0.065)
+for i in range(499):
+    xx.append(i/0.065)
     yy.append((data[3*i]<<8)+data[3*i+1])
-
-
+    
 
 #close serial port
 set_ser.close()
