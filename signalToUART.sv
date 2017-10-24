@@ -1,16 +1,16 @@
 // This module recieves a waveform of 32 14 bit ACS samples, and converts it to a serial format for sending to a PC.
 module signalToUART(clk, waveform, acquire, UART, startStop, bitCounter, waveformCounter, byteCounter, whichByte, sample);
 
-input [13:0] waveform [64];
+input [13:0] waveform [500];
 input clk;
 input acquire;
 output reg UART;
 
 //some debugging outputs
-output reg [10:0] bitCounter=0;
-output reg [10:0] waveformCounter=0;
-output reg [10:0] byteCounter=0;
-output reg [10:0] whichByte;
+output reg [17:0] bitCounter=0;
+output reg [17:0] waveformCounter=0;
+output reg [17:0] byteCounter=0;
+output reg [17:0] whichByte;
 output reg [13:0] sample;
 output reg startStop;
 
@@ -20,7 +20,7 @@ reg done;
 always @(posedge clk) begin
 	startStop=0;
 	if(acquire==0&&done==0) begin		//send the data only when acqire is down and data has not been sent
-		if(waveformCounter<64) begin  //send only 32 samples. 
+		if(waveformCounter<500) begin  //send only 32 samples. 
 			sample=waveform[waveformCounter];  //the current ADC value is a debugging output
 		
 			if(byteCounter==0&&bitCounter!=0) begin   	//start bit - serial bitstreams always start with a '0'

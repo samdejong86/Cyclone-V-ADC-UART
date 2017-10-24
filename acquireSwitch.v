@@ -4,7 +4,7 @@ module acquireSwitch(UART_RX, clk, acquire);
 input clk;
 input UART_RX;
 output reg acquire;
-reg [10:0] counter=0;
+reg [17:0] counter=0;
 
 
 always @(posedge clk) begin
@@ -16,7 +16,7 @@ always @(posedge clk) begin
 	else 
 		acquire=1;
 
-	if(counter>2100)
+	if(counter>15010)
 		counter<=0;
 
 

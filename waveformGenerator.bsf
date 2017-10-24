@@ -21,7 +21,7 @@ agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 248 128)
+	(rect 16 16 256 128)
 	(text "waveformGenerator" (rect 5 0 86 12)(font "Arial" ))
 	(text "inst" (rect 8 96 20 108)(font "Arial" ))
 	(port
@@ -46,13 +46,13 @@ agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
-		(pt 232 32)
+		(pt 240 32)
 		(output)
-		(text "waveform[0..63][13..0]" (rect 0 0 89 12)(font "Arial" ))
-		(text "waveform[0..63][13..0]" (rect 122 27 211 39)(font "Arial" ))
-		(line (pt 232 32)(pt 216 32)(line_width 3))
+		(text "waveform[0..499][13..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "waveform[0..499][13..0]" (rect 124 27 219 39)(font "Arial" ))
+		(line (pt 240 32)(pt 224 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 216 96)(line_width 1))
+		(rectangle (rect 16 16 224 96)(line_width 1))
 	)
 )
