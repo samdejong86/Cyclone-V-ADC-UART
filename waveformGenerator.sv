@@ -5,9 +5,9 @@ input [13:0] signal;
 input triggerIn;
 input clk;
 
-reg [5:0] counter=0;
+reg [6:0] counter=0;
 
-output reg [13:0] waveform [32];
+output reg [13:0] waveform [64];
 
 always @(posedge clk) begin
 
@@ -19,7 +19,7 @@ always @(posedge clk) begin
 		counter <= 0;
 	end
 
-	if(counter==31)
+	if(counter==63)
 		counter<=0;
 
 

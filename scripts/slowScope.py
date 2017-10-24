@@ -33,7 +33,7 @@ set_ser.open()
 
 # First set up the figure, the axis, and the plot element we want to animate
 fig = plt.figure()
-ax = plt.axes(xlim=(0, 800), ylim=(8000, 8800))
+ax = plt.axes(xlim=(0, 985), ylim=(8000, 8800))
 #line=ax.plot([],[],lw=2, marker='',color='black')[0]
 line, = ax.plot([], [], 'ro', animated=True)
 
@@ -59,8 +59,8 @@ def animate(i):
     # xyz
     # where xy is the ADC counts, z is the time.
     
-    for i in range(32):
-        x.append(data[3*i+2]*25)
+    for i in range(64):
+        x.append(data[3*i+2]/0.065)
         y.append((data[3*i]<<8)+data[3*i+1])
 
            
@@ -72,7 +72,7 @@ def animate(i):
 
 # call the animator.  blit=True means only re-draw the parts that have changed.
 anim = animation.FuncAnimation(fig, animate, init_func=init,
-                               frames=800, interval=20, blit=True)
+                               frames=400, interval=20, blit=True)
 
 
 plt.xlabel("Time (ns)")
