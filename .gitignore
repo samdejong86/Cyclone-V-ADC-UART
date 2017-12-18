@@ -11,3 +11,5 @@ greybox_tmp/*
 *.qarlog
 *.done
 *.qar
+*.mp4
+*.dat

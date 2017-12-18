@@ -1,0 +1,69 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 0 0 80 80)
+	(text "trigger_Mux" (rect 5 0 91 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 65 30 76)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "data1" (rect 0 0 36 13)(font "Arial" (font_size 8)))
+		(text "data1" (rect 4 27 34 39)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 32 40))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "data0" (rect 0 0 36 13)(font "Arial" (font_size 8)))
+		(text "data0" (rect 4 43 34 55)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 32 56))
+	)
+	(port
+		(pt 40 80)
+		(input)
+		(text "sel" (rect 0 0 13 17)(font "Arial" (font_size 8))(vertical))
+		(text "sel" (rect 34 48 46 63)(font "Arial" (font_size 8))(vertical))
+		(line (pt 40 80)(pt 40 68))
+	)
+	(port
+		(pt 80 48)
+		(output)
+		(text "result" (rect 0 0 36 13)(font "Arial" (font_size 8)))
+		(text "result" (rect 48 35 78 47)(font "Arial" (font_size 8)))
+		(line (pt 80 48)(pt 48 48))
+	)
+	(drawing
+		(line (pt 32 24)(pt 32 72))
+		(line (pt 32 24)(pt 48 32))
+		(line (pt 32 72)(pt 48 64))
+		(line (pt 48 32)(pt 48 64))
+		(line (pt 0 0)(pt 82 0))
+		(line (pt 82 0)(pt 82 82))
+		(line (pt 0 82)(pt 82 82))
+		(line (pt 0 0)(pt 0 82))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+	)
+)

@@ -60,7 +60,7 @@ def animate(i):
     # where xy is the ADC counts, z is the time.
     
     for i in range(500):
-        x.append(i/0.065)
+        x.append(i/0.050)
         y.append((data[3*i]<<8)+data[3*i+1])
 
            

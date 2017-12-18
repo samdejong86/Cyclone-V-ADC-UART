@@ -37,7 +37,7 @@ fpgaPulseHeight=0
 Pedistal=0
 
 for i in range(499):
-    xx.append(i/0.065)
+    xx.append(i/0.050)
     yy.append((data[3*i]<<8)+data[3*i+1])
     
 
