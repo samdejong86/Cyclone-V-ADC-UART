@@ -11,12 +11,15 @@ always @(posedge clk) begin
 
 	if(UART_RX==0||counter!=0) begin
 		counter <= counter+11'b1;
-		acquire=0;
+		//acquire=0;
 	end
 	else 
 		acquire=1;
 
-	if(counter>15010)
+	if(counter>30)
+		acquire=0;
+	
+	if(counter>15040)
 		counter<=0;
 
 

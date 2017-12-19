@@ -6,7 +6,7 @@ input triggerIn;
 input clk;
 output reg [13:0] result;
 output reg longTrigger;
-output reg [6:0] counter=0;
+output reg [10:0] counter=0;
 
 
 output reg [13:0] pulseHeight;
@@ -33,7 +33,7 @@ always @(posedge clk) begin
 	if(counter==30)
 		pulseHeight=tempPulse-pedistal;  //output the pulseheight
 	
-	if(counter==41)
+	if(counter==499)
 		counter<=0;
 	
 	

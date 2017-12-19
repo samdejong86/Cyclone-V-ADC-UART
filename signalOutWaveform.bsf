@@ -69,8 +69,8 @@ agreement for further details.
 	(port
 		(pt 216 80)
 		(output)
-		(text "counter[6..0]" (rect 0 0 49 12)(font "Arial" ))
-		(text "counter[6..0]" (rect 146 75 195 87)(font "Arial" ))
+		(text "counter[10..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "counter[10..0]" (rect 142 75 195 87)(font "Arial" ))
 		(line (pt 216 80)(pt 200 80)(line_width 3))
 	)
 	(drawing

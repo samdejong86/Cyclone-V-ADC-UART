@@ -9,6 +9,7 @@ output reg UART;
 //some debugging outputs
 output reg [17:0] bitCounter=0;
 output reg [17:0] waveformCounter=0;
+reg [17:0] waveformCounter2=0;
 output reg [17:0] byteCounter=0;
 output reg [17:0] whichByte;
 output reg [13:0] sample;
@@ -22,6 +23,7 @@ always @(posedge clk) begin
 	if(acquire==0&&done==0) begin		//send the data only when acqire is down and data has not been sent
 		if(waveformCounter<500) begin  //send only 32 samples. 
 			sample=waveform[waveformCounter];  //the current ADC value is a debugging output
+			waveformCounter2 = waveformCounter+1;	
 		
 			if(byteCounter==0&&bitCounter!=0) begin   	//start bit - serial bitstreams always start with a '0'
 				UART=0;	     
@@ -42,7 +44,7 @@ always @(posedge clk) begin
 			else if(whichByte==1)
 					UART=waveform[waveformCounter][byteCounter-1];  //second byte is bits 0-7 of the ADC value
 			else if(whichByte==2) begin                           
-				UART=waveformCounter[byteCounter-1];				//third byte is the time (or array index)
+				UART=waveformCounter2[byteCounter-1];				//third byte is the time (or array index)
 			end
 			else 
 				UART=0;
