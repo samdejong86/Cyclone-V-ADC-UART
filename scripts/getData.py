@@ -30,8 +30,7 @@ message="d"
 set_ser.write(message.encode('utf-8'))
 
 #recieve a response
-data=set_ser.read(1500)
-
+data=set_ser.read(1520)
 
 i=0
 lastC=0
@@ -50,6 +49,8 @@ for i in range(499):
         xx.append(i/0.05)
         yy.append((data[3*i]<<8)+data[3*i+1])
 
+waveNum = (data[1500]<<8)+data[1501]
+
 
 
 #close serial port
@@ -57,8 +58,9 @@ set_ser.close()
 
 if args.save:
     with open(args.filename, 'w') as f:
-        for i in range(len(xx)):
-            f.write(str(xx[i]) + "\t" + str(yy[i]) + "\n")
+	    f.write(str(waveNum)+"\n")
+	    for i in range(len(xx)):
+		    f.write(str(xx[i]) + "\t" + str(yy[i]) + "\n")
 
 
 if not args.noGraph:

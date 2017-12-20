@@ -45,13 +45,20 @@ set_ser.open()
 fig = plt.figure()
 ax = plt.axes(xlim=(0, 10000), ylim=(000, 16000))
 #line=ax.plot([],[],lw=2, marker='',color='black')[0]
-line, = ax.plot([], [], 'r-', animated=True)
+lines = []
 
+lobj = ax.plot([], [], 'r-', animated=True)[0]
+wNum_text = ax.text(0.02, 0.95, '', transform=ax.transAxes)
+
+lines.append(lobj)
+lines.append(wNum_text)
 
 # initialization function: plot the background of each frame
 def init():
-    line.set_data([],[])
-    return line,
+    for i in range(1):
+        lines[i].set_data([],[])
+    lines[1].set_text(" ")
+    return lines
 
 x,y = [],[]
 
@@ -59,7 +66,7 @@ x,y = [],[]
 def animate(i):
     message="d" 
     set_ser.write(message.encode('utf-8'))
-    data=set_ser.read(1500)
+    data=set_ser.read(1600)
 
     #print(len(data))
 
@@ -76,12 +83,15 @@ def animate(i):
         x.append(i/0.050)
         y.append((data[3*i]<<8)+data[3*i+1])
 
+    waveNumber = (data[1500]<<8)+data[1501]
+    #print(waveNumber)
            
 
-    line.set_data(x,y)       
+    lines[0].set_data(x,y)       
+    lines[1].set_text("wave number: "+str(waveNumber))
 
 
-    return line,
+    return lines
 
 # call the animator.  blit=True means only re-draw the parts that have changed.
 anim = animation.FuncAnimation(fig, animate, init_func=init,

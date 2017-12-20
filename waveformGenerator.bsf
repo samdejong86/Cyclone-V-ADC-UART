@@ -52,6 +52,13 @@ agreement for further details.
 		(text "waveform[0..499][13..0]" (rect 124 27 219 39)(font "Arial" ))
 		(line (pt 240 32)(pt 224 32)(line_width 3))
 	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "waveNumber[15..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "waveNumber[15..0]" (rect 142 43 219 55)(font "Arial" ))
+		(line (pt 240 48)(pt 224 48)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 224 96)(line_width 1))
 	)
