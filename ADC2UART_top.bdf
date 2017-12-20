@@ -1127,7 +1127,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 480 752 656 832)
+	(rect 480 752 688 832)
 	(text "acquireSwitch" (rect 5 0 84 11)(font "Arial" ))
 	(text "inst3" (rect 8 64 37 75)(font "Arial" ))
 	(port
@@ -1145,14 +1145,21 @@ agreement for further details.
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
-		(pt 176 32)
+		(pt 208 32)
 		(output)
 		(text "acquire" (rect 0 0 43 11)(font "Arial" ))
-		(text "acquire" (rect 119 27 155 38)(font "Arial" ))
-		(line (pt 176 32)(pt 160 32))
+		(text "acquire" (rect 151 27 187 38)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32))
+	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "counter[18..0]" (rect 0 0 77 11)(font "Arial" ))
+		(text "counter[18..0]" (rect 122 43 187 54)(font "Arial" ))
+		(line (pt 208 48)(pt 192 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 160 64))
+		(rectangle (rect 16 16 192 64))
 	)
 )
 (connector
@@ -1610,11 +1617,6 @@ agreement for further details.
 	(pt 264 760)
 )
 (connector
-	(text "acquire" (rect 666 768 709 781)(font "Intel Clear" ))
-	(pt 656 784)
-	(pt 712 784)
-)
-(connector
 	(pt 456 760)
 	(pt 472 760)
 )
@@ -1670,11 +1672,21 @@ agreement for further details.
 	(pt 464 896)
 	(pt 472 896)
 )
+(connector
+	(text "acquire" (rect 666 768 709 781)(font "Intel Clear" ))
+	(pt 656 784)
+	(pt 688 784)
+)
+(connector
+	(pt 688 784)
+	(pt 712 784)
+)
 (junction (pt -16 -384))
 (junction (pt 176 -216))
 (junction (pt 648 -432))
 (junction (pt 304 464))
 (junction (pt 464 896))
+(junction (pt 688 784))
 (text "1MHz clock for UART" (rect 24 664 202 684)(font "Intel Clear" (color 0 0 0)(font_size 11)(bold)))
 (text "Sends the waveform to UART_TX" (rect 176 840 479 861)(font "Intel Clear" (color 0 0 0)(font_size 12)(bold)))
 (text "Start to acquire when UART_RX recives a message" (rect 432 728 817 746)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))

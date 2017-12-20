@@ -21,7 +21,7 @@ agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 192 96)
+	(rect 16 16 224 96)
 	(text "acquireSwitch" (rect 5 0 58 12)(font "Arial" ))
 	(text "inst" (rect 8 64 20 76)(font "Arial" ))
 	(port
@@ -39,13 +39,20 @@ agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
-		(pt 176 32)
+		(pt 208 32)
 		(output)
 		(text "acquire" (rect 0 0 28 12)(font "Arial" ))
-		(text "acquire" (rect 127 27 155 39)(font "Arial" ))
-		(line (pt 176 32)(pt 160 32)(line_width 1))
+		(text "acquire" (rect 159 27 187 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 1))
+	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "counter[18..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "counter[18..0]" (rect 134 43 187 55)(font "Arial" ))
+		(line (pt 208 48)(pt 192 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 160 64)(line_width 1))
+		(rectangle (rect 16 16 192 64)(line_width 1))
 	)
 )

@@ -25,26 +25,26 @@ always @(posedge clk) begin
 			sample=waveform[waveformCounter];  //the current ADC value is a debugging output
 			waveformCounter2 = waveformCounter+1;	
 		
-			if(byteCounter==0&&bitCounter!=0) begin   	//start bit - serial bitstreams always start with a '0'
+			if(byteCounter==0) begin   	//start bit - serial bitstreams always start with a '0'
 				UART=0;	     
 				startStop=1;
 			end
-			else if(byteCounter==9) begin 					//end bit - serial bitstreams always end with a '1'
+			else if(byteCounter==9||byteCounter==10||byteCounter==11) begin 					//end bit - serial bitstreams always end with a '1'
 				UART=1;
 				startStop=1;
 			end
 		
 			//sending 3 bytes:
 			else if(whichByte==0) begin
-					if(byteCounter>6)
-						UART=0;
-					else
+					//	UART=0;
+					//else
 						UART=waveform[waveformCounter][byteCounter+7];  //first byte is bits 8-13 of the ADC value
 			end
-			else if(whichByte==1)
-					UART=waveform[waveformCounter][byteCounter-1];  //second byte is bits 0-7 of the ADC value
-			else if(whichByte==2) begin                           
-				UART=waveformCounter2[byteCounter-1];				//third byte is the time (or array index)
+			else if(whichByte==1) begin
+						UART=waveform[waveformCounter][byteCounter-1];  //second byte is bits 0-7 of the ADC value
+			end
+			else if(whichByte==2) begin
+					UART=waveformCounter2[byteCounter-1];				//third byte is the time (or array index)
 			end
 			else 
 				UART=0;
@@ -55,24 +55,24 @@ always @(posedge clk) begin
 		else 
 			done=1;   //the waveform has been sent
 			
-		bitCounter<=bitCounter+11'b1;;					//increment the bit counter
-		waveformCounter<=bitCounter/(11'd30);		//0-32 - waveform index 7'b11110 = 30  
-		byteCounter<=(bitCounter%11'd30)%11'd10;  //0-9 - counts the bits in the current byte. 7'b1010=10
-		whichByte<=bitCounter%11'd30/11'd10;  		//0-2 - counts the bytes in the current waveform.
+		bitCounter=bitCounter+11'b1;;					//increment the bit counter
+		waveformCounter=bitCounter/(11'd36);		//0-32 - waveform index 7'b11110 = 30  
+		byteCounter=(bitCounter%11'd36)%11'd12;  //0-9 - counts the bits in the current byte. 7'b1010=10
+		whichByte=bitCounter%11'd36/11'd12;  		//0-2 - counts the bytes in the current waveform.
 	end
 	else if(acquire==1) begin	//when acqure goes to 1, reset variables
 		done=0;
-		bitCounter<=0;
-		waveformCounter<=0;
-		byteCounter<=0;
-		whichByte<=0;
+		bitCounter=0;
+		waveformCounter=0;
+		byteCounter=0;
+		whichByte=0;
 		UART=1;
 	end
 	else begin		
-		bitCounter<=0;
-		waveformCounter<=0;
-		byteCounter<=0;
-		whichByte<=0;
+		bitCounter=0;
+		waveformCounter=0;
+		byteCounter=0;
+		whichByte=0;
 		UART=1;
 	end
 		

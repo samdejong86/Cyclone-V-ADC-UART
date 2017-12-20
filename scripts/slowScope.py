@@ -17,23 +17,33 @@ import numpy as np
 import serial   
 from matplotlib import pyplot as plt
 from matplotlib import animation
+import argparse
+
+parser = argparse.ArgumentParser(description='View waveforms coming from UART')
+parser.add_argument('-p','--port', help='The port to listen to', default="/dev/ttyUSB0", required=False)
+parser.add_argument('-m','--movie', help='Save a 200 frame video', action='store_true', required=False)
+parser.add_argument('-f','--filename', help='Video filename', default="slowScope.mp4", required=False)
+parser.add_argument('-t','--timeout', help='Port timeout (controls update rate)', default=0.02, required=False)
+
+args = parser.parse_args()
+
 
 
 #set the serial port settings
 set_ser = serial.Serial()
-set_ser.port="/dev/ttyUSB0"          #the location of the USB port 
+set_ser.port=args.port          #the location of the USB port 
 set_ser.baudrate=1000000             #baud rate of 1MHz
 set_ser.parity = serial.PARITY_NONE
 set_ser.stopbits=serial.STOPBITS_ONE
 set_ser.bytesize = serial.EIGHTBITS
-set_ser.timeout=0.002
+set_ser.timeout=float(args.timeout)
 
 #open the serial port
 set_ser.open()
 
 # First set up the figure, the axis, and the plot element we want to animate
 fig = plt.figure()
-ax = plt.axes(xlim=(0, 8000), ylim=(000, 16000))
+ax = plt.axes(xlim=(0, 10000), ylim=(000, 16000))
 #line=ax.plot([],[],lw=2, marker='',color='black')[0]
 line, = ax.plot([], [], 'r-', animated=True)
 
@@ -49,7 +59,7 @@ x,y = [],[]
 def animate(i):
     message="d" 
     set_ser.write(message.encode('utf-8'))
-    data=set_ser.read(15000)
+    data=set_ser.read(1500)
 
     #print(len(data))
 
@@ -75,8 +85,10 @@ def animate(i):
 
 # call the animator.  blit=True means only re-draw the parts that have changed.
 anim = animation.FuncAnimation(fig, animate, init_func=init,
-                               frames=1, interval=70, blit=True)
+                               frames=200, interval=20, blit=True)
 
+if args.movie:
+    anim.save(args.filename, metadata={'artist':'Sam'})
 
 plt.xlabel("Time (ns)")
 plt.ylabel("ADC counts (AU)")
