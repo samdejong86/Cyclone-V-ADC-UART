@@ -10,7 +10,7 @@ output reg		 			trigger;
 
 always @(ADC_IN) begin
 	
-	if(ADC_IN>trigLevel) begin
+	if(ADC_IN<trigLevel) begin
 		trigger <= 1;
 		outPulse = (ADC_IN-14'd8000)*14'd10;
 	end

@@ -4,10 +4,10 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CGXFC5C6F27) Path("/home/srdejong/Cyclone-V-ADC-UART/output_files/") File("ADC2UART_top.sof") MfrSpec(OpMask(1));
+		Device PartName(EPCQ256) Path("/home/srdejong/Cyclone-V-ADC-UART/output_files/") File("ADC2UART_top.pof") MfrSpec(OpMask(1) Child_OpMask(1 1));
 
 ChainEnd;
 
 AlteraBegin;
-	ChainType(JTAG);
+	ChainType(asc);
 AlteraEnd;
