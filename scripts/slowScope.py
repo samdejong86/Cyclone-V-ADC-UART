@@ -27,6 +27,8 @@ parser.add_argument('-t','--timeout', help='Port timeout (controls update rate)'
 
 args = parser.parse_args()
 
+x=[]
+y=[]
 
 
 #set the serial port settings
@@ -60,7 +62,7 @@ def init():
     lines[1].set_text(" ")
     return lines
 
-x,y = [],[]
+
 
 # animation function.  This is called sequentially
 def animate(i):
@@ -68,27 +70,30 @@ def animate(i):
     set_ser.write(message.encode('utf-8'))
     data=set_ser.read(1600)
 
-    #print(len(data))
-
-
-    x=[]
-    y=[]
-
+    global waveNumber
     
-    #loop over response. response looks like:
-    # xyz
-    # where xy is the ADC counts, z is the time.
+    if len(data)!=0:
+
+
+        del x[:]
+        del y[:]
+
+
+        #loop over response. response looks like:
+        # xyz
+        # where xy is the ADC counts, z is the time.
     
-    for i in range(499):
-        x.append(i/0.050)
-        y.append((data[3*i]<<8)+data[3*i+1])
+        for i in range(499):
+            x.append(i/0.050)
+            y.append((data[3*i]<<8)+data[3*i+1])
 
-    waveNumber = (data[1500]<<8)+data[1501]
-    #print(waveNumber)
-           
+            waveNumber = (data[1500]<<8)+data[1501]
 
+       
     lines[0].set_data(x,y)       
     lines[1].set_text("wave number: "+str(waveNumber))
+    
+
 
 
     return lines
