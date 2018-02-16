@@ -98,7 +98,7 @@ class SubplotAnimation(animation.TimedAnimation):
         ax2.add_line(self.line2a)
         ax2.add_line(self.line2e)
         ax2.set_xlim(50, 10000)
-        ax2.set_ylim(-3.14, 3.14)
+        ax2.set_ylim(-2*3.14, 2*3.14)
 
         ax3.set_xlabel('Time (ns)')
         ax3.set_ylabel('ADC counts')
@@ -137,13 +137,16 @@ class SubplotAnimation(animation.TimedAnimation):
                 
                 waveNumber = data[1501]
 
+            try:
+                fit=fit_sin(self.x,self.y)
+            except RuntimeError:
+                print("runtime error")
+                return
 
-            fit=fit_sin(self.x,self.y)
-
-            print(fit['maxcov'])
+            #print(fit['maxcov'])
          
             if fit['maxcov']<10:
-                print(str(i)+" "+"{0:.2f}".format(fit['amp'])+" {0:.2f}".format(fit['phase'])+" "+" {0:.2f}".format(fit['freq']*1000000))
+                #print(str(i)+" "+"{0:.2f}".format(fit['amp'])+" {0:.2f}".format(fit['phase'])+" "+" {0:.2f}".format(fit['freq']*1000000))
                 self.freq.append(fit['freq']*1000000)
                 self.amp.append(fit['amp'])
                 self.phase.append(fit['phase'])

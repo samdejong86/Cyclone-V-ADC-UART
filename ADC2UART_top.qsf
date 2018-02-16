@@ -56,69 +56,69 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
-set_location_assignment PIN_A16 -to ADC_CLK_A
-set_location_assignment PIN_A17 -to ADC_CLK_B
-set_location_assignment PIN_E13 -to ADC_DA[13]
-set_location_assignment PIN_D13 -to ADC_DA[12]
-set_location_assignment PIN_C14 -to ADC_DA[11]
-set_location_assignment PIN_D15 -to ADC_DA[10]
-set_location_assignment PIN_E16 -to ADC_DA[9]
-set_location_assignment PIN_D16 -to ADC_DA[8]
-set_location_assignment PIN_D18 -to ADC_DA[7]
-set_location_assignment PIN_D17 -to ADC_DA[6]
-set_location_assignment PIN_E20 -to ADC_DA[5]
-set_location_assignment PIN_E19 -to ADC_DA[4]
-set_location_assignment PIN_D21 -to ADC_DA[3]
-set_location_assignment PIN_D20 -to ADC_DA[2]
-set_location_assignment PIN_B24 -to ADC_DA[1]
-set_location_assignment PIN_A24 -to ADC_DA[0]
-set_location_assignment PIN_B12 -to ADC_DB[13]
-set_location_assignment PIN_A13 -to ADC_DB[12]
-set_location_assignment PIN_C23 -to ADC_DB[11]
-set_location_assignment PIN_C22 -to ADC_DB[10]
-set_location_assignment PIN_A14 -to ADC_DB[9]
-set_location_assignment PIN_B14 -to ADC_DB[8]
-set_location_assignment PIN_A23 -to ADC_DB[7]
-set_location_assignment PIN_A22 -to ADC_DB[6]
-set_location_assignment PIN_C17 -to ADC_DB[5]
-set_location_assignment PIN_B17 -to ADC_DB[4]
-set_location_assignment PIN_C19 -to ADC_DB[3]
-set_location_assignment PIN_C18 -to ADC_DB[2]
-set_location_assignment PIN_B21 -to ADC_DB[1]
-set_location_assignment PIN_B20 -to ADC_DB[0]
-set_location_assignment PIN_F16 -to ADC_OEB_A
-set_location_assignment PIN_E15 -to ADC_OEB_B
+set_location_assignment PIN_A19 -to ADC_CLK_A
+set_location_assignment PIN_A18 -to ADC_CLK_B
+set_location_assignment PIN_D11 -to ADC_DA[13]
+set_location_assignment PIN_D12 -to ADC_DA[12]
+set_location_assignment PIN_E10 -to ADC_DA[11]
+set_location_assignment PIN_E11 -to ADC_DA[10]
+set_location_assignment PIN_C9 -to ADC_DA[9]
+set_location_assignment PIN_B9 -to ADC_DA[8]
+set_location_assignment PIN_D10 -to ADC_DA[7]
+set_location_assignment PIN_C10 -to ADC_DA[6]
+set_location_assignment PIN_A12 -to ADC_DA[5]
+set_location_assignment PIN_B11 -to ADC_DA[4]
+set_location_assignment PIN_B10 -to ADC_DA[3]
+set_location_assignment PIN_A11 -to ADC_DA[2]
+set_location_assignment PIN_C20 -to ADC_DA[1]
+set_location_assignment PIN_B19 -to ADC_DA[0]
+set_location_assignment PIN_H14 -to ADC_DB[13]
+set_location_assignment PIN_H13 -to ADC_DB[12]
+set_location_assignment PIN_N12 -to ADC_DB[11]
+set_location_assignment PIN_M12 -to ADC_DB[10]
+set_location_assignment PIN_M11 -to ADC_DB[9]
+set_location_assignment PIN_L11 -to ADC_DB[8]
+set_location_assignment PIN_H18 -to ADC_DB[7]
+set_location_assignment PIN_H17 -to ADC_DB[6]
+set_location_assignment PIN_L12 -to ADC_DB[5]
+set_location_assignment PIN_K11 -to ADC_DB[4]
+set_location_assignment PIN_H15 -to ADC_DB[3]
+set_location_assignment PIN_J16 -to ADC_DB[2]
+set_location_assignment PIN_J12 -to ADC_DB[1]
+set_location_assignment PIN_J11 -to ADC_DB[0]
+set_location_assignment PIN_C15 -to ADC_OEB_A
+set_location_assignment PIN_G17 -to ADC_OEB_B
 set_location_assignment PIN_H12 -to CLOCK_50_B7A
-set_location_assignment PIN_A19 -to DAC_CLK_A
-set_location_assignment PIN_A18 -to DAC_CLK_B
-set_location_assignment PIN_C15 -to DAC_DA[13]
-set_location_assignment PIN_B15 -to DAC_DA[12]
-set_location_assignment PIN_B19 -to DAC_DA[11]
-set_location_assignment PIN_C20 -to DAC_DA[10]
-set_location_assignment PIN_A11 -to DAC_DA[9]
-set_location_assignment PIN_B10 -to DAC_DA[8]
-set_location_assignment PIN_B11 -to DAC_DA[7]
-set_location_assignment PIN_A12 -to DAC_DA[6]
-set_location_assignment PIN_C10 -to DAC_DA[5]
-set_location_assignment PIN_D10 -to DAC_DA[4]
-set_location_assignment PIN_B9 -to DAC_DA[3]
-set_location_assignment PIN_C9 -to DAC_DA[2]
-set_location_assignment PIN_E11 -to DAC_DA[1]
-set_location_assignment PIN_E10 -to DAC_DA[0]
-set_location_assignment PIN_G17 -to DAC_DB[13]
-set_location_assignment PIN_G16 -to DAC_DB[12]
-set_location_assignment PIN_J11 -to DAC_DB[11]
-set_location_assignment PIN_J12 -to DAC_DB[10]
-set_location_assignment PIN_J16 -to DAC_DB[9]
-set_location_assignment PIN_H15 -to DAC_DB[8]
-set_location_assignment PIN_K11 -to DAC_DB[7]
-set_location_assignment PIN_L12 -to DAC_DB[6]
-set_location_assignment PIN_H17 -to DAC_DB[5]
-set_location_assignment PIN_H18 -to DAC_DB[4]
-set_location_assignment PIN_L11 -to DAC_DB[3]
-set_location_assignment PIN_M11 -to DAC_DB[2]
-set_location_assignment PIN_M12 -to DAC_DB[1]
-set_location_assignment PIN_N12 -to DAC_DB[0]
+set_location_assignment PIN_A17 -to DAC_CLK_A
+set_location_assignment PIN_A16 -to DAC_CLK_B
+set_location_assignment PIN_C13 -to DAC_DA[13]
+set_location_assignment PIN_C12 -to DAC_DA[12]
+set_location_assignment PIN_A8 -to DAC_DA[11]
+set_location_assignment PIN_A9 -to DAC_DA[10]
+set_location_assignment PIN_B12 -to DAC_DA[9]
+set_location_assignment PIN_A13 -to DAC_DA[8]
+set_location_assignment PIN_C23 -to DAC_DA[7]
+set_location_assignment PIN_C22 -to DAC_DA[6]
+set_location_assignment PIN_A14 -to DAC_DA[5]
+set_location_assignment PIN_B14 -to DAC_DA[4]
+set_location_assignment PIN_A23 -to DAC_DA[3]
+set_location_assignment PIN_A22 -to DAC_DA[2]
+set_location_assignment PIN_C17 -to DAC_DA[1]
+set_location_assignment PIN_B17 -to DAC_DA[0]
+set_location_assignment PIN_E18 -to DAC_DB[13]
+set_location_assignment PIN_F18 -to DAC_DB[12]
+set_location_assignment PIN_F16 -to DAC_DB[11]
+set_location_assignment PIN_E15 -to DAC_DB[10]
+set_location_assignment PIN_E13 -to DAC_DB[9]
+set_location_assignment PIN_D13 -to DAC_DB[8]
+set_location_assignment PIN_C14 -to DAC_DB[7]
+set_location_assignment PIN_D15 -to DAC_DB[6]
+set_location_assignment PIN_E16 -to DAC_DB[5]
+set_location_assignment PIN_D16 -to DAC_DB[4]
+set_location_assignment PIN_D18 -to DAC_DB[3]
+set_location_assignment PIN_D17 -to DAC_DB[2]
+set_location_assignment PIN_E20 -to DAC_DB[1]
+set_location_assignment PIN_E19 -to DAC_DB[0]
 set_location_assignment PIN_A21 -to DAC_MODE
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE ADC2UART_top.stp
@@ -316,7 +316,6 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to ADC_test|vcc -section_id ADC_test
 set_global_assignment -name SIGNALTAP_FILE ADC2UART_top.stp
@@ -408,10 +407,8 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[85] -t
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[86] -to "simple_counter:inst7|counter_out[8]" -section_id ADC_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[87] -to "simple_counter:inst7|counter_out[9]" -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to UART_test|vcc -section_id UART_test
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=2048" -section_id UART_test
@@ -1125,7 +1122,6 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[99]
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[100] -to trigLevel[8] -section_id ADC_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[101] -to trigLevel[9] -section_id ADC_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[102] -to trigger -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[103] -to triggerSlopeSwitch -section_id ADC_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[88] -to trigLevel[0] -section_id ADC_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[89] -to trigLevel[10] -section_id ADC_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[90] -to trigLevel[11] -section_id ADC_test
@@ -1141,29 +1137,90 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[99] -t
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[100] -to trigLevel[8] -section_id ADC_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[101] -to trigLevel[9] -section_id ADC_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[102] -to trigger -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to triggerSlopeSwitch -section_id ADC_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=104" -section_id ADC_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=104" -section_id ADC_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=104" -section_id ADC_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id ADC_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=333" -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to ADC_test|vcc -section_id ADC_test
-set_global_assignment -name SLD_FILE db/ADC2UART_top_auto_stripped.stp
+set_global_assignment -name VERILOG_FILE ExtTrigLevel.v
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[103] -to "trigger:inst10|lastVal[0]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[104] -to "trigger:inst10|lastVal[10]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[105] -to "trigger:inst10|lastVal[11]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[106] -to "trigger:inst10|lastVal[12]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[107] -to "trigger:inst10|lastVal[13]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[108] -to "trigger:inst10|lastVal[1]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[109] -to "trigger:inst10|lastVal[2]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[110] -to "trigger:inst10|lastVal[3]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[111] -to "trigger:inst10|lastVal[4]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[112] -to "trigger:inst10|lastVal[5]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[113] -to "trigger:inst10|lastVal[6]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[114] -to "trigger:inst10|lastVal[7]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[115] -to "trigger:inst10|lastVal[8]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[116] -to "trigger:inst10|lastVal[9]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[117] -to "trigger:inst30|lastVal[0]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[118] -to "trigger:inst30|lastVal[10]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[119] -to "trigger:inst30|lastVal[11]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[120] -to "trigger:inst30|lastVal[12]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[121] -to "trigger:inst30|lastVal[13]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[122] -to "trigger:inst30|lastVal[1]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[123] -to "trigger:inst30|lastVal[2]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[124] -to "trigger:inst30|lastVal[3]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[125] -to "trigger:inst30|lastVal[4]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[126] -to "trigger:inst30|lastVal[5]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[127] -to "trigger:inst30|lastVal[6]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[128] -to "trigger:inst30|lastVal[7]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[129] -to "trigger:inst30|lastVal[8]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[130] -to "trigger:inst30|lastVal[9]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[131] -to triggerSlopeSwitch -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to "trigger:inst10|lastVal[0]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to "trigger:inst10|lastVal[10]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to "trigger:inst10|lastVal[11]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to "trigger:inst10|lastVal[12]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "trigger:inst10|lastVal[13]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "trigger:inst10|lastVal[1]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "trigger:inst10|lastVal[2]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "trigger:inst10|lastVal[3]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "trigger:inst10|lastVal[4]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "trigger:inst10|lastVal[5]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "trigger:inst10|lastVal[6]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "trigger:inst10|lastVal[7]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "trigger:inst10|lastVal[8]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "trigger:inst10|lastVal[9]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "trigger:inst30|lastVal[0]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[118] -to "trigger:inst30|lastVal[10]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[119] -to "trigger:inst30|lastVal[11]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[120] -to "trigger:inst30|lastVal[12]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[121] -to "trigger:inst30|lastVal[13]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[122] -to "trigger:inst30|lastVal[1]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[123] -to "trigger:inst30|lastVal[2]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[124] -to "trigger:inst30|lastVal[3]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[125] -to "trigger:inst30|lastVal[4]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[126] -to "trigger:inst30|lastVal[5]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[127] -to "trigger:inst30|lastVal[6]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[128] -to "trigger:inst30|lastVal[7]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[129] -to "trigger:inst30|lastVal[8]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[130] -to "trigger:inst30|lastVal[9]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[131] -to triggerSlopeSwitch -section_id ADC_test
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=132" -section_id ADC_test
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=132" -section_id ADC_test
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=132" -section_id ADC_test
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id ADC_test
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=417" -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to ADC_test|gnd -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to ADC_test|gnd -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to ADC_test|gnd -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/ADC2UART_top_auto_stripped.stp
