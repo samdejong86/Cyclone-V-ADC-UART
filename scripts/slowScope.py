@@ -62,7 +62,7 @@ def init():
     lines[1].set_text(" ")
     return lines
 
-
+waveNumber=0
 
 # animation function.  This is called sequentially
 def animate(i):

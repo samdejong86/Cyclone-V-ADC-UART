@@ -25,12 +25,7 @@ set_ser.timeout=1
 #open the serial port
 set_ser.open()
 
-#send a message (can be anything)
-message="d" 
-set_ser.write(message.encode('utf-8'))
-
-#recieve a response
-data=set_ser.read(1520)
+data=[]
 
 i=0
 lastC=0
@@ -38,18 +33,31 @@ ADC=0
 xx=[]
 yy=[]
 
-#loop over response. response looks like:
-# xyz
-# where xy is the ADC counts, z is the time.
-
 fpgaPulseHeight=0
 Pedistal=0
+wavenum=0
 
-for i in range(499):
-        xx.append(i/0.05)
-        yy.append((data[3*i]<<8)+data[3*i+1])
+#print(len(data))
+while len(data) == 0:
 
-waveNum = (data[1500]<<8)+data[1501]
+        #send a message (can be anything)
+	message="d" 
+	set_ser.write(message.encode('utf-8'))
+
+	#recieve a response
+	data=set_ser.read(1520)
+
+	if len(data)==0:
+		continue;
+	
+        #loop over response. response looks like:
+        # xyz
+        # where xy is the ADC counts, z is the time.
+	for i in range(499):
+		xx.append(i/0.05)
+		yy.append((data[3*i]<<8)+data[3*i+1])
+
+		waveNum = (data[1500]<<8)+data[1501]
 
 
 

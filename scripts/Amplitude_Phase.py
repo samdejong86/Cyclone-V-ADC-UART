@@ -68,25 +68,35 @@ class SubplotAnimation(animation.TimedAnimation):
         ax2.set_xscale('log')
 
 
-        self.t = np.linspace(0, 80, 400)
+        self.t = np.linspace(0, 80, 50)
         self.x = []
         self.y = []
         self.freq =[]
         self.phase=[]
         self.amp=[]
 
-        ax1.set_xlabel('Frequency')
-        ax1.set_ylabel('Amplitude')
+        ax1.set_xlabel('Frequency (kHz)')
+        ax1.set_ylabel('Amplitude (ADC counts)')
         self.line1 = Line2D([], [], marker='o',linestyle=' ',ms=0.2,color='black')
+        self.line1a = Line2D([], [], color='red', linewidth=1)
+        self.line1e = Line2D(
+            [], [], color='red', marker='o', markeredgecolor='r')
         ax1.add_line(self.line1)
+        ax1.add_line(self.line1a)
+        ax1.add_line(self.line1e)
         ax1.set_xlim(50, 10000)
         ax1.set_ylim(1000,5000)
         #ax1.set_aspect('equal', 'datalim')
 
-        ax2.set_xlabel('Frequency')
-        ax2.set_ylabel('Phase')
+        ax2.set_xlabel('Frequency (kHz)')
+        ax2.set_ylabel('Phase (rad)')
         self.line2 = Line2D([], [],marker='o',linestyle=' ',ms=0.2, color='black')
+        self.line2a = Line2D([], [], color='red', linewidth=1)
+        self.line2e = Line2D(
+            [], [], color='red', marker='o', markeredgecolor='r')
         ax2.add_line(self.line2)
+        ax2.add_line(self.line2a)
+        ax2.add_line(self.line2e)
         ax2.set_xlim(50, 10000)
         ax2.set_ylim(-3.14, 3.14)
 
@@ -97,11 +107,14 @@ class SubplotAnimation(animation.TimedAnimation):
         ax3.set_xlim(0, 10000)
         ax3.set_ylim(0, 16000)
 
-        animation.TimedAnimation.__init__(self, fig, interval=50, blit=True)
+        animation.TimedAnimation.__init__(self, fig, interval=1, blit=True)
 
     def _draw_frame(self, framedata):
         i = framedata
+        #print(i)
         head = i - 1
+        if i == 999:
+            print("END")
 
         message="d" 
         set_ser.write(message.encode('utf-8'))
@@ -127,10 +140,10 @@ class SubplotAnimation(animation.TimedAnimation):
 
             fit=fit_sin(self.x,self.y)
 
-            #print(str(fit['amp'])+" "+str(fit['phase'])+" "+str(fit['freq']))
-            #print(fit['freq']*1000000)
+            print(fit['maxcov'])
          
-            if fit['maxcov']<100:
+            if fit['maxcov']<10:
+                print(str(i)+" "+"{0:.2f}".format(fit['amp'])+" {0:.2f}".format(fit['phase'])+" "+" {0:.2f}".format(fit['freq']*1000000))
                 self.freq.append(fit['freq']*1000000)
                 self.amp.append(fit['amp'])
                 self.phase.append(fit['phase'])
@@ -141,27 +154,35 @@ class SubplotAnimation(animation.TimedAnimation):
         #head_slice = (self.t > self.t[i] - 1.0) & (self.t < self.t[i])
 
         self.line1.set_data(self.freq, self.amp)
+        self.line1e.set_data(self.freq[-1:], self.amp[-1:])
+        self.line1a.set_data(self.freq[-5:], self.amp[-5:])
 
         self.line2.set_data(self.freq, self.phase)
+        self.line2e.set_data(self.freq[-1:], self.phase[-1:])
+        self.line2a.set_data(self.freq[-5:], self.phase[-5:])
 
         self.line3.set_data(self.x,self.y)
 
-        self._drawn_artists = [self.line1,
-                               self.line2,
+        self._drawn_artists = [self.line1, self.line1a, self.line1e,
+                               self.line2, self.line2a, self.line2e,
                                self.line3]
 
     def new_frame_seq(self):
         return iter(range(self.t.size))
 
     def _init_draw(self):
-        lines = [self.line1,# self.line1a, self.line1e,
-                 self.line2,# self.line2a, self.line2e,
+        lines = [self.line1, self.line1a, self.line1e,
+                 self.line2, self.line2a, self.line2e,
                  self.line3]#, self.line3a, self.line3e]
         for l in lines:
             l.set_data([], [])
 
+#fig = plt.figure(figsize=(12,10))
 ani = SubplotAnimation()
-# ani.save('test_sub.mp4')
+
+
+
+#ani.save("amplitude_phase.mp4", metadata={'artist':'Sam'})
 plt.show()
 
 
