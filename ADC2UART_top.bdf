@@ -86,7 +86,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 288 1168 456 1184)
+	(rect 288 944 456 960)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "UART_RX" (rect 5 0 53 13)(font "Intel Clear" ))
 	(pt 168 8)
@@ -134,7 +134,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -40 1024 128 1040)
+	(rect -40 800 128 816)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "delaySwitch" (rect 5 0 64 11)(font "Arial" ))
 	(pt 168 8)
@@ -278,7 +278,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 664 760 840 776)
+	(rect 664 536 840 552)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "hex3[6..0]" (rect 90 0 139 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -294,7 +294,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 664 744 840 760)
+	(rect 664 520 840 536)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "hex2[6..0]" (rect 90 0 139 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -310,7 +310,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 664 728 840 744)
+	(rect 664 504 840 520)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "hex1[6..0]" (rect 90 0 139 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -326,7 +326,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 664 712 840 728)
+	(rect 664 488 840 504)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "hex0[6..0]" (rect 90 0 138 11)(font "Arial" ))
 	(pt 0 8)
@@ -374,7 +374,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 472 1304 648 1320)
+	(rect 472 1080 648 1096)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "UART_TX" (rect 90 0 141 11)(font "Arial" ))
 	(pt 0 8)
@@ -390,7 +390,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 680 944 856 960)
+	(rect 680 720 856 736)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "DAC_DB[13..0]" (rect 90 0 164 13)(font "Intel Clear" ))
 	(pt 0 8)
@@ -477,7 +477,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 24 1104 184 1248)
+	(rect 24 880 184 1024)
 	(text "SlowPll" (rect 59 -1 110 15)(font "Arial" (font_size 10)))
 	(text "inst8" (rect 8 128 31 139)(font "Arial" ))
 	(port
@@ -627,7 +627,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 464 928 680 1040)
+	(rect 464 704 680 816)
 	(text "signalOutWaveform" (rect 5 0 101 11)(font "Arial" ))
 	(text "inst6" (rect 8 96 31 107)(font "Arial" ))
 	(port
@@ -684,7 +684,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 504 688 664 896)
+	(rect 504 464 664 672)
 	(text "bin2dec" (rect 5 0 43 11)(font "Arial" ))
 	(text "inst11" (rect 8 192 37 203)(font "Arial" ))
 	(port
@@ -894,7 +894,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 168 1280 464 1456)
+	(rect 168 1056 464 1232)
 	(text "signalToUART" (rect 5 0 76 11)(font "Arial" ))
 	(text "inst12" (rect 8 160 37 171)(font "Arial" ))
 	(port
@@ -979,7 +979,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 64 672 296 752)
+	(rect 64 448 296 528)
 	(text "delayVec" (rect 5 0 51 11)(font "Arial" ))
 	(text "inst14" (rect 8 64 37 75)(font "Arial" ))
 	(port
@@ -1008,7 +1008,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 472 1168 712 1280)
+	(rect 472 944 712 1056)
 	(text "acquireSwitch" (rect 5 0 73 11)(font "Arial" ))
 	(text "inst3" (rect 8 96 31 107)(font "Arial" ))
 	(port
@@ -1127,7 +1127,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 64 920 208 1000)
+	(rect 64 696 208 776)
 	(text "DelayMux" (rect 42 0 112 16)(font "Arial" (font_size 10)))
 	(text "inst15" (rect 8 65 39 78)(font "Intel Clear" ))
 	(port
@@ -1174,7 +1174,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 64 784 304 896)
+	(rect 64 560 304 672)
 	(text "waveformGenerator" (rect 5 0 102 11)(font "Arial" ))
 	(text "inst13" (rect 8 96 37 107)(font "Arial" ))
 	(port
@@ -1541,177 +1541,6 @@ agreement for further details.
 	(pt 352 128)
 )
 (connector
-	(text "ADC_CLK" (rect 450 704 497 717)(font "Intel Clear" ))
-	(pt 504 720)
-	(pt 440 720)
-)
-(connector
-	(text "ADC_DB[13..0]" (rect -22 704 52 717)(font "Intel Clear" ))
-	(pt 64 720)
-	(pt -32 720)
-	(bus)
-)
-(connector
-	(text "ADC_CLK" (rect -22 688 25 701)(font "Intel Clear" ))
-	(pt 64 704)
-	(pt -32 704)
-)
-(connector
-	(text "PH[13..0]" (rect 450 720 497 733)(font "Intel Clear" ))
-	(pt 440 736)
-	(pt 504 736)
-	(bus)
-)
-(connector
-	(pt 458 992)
-	(pt 458 1000)
-	(bus)
-)
-(connector
-	(pt 458 960)
-	(pt 458 952)
-)
-(connector
-	(pt 464 960)
-	(pt 458 960)
-)
-(connector
-	(pt 464 992)
-	(pt 458 992)
-	(bus)
-)
-(connector
-	(text "trigger" (rect 372 960 406 973)(font "Intel Clear" ))
-	(pt 362 976)
-	(pt 464 976)
-)
-(connector
-	(text "running" (rect 370 936 408 949)(font "Intel Clear" ))
-	(pt 360 952)
-	(pt 458 952)
-)
-(connector
-	(pt 680 960)
-	(pt 680 952)
-	(bus)
-)
-(connector
-	(text "longTrig" (rect 690 960 732 973)(font "Intel Clear" ))
-	(pt 680 976)
-	(pt 760 976)
-)
-(connector
-	(text "PH[13..0]" (rect 690 976 737 989)(font "Intel Clear" ))
-	(pt 680 992)
-	(pt 744 992)
-	(bus)
-)
-(connector
-	(text "longTrigCounter[6..0]" (rect 690 992 797 1005)(font "Intel Clear" ))
-	(pt 680 1008)
-	(pt 792 1008)
-	(bus)
-)
-(connector
-	(text "Delay[0..99][13..0]" (rect 296 688 388 701)(font "Intel Clear" ))
-	(pt 296 704)
-	(pt 376 704)
-	(bus)
-)
-(connector
-	(text "Delay[99][13..0]" (rect 370 984 450 997)(font "Intel Clear" ))
-	(pt 458 1000)
-	(pt 362 1000)
-	(bus)
-)
-(connector
-	(pt 160 1312)
-	(pt 160 1304)
-)
-(connector
-	(pt 168 1312)
-	(pt 160 1312)
-)
-(connector
-	(text "CLK_1MHz" (rect 34 1288 88 1301)(font "Intel Clear" ))
-	(pt 160 1304)
-	(pt 24 1304)
-)
-(connector
-	(text "CLOCK_50" (rect -38 1160 16 1173)(font "Intel Clear" ))
-	(pt -48 1176)
-	(pt 24 1176)
-)
-(connector
-	(text "g" (rect -38 1200 -31 1213)(font "Intel Clear" ))
-	(pt -48 1216)
-	(pt 24 1216)
-)
-(connector
-	(text "CLK_1MHz" (rect 194 1160 248 1173)(font "Intel Clear" ))
-	(pt 184 1176)
-	(pt 264 1176)
-)
-(connector
-	(pt 456 1176)
-	(pt 472 1176)
-)
-(connector
-	(text "waveForm[0..499][13..0]" (rect 24 1312 146 1325)(font "Intel Clear" ))
-	(pt 24 1328)
-	(pt 168 1328)
-	(bus)
-)
-(connector
-	(text "acquire" (rect 26 1344 63 1357)(font "Intel Clear" ))
-	(pt 24 1360)
-	(pt 168 1360)
-)
-(connector
-	(text "waveNum[15..0]" (rect 314 816 395 829)(font "Intel Clear" ))
-	(pt 304 832)
-	(pt 400 832)
-	(bus)
-)
-(connector
-	(text "waveForm[0..499][13..0]" (rect 328 792 450 805)(font "Intel Clear" ))
-	(pt 304 816)
-	(pt 392 816)
-	(bus)
-)
-(connector
-	(pt 48 816)
-	(pt 64 816)
-)
-(connector
-	(text "trigger" (rect -30 816 4 829)(font "Intel Clear" ))
-	(pt -40 832)
-	(pt 64 832)
-)
-(connector
-	(text "running" (rect -32 792 6 805)(font "Intel Clear" ))
-	(pt 48 808)
-	(pt -42 808)
-)
-(connector
-	(pt 48 816)
-	(pt 48 808)
-)
-(connector
-	(text "waveNum[15..0]" (rect 42 1328 123 1341)(font "Intel Clear" ))
-	(pt 168 1344)
-	(pt 24 1344)
-	(bus)
-)
-(connector
-	(pt 456 1312)
-	(pt 464 1312)
-)
-(connector
-	(pt 464 1312)
-	(pt 472 1312)
-)
-(connector
 	(text "counter[31..0]" (rect 786 136 856 149)(font "Intel Clear" ))
 	(pt 768 128)
 	(pt 856 128)
@@ -1758,88 +1587,6 @@ agreement for further details.
 	(text "trigSlope" (rect 178 352 224 365)(font "Intel Clear" ))
 	(pt 168 368)
 	(pt 224 368)
-)
-(connector
-	(pt 56 848)
-	(pt 56 856)
-	(bus)
-)
-(connector
-	(pt 64 848)
-	(pt 56 848)
-	(bus)
-)
-(connector
-	(text "Delayed[13..0]" (rect -30 840 43 853)(font "Intel Clear" ))
-	(pt 56 856)
-	(pt -40 856)
-	(bus)
-)
-(connector
-	(pt 64 960)
-	(pt 56 960)
-	(bus)
-)
-(connector
-	(pt 56 960)
-	(pt 56 944)
-	(bus)
-)
-(connector
-	(pt 56 976)
-	(pt 56 984)
-	(bus)
-)
-(connector
-	(pt 64 976)
-	(pt 56 976)
-	(bus)
-)
-(connector
-	(pt 128 1032)
-	(pt 136 1032)
-)
-(connector
-	(pt 136 1032)
-	(pt 136 1000)
-)
-(connector
-	(text "Delayed[13..0]" (rect 218 952 291 965)(font "Intel Clear" ))
-	(pt 208 968)
-	(pt 288 968)
-	(bus)
-)
-(connector
-	(text "Delay[99][13..0]" (rect -48 968 32 981)(font "Intel Clear" ))
-	(pt 56 984)
-	(pt -40 984)
-	(bus)
-)
-(connector
-	(text "Delay[0][13..0]" (rect -48 928 26 941)(font "Intel Clear" ))
-	(pt 56 944)
-	(pt -40 944)
-	(bus)
-)
-(connector
-	(pt 472 1176)
-	(pt 472 1200)
-)
-(connector
-	(text "CLK_1MHz" (rect 362 1200 416 1213)(font "Intel Clear" ))
-	(pt 352 1216)
-	(pt 472 1216)
-)
-(connector
-	(text "waveNum[15..0]" (rect 346 1216 427 1229)(font "Intel Clear" ))
-	(pt 472 1232)
-	(pt 352 1232)
-	(bus)
-)
-(connector
-	(text "acquire" (rect 762 1184 799 1197)(font "Intel Clear" ))
-	(pt 712 1200)
-	(pt 736 1200)
 )
 (connector
 	(text "ADC_DA[13..0]" (rect -40 -96 34 -83)(font "Intel Clear" ))
@@ -1936,6 +1683,259 @@ agreement for further details.
 	(pt -40 24)
 )
 (connector
+	(text "ADC_CLK" (rect 450 480 497 493)(font "Intel Clear" ))
+	(pt 504 496)
+	(pt 440 496)
+)
+(connector
+	(text "ADC_DB[13..0]" (rect -22 480 52 493)(font "Intel Clear" ))
+	(pt 64 496)
+	(pt -32 496)
+	(bus)
+)
+(connector
+	(text "ADC_CLK" (rect -22 464 25 477)(font "Intel Clear" ))
+	(pt 64 480)
+	(pt -32 480)
+)
+(connector
+	(text "PH[13..0]" (rect 450 496 497 509)(font "Intel Clear" ))
+	(pt 440 512)
+	(pt 504 512)
+	(bus)
+)
+(connector
+	(pt 458 768)
+	(pt 458 776)
+	(bus)
+)
+(connector
+	(pt 458 736)
+	(pt 458 728)
+)
+(connector
+	(pt 464 736)
+	(pt 458 736)
+)
+(connector
+	(pt 464 768)
+	(pt 458 768)
+	(bus)
+)
+(connector
+	(text "trigger" (rect 372 736 406 749)(font "Intel Clear" ))
+	(pt 362 752)
+	(pt 464 752)
+)
+(connector
+	(text "running" (rect 370 712 408 725)(font "Intel Clear" ))
+	(pt 360 728)
+	(pt 458 728)
+)
+(connector
+	(pt 680 736)
+	(pt 680 728)
+	(bus)
+)
+(connector
+	(text "longTrig" (rect 690 736 732 749)(font "Intel Clear" ))
+	(pt 680 752)
+	(pt 760 752)
+)
+(connector
+	(text "PH[13..0]" (rect 690 752 737 765)(font "Intel Clear" ))
+	(pt 680 768)
+	(pt 744 768)
+	(bus)
+)
+(connector
+	(text "longTrigCounter[6..0]" (rect 690 768 797 781)(font "Intel Clear" ))
+	(pt 680 784)
+	(pt 792 784)
+	(bus)
+)
+(connector
+	(text "Delay[0..99][13..0]" (rect 296 464 388 477)(font "Intel Clear" ))
+	(pt 296 480)
+	(pt 376 480)
+	(bus)
+)
+(connector
+	(text "Delay[99][13..0]" (rect 370 760 450 773)(font "Intel Clear" ))
+	(pt 458 776)
+	(pt 362 776)
+	(bus)
+)
+(connector
+	(pt 160 1088)
+	(pt 160 1080)
+)
+(connector
+	(pt 168 1088)
+	(pt 160 1088)
+)
+(connector
+	(text "CLK_1MHz" (rect 34 1064 88 1077)(font "Intel Clear" ))
+	(pt 160 1080)
+	(pt 24 1080)
+)
+(connector
+	(text "CLOCK_50" (rect -38 936 16 949)(font "Intel Clear" ))
+	(pt -48 952)
+	(pt 24 952)
+)
+(connector
+	(text "g" (rect -38 976 -31 989)(font "Intel Clear" ))
+	(pt -48 992)
+	(pt 24 992)
+)
+(connector
+	(text "CLK_1MHz" (rect 194 936 248 949)(font "Intel Clear" ))
+	(pt 184 952)
+	(pt 264 952)
+)
+(connector
+	(pt 456 952)
+	(pt 472 952)
+)
+(connector
+	(text "waveForm[0..499][13..0]" (rect 24 1088 146 1101)(font "Intel Clear" ))
+	(pt 24 1104)
+	(pt 168 1104)
+	(bus)
+)
+(connector
+	(text "acquire" (rect 26 1120 63 1133)(font "Intel Clear" ))
+	(pt 24 1136)
+	(pt 168 1136)
+)
+(connector
+	(text "waveNum[15..0]" (rect 314 592 395 605)(font "Intel Clear" ))
+	(pt 304 608)
+	(pt 400 608)
+	(bus)
+)
+(connector
+	(text "waveForm[0..499][13..0]" (rect 328 568 450 581)(font "Intel Clear" ))
+	(pt 304 592)
+	(pt 392 592)
+	(bus)
+)
+(connector
+	(pt 48 592)
+	(pt 64 592)
+)
+(connector
+	(text "trigger" (rect -30 592 4 605)(font "Intel Clear" ))
+	(pt -40 608)
+	(pt 64 608)
+)
+(connector
+	(text "running" (rect -32 568 6 581)(font "Intel Clear" ))
+	(pt 48 584)
+	(pt -42 584)
+)
+(connector
+	(pt 48 592)
+	(pt 48 584)
+)
+(connector
+	(text "waveNum[15..0]" (rect 42 1104 123 1117)(font "Intel Clear" ))
+	(pt 168 1120)
+	(pt 24 1120)
+	(bus)
+)
+(connector
+	(pt 56 624)
+	(pt 56 632)
+	(bus)
+)
+(connector
+	(pt 64 624)
+	(pt 56 624)
+	(bus)
+)
+(connector
+	(text "Delayed[13..0]" (rect -30 616 43 629)(font "Intel Clear" ))
+	(pt 56 632)
+	(pt -40 632)
+	(bus)
+)
+(connector
+	(pt 64 736)
+	(pt 56 736)
+	(bus)
+)
+(connector
+	(pt 56 736)
+	(pt 56 720)
+	(bus)
+)
+(connector
+	(pt 56 752)
+	(pt 56 760)
+	(bus)
+)
+(connector
+	(pt 64 752)
+	(pt 56 752)
+	(bus)
+)
+(connector
+	(pt 128 808)
+	(pt 136 808)
+)
+(connector
+	(text "Delayed[13..0]" (rect 218 728 291 741)(font "Intel Clear" ))
+	(pt 208 744)
+	(pt 288 744)
+	(bus)
+)
+(connector
+	(text "Delay[99][13..0]" (rect -48 744 32 757)(font "Intel Clear" ))
+	(pt 56 760)
+	(pt -40 760)
+	(bus)
+)
+(connector
+	(text "Delay[0][13..0]" (rect -48 704 26 717)(font "Intel Clear" ))
+	(pt 56 720)
+	(pt -40 720)
+	(bus)
+)
+(connector
+	(pt 472 952)
+	(pt 472 976)
+)
+(connector
+	(text "CLK_1MHz" (rect 362 976 416 989)(font "Intel Clear" ))
+	(pt 352 992)
+	(pt 472 992)
+)
+(connector
+	(text "waveNum[15..0]" (rect 346 992 427 1005)(font "Intel Clear" ))
+	(pt 472 1008)
+	(pt 352 1008)
+	(bus)
+)
+(connector
+	(text "acquire" (rect 762 960 799 973)(font "Intel Clear" ))
+	(pt 712 976)
+	(pt 736 976)
+)
+(connector
+	(pt 136 776)
+	(pt 136 808)
+)
+(connector
+	(pt 456 1088)
+	(pt 464 1088)
+)
+(connector
+	(pt 464 1088)
+	(pt 472 1088)
+)
+(connector
 	(pt 272 -88)
 	(pt 280 -88)
 )
@@ -1954,28 +1954,28 @@ agreement for further details.
 (junction (pt -16 -384))
 (junction (pt 176 -216))
 (junction (pt 648 -432))
-(junction (pt 464 1312))
 (junction (pt 280 -88))
 (junction (pt 280 32))
-(text "1MHz clock for UART" (rect 24 1080 195 1100)(font "Intel Clear" (color 0 0 0)(font_size 11)(bold)))
-(text "Sends the waveform to UART_TX" (rect 176 1256 468 1277)(font "Intel Clear" (color 0 0 0)(font_size 12)(bold)))
-(text "Start to acquire when UART_RX recives a message" (rect 432 1144 797 1162)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
+(junction (pt 464 1088))
+(text "1MHz clock for UART" (rect 24 856 195 876)(font "Intel Clear" (color 0 0 0)(font_size 11)(bold)))
+(text "Sends the waveform to UART_TX" (rect 176 1032 468 1053)(font "Intel Clear" (color 0 0 0)(font_size 12)(bold)))
+(text "Start to acquire when UART_RX recives a message" (rect 432 920 797 938)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
 (text "Generates a trigger" (rect 104 -144 245 -126)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
 (text "Increments counter when triggerin = 1" (rect 560 80 840 98)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
 (text "DAC: 150MHz" (rect 408 -312 508 -294)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
 (text "Clock Setup" (rect 696 -536 873 -501)(font "Intel Clear" (color 0 0 0)(font_size 20)(bold)))
 (text "Triggering" (rect 704 -136 856 -101)(font "Intel Clear" (color 0 0 0)(font_size 20)(bold)))
-(text "PC communication" (rect 616 1080 892 1115)(font "Intel Clear" (color 0 0 0)(font_size 20)(bold)))
-(text "Generates a delayed waveform" (rect 64 760 290 778)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
-(text "Signal Processing" (rect 616 640 875 675)(font "Intel Clear" (color 0 0 0)(font_size 20)(bold)))
-(text "Generates DAC out signal and pulseheight" (rect 440 912 749 930)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
+(text "PC communication" (rect 616 856 892 891)(font "Intel Clear" (color 0 0 0)(font_size 20)(bold)))
+(text "Generates a delayed waveform" (rect 64 536 290 554)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
+(text "Signal Processing" (rect 616 416 875 451)(font "Intel Clear" (color 0 0 0)(font_size 20)(bold)))
+(text "Generates DAC out signal and pulseheight" (rect 440 688 749 706)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
 (text "ADC/DAC clock. ADC: 50MHz" (rect 304 -336 515 -318)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
 (text "Switch between self trigger and external trigger" (rect 304 -120 653 -102)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
 (text "Channel B is the channel" (rect -64 136 82 151)(font "Intel Clear" (color 0 0 0)(font_size 8)(bold)))
 (text "the signal is on. Channel" (rect -64 152 81 167)(font "Intel Clear" (color 0 0 0)(font_size 8)(bold)))
 (text "A is the external trigger" (rect -64 168 74 183)(font "Intel Clear" (color 0 0 0)(font_size 8)(bold)))
-(text "Delays the signal by up to 100 clock ticks" (rect 64 648 366 666)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
-(rectangle (rect -72 1072 864 1472))
+(text "Delays the signal by up to 100 clock ticks" (rect 64 424 366 442)(font "Intel Clear" (color 0 0 0)(font_size 10)(bold)))
+(rectangle (rect -72 848 864 1248))
 (rectangle (rect -72 -544 864 -168))
 (rectangle (rect -72 -152 864 392))
-(rectangle (rect -72 632 864 1056))
+(rectangle (rect -72 408 864 832))

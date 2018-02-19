@@ -10,11 +10,9 @@ output reg [15:0] waveNumber=0;
 
 output reg [13:0] waveform [500];
 
-reg lastTrig=0;
-
 always @(posedge clk) begin
 
-	if((triggerIn==1&&lastTrig==1)||(counter!=0)) begin  //if a trigger is recieved, start the counter, and keep counting after trigger = 0
+	if(triggerIn==1||(counter!=0)) begin  //if a trigger is recieved, start the counter, and keep counting after trigger = 0
 		counter <= counter + 6'b1;
 		waveform[counter] = signal; //fill the waveform
 	end
@@ -27,7 +25,6 @@ always @(posedge clk) begin
 		waveNumber = waveNumber+1;
 	end
 
-	lastTrig=triggerIn;
 
 end
 

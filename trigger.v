@@ -17,7 +17,7 @@ always @(posedge clk) begin
 	if(trigSlope == 1) begin
 		if(ADC_IN>trigLevel&&ADC_IN>=lastVal) begin
 			trigCount=trigCount+1;
-			if(trigCount<=2)
+			if(trigCount==2)
 				trigger <= 1;
 			else
 				trigger<=0;
@@ -34,7 +34,7 @@ always @(posedge clk) begin
 	else if(trigSlope == 0) begin
 		if(ADC_IN<trigLevel&&ADC_IN<=lastVal) begin
 			trigCount=trigCount+1;
-			if(trigCount<=2)
+			if(trigCount==2)
 				trigger <= 1;
 			else
 				trigger<=0;
