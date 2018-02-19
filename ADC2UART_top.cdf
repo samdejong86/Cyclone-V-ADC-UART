@@ -3,8 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Cfg)
-		Device PartName(EPCQ256) Path("/home/srdejong/Cyclone-V-ADC-UART/output_files/") File("ADC2UART_top.pof") MfrSpec(OpMask(1) Child_OpMask(1 1));
+	P ActionCode(Ign)
+		Device PartName(EPCQ128) MfrSpec(OpMask(0) Child_OpMask(1 1) FullPath("/home/srdejong/Cyclone-V-ADC-UART/output_files/ADC2UART_top.pof"));
 
 ChainEnd;
 
