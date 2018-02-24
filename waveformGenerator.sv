@@ -8,7 +8,7 @@ input clk;
 reg [10:0] counter=0;
 output reg [15:0] waveNumber=0;
 
-output reg [13:0] waveform [500];
+output reg [13:0] waveform [2000];
 
 always @(posedge clk) begin
 
@@ -20,7 +20,7 @@ always @(posedge clk) begin
 		counter <= 0;
 	end
 
-	if(counter==499) begin
+	if(counter==1999) begin
 		counter<=0;
 		waveNumber = waveNumber+1;
 	end

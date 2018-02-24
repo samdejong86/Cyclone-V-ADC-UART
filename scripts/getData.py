@@ -45,7 +45,7 @@ while len(data) == 0:
 	set_ser.write(message.encode('utf-8'))
 
 	#recieve a response
-	data=set_ser.read(1520)
+	data=set_ser.read(7200)
 
 	if len(data)==0:
 		continue;
@@ -53,11 +53,11 @@ while len(data) == 0:
         #loop over response. response looks like:
         # xyz
         # where xy is the ADC counts, z is the time.
-	for i in range(499):
+	for i in range(1999):
 		xx.append(i/0.05)
 		yy.append((data[3*i]<<8)+data[3*i+1])
 
-		waveNum = (data[1500]<<8)+data[1501]
+		waveNum = (data[6000]<<8)+data[6001]
 
 
 

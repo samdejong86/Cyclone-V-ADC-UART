@@ -48,8 +48,8 @@ agreement for further details.
 	(port
 		(pt 240 32)
 		(output)
-		(text "waveform[0..499][13..0]" (rect 0 0 95 12)(font "Arial" ))
-		(text "waveform[0..499][13..0]" (rect 124 27 219 39)(font "Arial" ))
+		(text "waveform[0..1999][13..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "waveform[0..1999][13..0]" (rect 122 27 219 39)(font "Arial" ))
 		(line (pt 240 32)(pt 224 32)(line_width 3))
 	)
 	(port

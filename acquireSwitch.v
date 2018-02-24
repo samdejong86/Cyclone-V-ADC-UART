@@ -18,7 +18,7 @@ always @(posedge clk) begin
 	else 
 		acquire=1;
 	
-	if(counter>18040) begin
+	if(counter>72160) begin
 		counter<=0;
 		lastwavenum=wavenum;
 	end

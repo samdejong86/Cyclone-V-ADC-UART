@@ -51,7 +51,7 @@ set_ser.baudrate=1000000             #baud rate of 1MHz
 set_ser.parity = serial.PARITY_NONE
 set_ser.stopbits=serial.STOPBITS_ONE
 set_ser.bytesize = serial.EIGHTBITS
-set_ser.timeout=0.02
+set_ser.timeout=0.2
 
 set_ser.open()
 
@@ -104,7 +104,7 @@ class SubplotAnimation(animation.TimedAnimation):
         ax3.set_ylabel('ADC counts')
         self.line3 = Line2D([], [], color='black')
         ax3.add_line(self.line3)
-        ax3.set_xlim(0, 10000)
+        ax3.set_xlim(0, 40000)
         ax3.set_ylim(0, 16000)
 
         animation.TimedAnimation.__init__(self, fig, interval=1, blit=True)
@@ -118,7 +118,7 @@ class SubplotAnimation(animation.TimedAnimation):
 
         message="d" 
         set_ser.write(message.encode('utf-8'))
-        data=set_ser.read(1600)
+        data=set_ser.read(7400)
 
         if len(data)!=0:
 
@@ -131,14 +131,14 @@ class SubplotAnimation(animation.TimedAnimation):
             # xyz
             # where xy is the ADC counts, z is the time.
     
-            for k in range(499):
+            for k in range(1999):
                 self.x.append(k/0.050)
                 self.y.append((data[3*k]<<8)+data[3*k+1])
                 
-                waveNumber = data[1501]
+                #waveNumber = data[1501]
 
             try:
-                fit=fit_sin(self.x,self.y)
+                fit=fit_sin(self.x[:500],self.y[:500])
             except RuntimeError:
                 print("runtime error")
                 return

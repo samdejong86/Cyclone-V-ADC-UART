@@ -45,7 +45,7 @@ set_ser.open()
 
 # First set up the figure, the axis, and the plot element we want to animate
 fig = plt.figure()
-ax = plt.axes(xlim=(0, 10000), ylim=(000, 16000))
+ax = plt.axes(xlim=(0, 40000), ylim=(000, 16000))
 #line=ax.plot([],[],lw=2, marker='',color='black')[0]
 lines = []
 
@@ -68,7 +68,7 @@ waveNumber=0
 def animate(i):
     message="d" 
     set_ser.write(message.encode('utf-8'))
-    data=set_ser.read(1600)
+    data=set_ser.read(6400)
 
     global waveNumber
     
@@ -83,11 +83,11 @@ def animate(i):
         # xyz
         # where xy is the ADC counts, z is the time.
     
-        for i in range(499):
+        for i in range(1999):
             x.append(i/0.050)
             y.append((data[3*i]<<8)+data[3*i+1])
 
-            waveNumber = (data[1500]<<8)+data[1501]
+            waveNumber = (data[6000]<<8)+data[6001]
 
        
     lines[0].set_data(x,y)       
