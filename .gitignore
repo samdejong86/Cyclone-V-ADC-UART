@@ -16,3 +16,4 @@ greybox_tmp/*
 *.txt
 *.pof
 *.sof
+*devel*
