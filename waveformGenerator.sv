@@ -22,7 +22,7 @@ always @(posedge clk) begin
 
 	if(counter==1999) begin
 		counter<=0;
-		waveNumber = waveNumber+1;
+		waveNumber = waveNumber+15'd1;
 	end
 
 

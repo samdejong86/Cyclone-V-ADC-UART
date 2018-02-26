@@ -24,11 +24,13 @@ parser.add_argument('-p','--port', help='The port to listen to', default="/dev/t
 parser.add_argument('-m','--movie', help='Save a 200 frame video', action='store_true', required=False)
 parser.add_argument('-f','--filename', help='Video filename', default="slowScope.mp4", required=False)
 parser.add_argument('-t','--timeout', help='Port timeout (controls update rate)', default=0.02, required=False)
+parser.add_argument('-r','--freq'   , help='Sampling frequency in Gigahertz',     default=0.05, required=False)
 
 args = parser.parse_args()
 
 x=[]
 y=[]
+
 
 
 #set the serial port settings
@@ -40,12 +42,15 @@ set_ser.stopbits=serial.STOPBITS_ONE
 set_ser.bytesize = serial.EIGHTBITS
 set_ser.timeout=float(args.timeout)
 
+sampleFreq=float(args.freq)
+
+
 #open the serial port
 set_ser.open()
 
 # First set up the figure, the axis, and the plot element we want to animate
 fig = plt.figure()
-ax = plt.axes(xlim=(0, 40000), ylim=(000, 16000))
+ax = plt.axes(xlim=(0, 2000/sampleFreq), ylim=(000, 16000))
 #line=ax.plot([],[],lw=2, marker='',color='black')[0]
 lines = []
 
@@ -71,6 +76,7 @@ def animate(i):
     data=set_ser.read(6400)
 
     global waveNumber
+    global sampleFreq
     
     if len(data)!=0:
 
@@ -84,7 +90,7 @@ def animate(i):
         # where xy is the ADC counts, z is the time.
     
         for i in range(1999):
-            x.append(i/0.050)
+            x.append(i/sampleFreq)
             y.append((data[3*i]<<8)+data[3*i+1])
 
             waveNumber = (data[6000]<<8)+data[6001]

@@ -1,5 +1,5 @@
 
-# (C) 2001-2017 Altera Corporation. All rights reserved.
+# (C) 2001-2018 Altera Corporation. All rights reserved.
 # Your use of Altera Corporation's design tools, logic functions and 
 # other software and tools, and its AMPP partner logic functions, and 
 # any output files any of the foregoing (including device programming 
@@ -92,7 +92,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 16.1 196 linux 2017.12.18.14:37:32
+# ACDS 16.1 196 linux 2018.02.26.14:38:10
 
 # ----------------------------------------
 # Initialize variables

@@ -22,6 +22,7 @@ import argparse
 import scipy.optimize
 
 
+
 def fit_sin(tt, yy):
     '''Fit sin to the input time sequence, and return fitting parameters "amp", "omega", "phase", "offset", "freq", "period" and "fitfunc"'''
     tt = np.array(tt)
@@ -74,6 +75,7 @@ class SubplotAnimation(animation.TimedAnimation):
         self.freq =[]
         self.phase=[]
         self.amp=[]
+        self.sampleFreq=0.04
 
         ax1.set_xlabel('Frequency (kHz)')
         ax1.set_ylabel('Amplitude (ADC counts)')
@@ -132,7 +134,7 @@ class SubplotAnimation(animation.TimedAnimation):
             # where xy is the ADC counts, z is the time.
     
             for k in range(1999):
-                self.x.append(k/0.050)
+                self.x.append(k/self.sampleFreq)
                 self.y.append((data[3*k]<<8)+data[3*k+1])
                 
                 #waveNumber = data[1501]

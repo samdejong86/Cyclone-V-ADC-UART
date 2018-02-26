@@ -10,6 +10,7 @@ parser.add_argument('-p','--port', help='The port to listen to', default="/dev/t
 parser.add_argument('-s','--save', help='Save data to a file', action='store_true', required=False)
 parser.add_argument('-f','--filename', help='Name of data file', default="UART.dat", required=False)
 parser.add_argument('-n','--noGraph', help='Suppress graphical output', action='store_true', required=False)
+parser.add_argument('-r','--freq'   , help='Sampling frequency in Gigahertz',     default=0.05, required=False)
 
 args = parser.parse_args()
 
@@ -54,7 +55,7 @@ while len(data) == 0:
         # xyz
         # where xy is the ADC counts, z is the time.
 	for i in range(1999):
-		xx.append(i/0.05)
+		xx.append(i/float(args.freq))
 		yy.append((data[3*i]<<8)+data[3*i+1])
 
 		waveNum = (data[6000]<<8)+data[6001]

@@ -24,7 +24,7 @@ always @(posedge clk) begin
 	if(acquire==0&&done==0) begin		//send the data only when acqire is down and data has not been sent
 		if(waveformCounter<2000) begin  //send only 32 samples. 
 			sample=waveform[waveformCounter];  //the current ADC value is a debugging output
-			waveformCounter2 = waveformCounter+1;	
+			waveformCounter2 = waveformCounter+18'd1;	
 		
 			if(byteCounter==0) begin   	//start bit - serial bitstreams always start with a '0'
 				UART=0;	     
