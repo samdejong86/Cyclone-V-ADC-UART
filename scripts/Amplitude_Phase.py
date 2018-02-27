@@ -25,7 +25,7 @@ import scipy.optimize
 parser = argparse.ArgumentParser(description='Find amplitude and phase of sinewave from FPGA')
 parser.add_argument('-p','--port', help='The port to listen to', default="/dev/ttyUSB0", required=False)
 parser.add_argument('-m','--movie', help='Save a video', action='store_true', required=False)
-parser.add_argument('-f','--filename', help='Video filename', default="slowScope.mp4", required=False)
+parser.add_argument('-f','--filename', help='Video filename', default="Amplitude_Phase_Scan.mp4", required=False)
 parser.add_argument('-t','--timeout', help='Port timeout (controls update rate)', default=0.2, required=False)
 parser.add_argument('-r','--freq'   , help='Sampling frequency in Megahertz',     default=50, required=False)
 
@@ -51,7 +51,6 @@ def fit_sin(tt, yy):
 
     def sinfunc(t, w, p):  return   guess_amp*np.sin(w*t + p) + guess_offset
     popt, pcov = scipy.optimize.curve_fit(sinfunc, tt, yy, p0=guess,bounds=b )
-    #A, w, p, c = popt
     w,p=popt
     f = w/(2.*np.pi)
     fitfunc = lambda t: A * np.sin(w*t + p) + c
@@ -81,7 +80,7 @@ class SubplotAnimation(animation.TimedAnimation):
         ax2.set_xscale('log')
 
 
-        self.t = np.linspace(0, 80, 999)
+        self.t = np.linspace(0, 80, 1999)
         self.x = []
         self.y = []
         self.freq =[]
@@ -100,7 +99,6 @@ class SubplotAnimation(animation.TimedAnimation):
         ax1.add_line(self.line1e)
         ax1.set_xlim(50, 10000)
         ax1.set_ylim(1000,5000)
-        #ax1.set_aspect('equal', 'datalim')
 
         ax2.set_xlabel('Frequency (kHz)')
         ax2.set_ylabel('Phase (rad)')
@@ -125,9 +123,7 @@ class SubplotAnimation(animation.TimedAnimation):
 
     def _draw_frame(self, framedata):
         i = framedata
-        #print(i)
         head = i - 1
-        #print(i)
         if i == 999:
             print("END")
 
@@ -150,25 +146,21 @@ class SubplotAnimation(animation.TimedAnimation):
                 self.x.append(k/self.sampleFreq)
                 self.y.append((data[3*k]<<8)+data[3*k+1])
                 
-                #waveNumber = data[1501]
-
+     
             try:
                 fit=fit_sin(self.x[:500],self.y[:500])
             except RuntimeError:
                 print("runtime error")
                 return
 
-            if fit['maxcov']<10:
-                #print(str(i)+" "+"{0:.2f}".format(fit['amp'])+" {0:.2f}".format(fit['phase'])+" "+" {0:.2f}".format(fit['freq']*1000000))
+
+            if fit['maxcov']<0.001:
                 self.freq.append(fit['freq']*1000000)
                 self.amp.append(fit['amp'])
                 self.phase.append(fit['phase'])
-            #print(fit['maxcov'])
-   
+        
 
-
-        #head_slice = (self.t > self.t[i] - 1.0) & (self.t < self.t[i])
-
+    
         self.line1.set_data(self.freq, self.amp)
         self.line1e.set_data(self.freq[-1:], self.amp[-1:])
         self.line1a.set_data(self.freq[-5:], self.amp[-5:])
@@ -193,7 +185,6 @@ class SubplotAnimation(animation.TimedAnimation):
         for l in lines:
             l.set_data([], [])
 
-#fig = plt.figure(figsize=(12,10))
 ani = SubplotAnimation()
 
 
