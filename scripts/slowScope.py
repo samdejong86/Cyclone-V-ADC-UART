@@ -24,7 +24,7 @@ parser.add_argument('-p','--port', help='The port to listen to', default="/dev/t
 parser.add_argument('-m','--movie', help='Save a 200 frame video', action='store_true', required=False)
 parser.add_argument('-f','--filename', help='Video filename', default="slowScope.mp4", required=False)
 parser.add_argument('-t','--timeout', help='Port timeout (controls update rate)', default=0.02, required=False)
-parser.add_argument('-r','--freq'   , help='Sampling frequency in Gigahertz',     default=0.05, required=False)
+parser.add_argument('-r','--freq'   , help='Sampling frequency in Megahertz',     default=50, required=False)
 
 args = parser.parse_args()
 
@@ -42,7 +42,7 @@ set_ser.stopbits=serial.STOPBITS_ONE
 set_ser.bytesize = serial.EIGHTBITS
 set_ser.timeout=float(args.timeout)
 
-sampleFreq=float(args.freq)
+sampleFreq=float(args.freq)/1000
 
 
 #open the serial port

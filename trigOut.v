@@ -7,7 +7,7 @@ reg [2:0] count;
 always @(posedge clk) begin
 	
 	if(count==0)
-		triggerOut=10000;
+		triggerOut=14'b11111111111111;
 	else 
 		triggerOut=0;
 

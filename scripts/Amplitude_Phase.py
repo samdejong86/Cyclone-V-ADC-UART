@@ -22,6 +22,18 @@ import argparse
 import scipy.optimize
 
 
+parser = argparse.ArgumentParser(description='Find amplitude and phase of sinewave from FPGA')
+parser.add_argument('-p','--port', help='The port to listen to', default="/dev/ttyUSB0", required=False)
+parser.add_argument('-m','--movie', help='Save a video', action='store_true', required=False)
+parser.add_argument('-f','--filename', help='Video filename', default="slowScope.mp4", required=False)
+parser.add_argument('-t','--timeout', help='Port timeout (controls update rate)', default=0.2, required=False)
+parser.add_argument('-r','--freq'   , help='Sampling frequency in Megahertz',     default=50, required=False)
+
+args = parser.parse_args()
+
+
+
+
 
 def fit_sin(tt, yy):
     '''Fit sin to the input time sequence, and return fitting parameters "amp", "omega", "phase", "offset", "freq", "period" and "fitfunc"'''
@@ -30,29 +42,29 @@ def fit_sin(tt, yy):
     ff = np.fft.fftfreq(len(tt), (tt[1]-tt[0]))   # assume uniform spacing
     Fyy = abs(np.fft.fft(yy))
     guess_freq = abs(ff[np.argmax(Fyy[1:])+1])   # excluding the zero frequency "peak", which is related to offset
-    guess_amp = np.std(yy) * 2.**0.5
-    guess_offset = np.mean(yy)
- 
-    guess = np.array([guess_amp, 2.*np.pi*guess_freq, -1.7, guess_offset])
-    #param_bounds=([-np.inf,0,-np.inf],[np.inf,0,np.inf],)
-    
-    b=([0,-np.inf,-np.inf,-np.inf], [np.inf,np.inf,0,np.inf])
+    guess_amp = (max(yy)-min(yy))/2
+    guess_offset = (max(yy)+min(yy))/2
+    guess = np.array([2.*np.pi*guess_freq, -1.7])
 
-    def sinfunc(t, A, w, p, c):  return A * np.sin(w*t + p) + c
+    b=([0.1*guess_freq,-np.inf], [100*guess_freq,0])
+    
+
+    def sinfunc(t, w, p):  return   guess_amp*np.sin(w*t + p) + guess_offset
     popt, pcov = scipy.optimize.curve_fit(sinfunc, tt, yy, p0=guess,bounds=b )
-    A, w, p, c = popt
+    #A, w, p, c = popt
+    w,p=popt
     f = w/(2.*np.pi)
     fitfunc = lambda t: A * np.sin(w*t + p) + c
-    return {"amp": A, "omega": w, "phase": p, "offset": c, "freq": f, "period": 1./f, "fitfunc": fitfunc, "maxcov": np.max(pcov), "rawres": (guess,popt,pcov)}
+    return {"amp": guess_amp, "omega": w, "phase": p, "offset": guess_offset, "freq": f, "period": 1./f, "fitfunc": fitfunc, "maxcov": np.max(pcov), "rawres": (guess,popt,pcov)}
 
 #set the serial port settings
 set_ser = serial.Serial()
-set_ser.port="/dev/ttyUSB0"          #the location of the USB port 
+set_ser.port=args.port          #the location of the USB port 
 set_ser.baudrate=1000000             #baud rate of 1MHz
 set_ser.parity = serial.PARITY_NONE
 set_ser.stopbits=serial.STOPBITS_ONE
 set_ser.bytesize = serial.EIGHTBITS
-set_ser.timeout=0.2
+set_ser.timeout=float(args.timeout)
 
 set_ser.open()
 
@@ -69,13 +81,13 @@ class SubplotAnimation(animation.TimedAnimation):
         ax2.set_xscale('log')
 
 
-        self.t = np.linspace(0, 80, 50)
+        self.t = np.linspace(0, 80, 999)
         self.x = []
         self.y = []
         self.freq =[]
         self.phase=[]
         self.amp=[]
-        self.sampleFreq=0.04
+        self.sampleFreq=float(args.freq)/1000
 
         ax1.set_xlabel('Frequency (kHz)')
         ax1.set_ylabel('Amplitude (ADC counts)')
@@ -106,15 +118,16 @@ class SubplotAnimation(animation.TimedAnimation):
         ax3.set_ylabel('ADC counts')
         self.line3 = Line2D([], [], color='black')
         ax3.add_line(self.line3)
-        ax3.set_xlim(0, 40000)
+        ax3.set_xlim(0, 2000/self.sampleFreq)
         ax3.set_ylim(0, 16000)
 
-        animation.TimedAnimation.__init__(self, fig, interval=1, blit=True)
+        animation.TimedAnimation.__init__(self, fig, interval=10, blit=True)
 
     def _draw_frame(self, framedata):
         i = framedata
         #print(i)
         head = i - 1
+        #print(i)
         if i == 999:
             print("END")
 
@@ -145,8 +158,6 @@ class SubplotAnimation(animation.TimedAnimation):
                 print("runtime error")
                 return
 
-            #print(fit['maxcov'])
-         
             if fit['maxcov']<10:
                 #print(str(i)+" "+"{0:.2f}".format(fit['amp'])+" {0:.2f}".format(fit['phase'])+" "+" {0:.2f}".format(fit['freq']*1000000))
                 self.freq.append(fit['freq']*1000000)
@@ -186,8 +197,9 @@ class SubplotAnimation(animation.TimedAnimation):
 ani = SubplotAnimation()
 
 
+if args.movie:
+    ani.save(args.filename, metadata={'artist':'Sam'})
 
-#ani.save("amplitude_phase.mp4", metadata={'artist':'Sam'})
 plt.show()
 
 
