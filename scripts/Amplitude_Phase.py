@@ -80,7 +80,7 @@ class SubplotAnimation(animation.TimedAnimation):
         ax2.set_xscale('log')
 
 
-        self.t = np.linspace(0, 80, 1999)
+        self.t = np.linspace(0, 80, 19999)
         self.x = []
         self.y = []
         self.freq =[]
@@ -124,9 +124,7 @@ class SubplotAnimation(animation.TimedAnimation):
     def _draw_frame(self, framedata):
         i = framedata
         head = i - 1
-        if i == 999:
-            print("END")
-
+        
         message="d" 
         set_ser.write(message.encode('utf-8'))
         data=set_ser.read(7400)
@@ -155,6 +153,7 @@ class SubplotAnimation(animation.TimedAnimation):
 
 
             if fit['maxcov']<0.001:
+               
                 self.freq.append(fit['freq']*1000000)
                 self.amp.append(fit['amp'])
                 self.phase.append(fit['phase'])
