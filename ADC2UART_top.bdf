@@ -2322,9 +2322,35 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "signedSignal[13..0]" (rect 1032 688 1148 701)(font "Intel Clear" ))
-	(pt 1024 704)
+	(text "sys_clk" (rect 1042 608 1083 621)(font "Intel Clear" ))
+	(pt 1096 624)
+	(pt 1032 624)
+)
+(connector
+	(text "v" (rect 1079 648 1086 661)(font "Intel Clear" ))
+	(pt 1096 664)
+	(pt 1064 664)
+)
+(connector
+	(text "v" (rect 1079 704 1086 717)(font "Intel Clear" ))
+	(pt 1096 720)
+	(pt 1064 720)
+)
+(connector
+	(text "v" (rect 1495 656 1502 669)(font "Intel Clear" ))
+	(pt 1512 672)
+	(pt 1480 672)
+)
+(connector
+	(text "OFC_FIR[35..0]" (rect 1490 608 1573 621)(font "Intel Clear" ))
+	(pt 1480 624)
+	(pt 1552 624)
+	(bus)
+)
+(connector
+	(text "signedSignal[13..0]" (rect 976 688 1092 701)(font "Intel Clear" ))
 	(pt 1096 704)
+	(pt 968 704)
 	(bus)
 )
 (junction (pt 400 -448))
