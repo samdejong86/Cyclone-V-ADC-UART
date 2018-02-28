@@ -1,0 +1,15 @@
+	component FIR_ofc is
+		port (
+			clk              : in  std_logic                     := 'X';             -- clk
+			reset_n          : in  std_logic                     := 'X';             -- reset_n
+			ast_sink_data    : in  std_logic_vector(13 downto 0) := (others => 'X'); -- data
+			ast_sink_valid   : in  std_logic                     := 'X';             -- valid
+			ast_sink_error   : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- error
+			ast_sink_ready   : out std_logic;                                        -- ready
+			ast_source_data  : out std_logic_vector(35 downto 0);                    -- data
+			ast_source_valid : out std_logic;                                        -- valid
+			ast_source_error : out std_logic_vector(1 downto 0);                     -- error
+			ast_source_ready : in  std_logic                     := 'X'              -- ready
+		);
+	end component FIR_ofc;
+
