@@ -2530,12 +2530,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "OFC_FIR[35..22]" (rect 1042 384 1131 397)(font "Intel Clear" ))
-	(pt 1032 400)
-	(pt 1136 400)
-	(bus)
-)
-(connector
 	(pt 1368 400)
 	(pt 1368 416)
 	(bus)
@@ -2543,6 +2537,12 @@ agreement for further details.
 (connector
 	(pt 1248 416)
 	(pt 1368 416)
+	(bus)
+)
+(connector
+	(text "OFC_FIR[33..20]" (rect 1042 384 1132 397)(font "Intel Clear" ))
+	(pt 1032 400)
+	(pt 1136 400)
 	(bus)
 )
 (junction (pt 432 -792))

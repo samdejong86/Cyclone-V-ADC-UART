@@ -83,8 +83,7 @@ def animate(i):
     global waveNumber
     global sampleFreq
     
-    if len(data)!=0:
-
+    if len(data)==3003:
 
         del x[:]
         del y[:]
