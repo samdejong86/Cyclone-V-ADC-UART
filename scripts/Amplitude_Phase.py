@@ -1,3 +1,4 @@
+#!/home/srdejong/miniconda3/bin/python
 """
 =================
 Animated subplots

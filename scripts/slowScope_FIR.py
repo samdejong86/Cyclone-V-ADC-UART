@@ -17,6 +17,8 @@ import numpy as np
 import serial   
 from matplotlib import pyplot as plt
 from matplotlib import animation
+import matplotlib.patches as mpatches
+
 import argparse
 
 parser = argparse.ArgumentParser(description='View waveforms coming from UART')
@@ -119,6 +121,11 @@ if args.movie:
 
 plt.xlabel("Time (ns)")
 plt.ylabel("ADC counts (AU)")
+red_patch = mpatches.Patch(color='red', label='Signal')
+blue_patch = mpatches.Patch(color='blue', label='FIR')
+plt.legend(handles=[red_patch, blue_patch])
+
+
 plt.show()
 
 set_ser.close()
