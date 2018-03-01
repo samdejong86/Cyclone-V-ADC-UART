@@ -74,7 +74,7 @@ waveNumber=0
 
 # animation function.  This is called sequentially
 def animate(i):
-    message="f" 
+    message="i" 
     set_ser.write(message.encode('utf-8'))
     data=set_ser.read(3200)
 

@@ -43,13 +43,11 @@ wavenum=0
 while len(data) == 0:
 
         #send a message (can be anything)
-	message="f" 
+	message="i" 
 	set_ser.write(message.encode('utf-8'))
 
 	#recieve a response
 	data=set_ser.read(3600)
-
-	print(len(data))
 
 	if len(data)==0:
 		continue;

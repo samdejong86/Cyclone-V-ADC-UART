@@ -46,7 +46,7 @@ always @(posedge clk) begin
 			acquireWave=0;
 			acquireFIR=1;
 		end	
-		else if(char==8'b01100110) begin
+		else if(char==8'b01101001) begin
 			acquireFIR=0;
 			acquireWave=1;
 		end

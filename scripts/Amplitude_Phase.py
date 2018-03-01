@@ -116,7 +116,7 @@ class SubplotAnimation(animation.TimedAnimation):
         ax3.set_ylabel('ADC counts')
         self.line3 = Line2D([], [], color='black')
         ax3.add_line(self.line3)
-        ax3.set_xlim(0, 2000/self.sampleFreq)
+        ax3.set_xlim(0, 1000/self.sampleFreq)
         ax3.set_ylim(0, 16000)
 
         animation.TimedAnimation.__init__(self, fig, interval=10, blit=True)
@@ -127,7 +127,7 @@ class SubplotAnimation(animation.TimedAnimation):
         
         message="w" 
         set_ser.write(message.encode('utf-8'))
-        data=set_ser.read(7400)
+        data=set_ser.read(3700)
 
         if len(data)!=0:
 
@@ -140,7 +140,7 @@ class SubplotAnimation(animation.TimedAnimation):
             # xyz
             # where xy is the ADC counts, z is the time.
     
-            for k in range(1999):
+            for k in range(999):
                 self.x.append(k/self.sampleFreq)
                 self.y.append((data[3*k]<<8)+data[3*k+1])
                 

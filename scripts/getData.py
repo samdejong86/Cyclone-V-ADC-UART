@@ -48,8 +48,6 @@ while len(data) == 0:
 	#recieve a response
 	data=set_ser.read(3600)
 
-	print(len(data))
-
 	if len(data)==0:
 		continue;
 	
