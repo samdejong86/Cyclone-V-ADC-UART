@@ -125,7 +125,7 @@ class SubplotAnimation(animation.TimedAnimation):
         i = framedata
         head = i - 1
         
-        message="d" 
+        message="w" 
         set_ser.write(message.encode('utf-8'))
         data=set_ser.read(7400)
 

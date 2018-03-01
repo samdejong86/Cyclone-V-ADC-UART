@@ -21,8 +21,8 @@ agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 256 128)
-	(text "waveformGenerator" (rect 5 0 86 12)(font "Arial" ))
+	(rect 16 16 272 128)
+	(text "FIRwaveformGenerator" (rect 5 0 102 12)(font "Arial" ))
 	(text "inst" (rect 8 96 20 108)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -41,25 +41,25 @@ agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "signal[13..0]" (rect 0 0 44 12)(font "Arial" ))
-		(text "signal[13..0]" (rect 21 59 65 71)(font "Arial" ))
+		(text "FIR[13..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "FIR[13..0]" (rect 21 59 61 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
-		(pt 240 32)
+		(pt 256 32)
 		(output)
-		(text "waveform[0..999][13..0]" (rect 0 0 94 12)(font "Arial" ))
-		(text "waveform[0..999][13..0]" (rect 125 27 219 39)(font "Arial" ))
-		(line (pt 240 32)(pt 224 32)(line_width 3))
+		(text "FIRwaveform[0..499][13..0]" (rect 0 0 112 12)(font "Arial" ))
+		(text "FIRwaveform[0..499][13..0]" (rect 123 27 235 39)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32)(line_width 3))
 	)
 	(port
-		(pt 240 48)
+		(pt 256 48)
 		(output)
-		(text "waveNumber[15..0]" (rect 0 0 77 12)(font "Arial" ))
-		(text "waveNumber[15..0]" (rect 142 43 219 55)(font "Arial" ))
-		(line (pt 240 48)(pt 224 48)(line_width 3))
+		(text "FIRwaveNumber[15..0]" (rect 0 0 94 12)(font "Arial" ))
+		(text "FIRwaveNumber[15..0]" (rect 141 43 235 55)(font "Arial" ))
+		(line (pt 256 48)(pt 240 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 224 96)(line_width 1))
+		(rectangle (rect 16 16 240 96)(line_width 1))
 	)
 )

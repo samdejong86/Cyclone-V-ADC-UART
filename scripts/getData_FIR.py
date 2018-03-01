@@ -8,7 +8,7 @@ import argparse
 parser = argparse.ArgumentParser(description='View a single waveform coming from UART')
 parser.add_argument('-p','--port', help='The port to listen to', default="/dev/ttyUSB0", required=False)
 parser.add_argument('-s','--save', help='Save data to a file', action='store_true', required=False)
-parser.add_argument('-f','--filename', help='Name of data file', default="UART.dat", required=False)
+parser.add_argument('-f','--filename', help='Name of data file', default="UART_FIR.dat", required=False)
 parser.add_argument('-n','--noGraph', help='Suppress graphical output', action='store_true', required=False)
 parser.add_argument('-r','--freq'   , help='Sampling frequency in Megahertz',     default=50, required=False)
 
@@ -33,6 +33,7 @@ lastC=0
 ADC=0
 xx=[]
 yy=[]
+ff=[]
 
 fpgaPulseHeight=0
 Pedistal=0
@@ -42,7 +43,7 @@ wavenum=0
 while len(data) == 0:
 
         #send a message (can be anything)
-	message="w" 
+	message="f" 
 	set_ser.write(message.encode('utf-8'))
 
 	#recieve a response
@@ -56,11 +57,12 @@ while len(data) == 0:
         #loop over response. response looks like:
         # xyz
         # where xy is the ADC counts, z is the time.
-	for i in range(999):
+	for i in range(499):
 		xx.append(i/(float(args.freq)/1000))
-		yy.append((data[3*i]<<8)+data[3*i+1])
+		yy.append((data[3*i]<<8)+data[3*i+1]-8192)
+		ff.append((data[3*(i+500)]<<8)+data[3*(i+500)+1]-8192)
 
-		waveNum = (data[3000]<<8)+data[3001]
+	waveNum = (data[3000]<<8)+data[3001]
 
 
 
@@ -71,7 +73,7 @@ if args.save:
     with open(args.filename, 'w') as f:
 	    f.write(str(waveNum)+"\n")
 	    for i in range(len(xx)):
-		    f.write(str(xx[i]) + "\t" + str(yy[i]) + "\n")
+		    f.write(str(xx[i]) + "\t" + str(yy[i]) + "\t" + str(ff[i])+"\n")
 
 
 if not args.noGraph:
@@ -81,4 +83,5 @@ if not args.noGraph:
     
     #plot ADC counts vs time
     plt.plot(xx, yy)
+    plt.plot(xx, ff)
 plt.show()
