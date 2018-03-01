@@ -53,7 +53,7 @@ always @(posedge clk) begin
 	end
 	
 	
-	if(counter>72170) begin
+	if(counter>36049) begin
 		counter<=0;
 		lastwavenum=wavenum;
 		char=0;

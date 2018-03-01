@@ -22,20 +22,20 @@ agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 64 64 176 144)
-	(text "signer" (rect 5 0 42 11)(font "Arial" ))
+	(text "unsigner" (rect 5 0 56 11)(font "Arial" ))
 	(text "inst" (rect 8 64 30 75)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "unsign[13..0]" (rect 0 0 74 11)(font "Arial" ))
-		(text "unsign[13..0]" (rect 21 27 95 38)(font "Arial" ))
+		(text "sign[13..0]" (rect 0 0 60 11)(font "Arial" ))
+		(text "sign[13..0]" (rect 21 27 81 38)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 112 48)
 		(output)
-		(text "sign[13..0]" (rect -80 0 -20 11)(font "Arial" ))
-		(text "sign[13..0]" (rect 25 43 85 54)(font "Arial" ))
+		(text "unsign[13..0]" (rect -80 0 -6 11)(font "Arial" ))
+		(text "unsign[13..0]" (rect 29 43 103 54)(font "Arial" ))
 		(line (pt 112 48)(pt 96 48)(line_width 3))
 	)
 	(drawing
