@@ -21,24 +21,24 @@ agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 64 64 176 144)
+	(rect 64 64 176 160)
 	(text "unsigner" (rect 5 0 56 11)(font "Arial" ))
 	(text "inst" (rect 8 64 30 75)(font "Arial" ))
 	(port
-		(pt 0 32)
+		(pt 0 56)
 		(input)
 		(text "sign[13..0]" (rect 0 0 60 11)(font "Arial" ))
-		(text "sign[13..0]" (rect 21 27 81 38)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "sign[13..0]" (rect 21 51 81 62)(font "Arial" (color 0 0 0)))
+		(line (pt 0 56)(pt 16 56)(line_width 3))
 	)
 	(port
-		(pt 112 48)
+		(pt 112 40)
 		(output)
 		(text "unsign[13..0]" (rect -80 0 -6 11)(font "Arial" ))
-		(text "unsign[13..0]" (rect 29 43 103 54)(font "Arial" ))
-		(line (pt 112 48)(pt 96 48)(line_width 3))
+		(text "unsign[13..0]" (rect 29 35 103 46)(font "Arial" (color 0 0 0)))
+		(line (pt 112 40)(pt 96 40)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 96 64))
+		(circle (rect 16 8 96 88)(fill (color 0 170 255)))
 	)
 )
