@@ -21,9 +21,9 @@ agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 312 192)
+	(rect 16 16 312 160)
 	(text "signalToUART" (rect 5 0 66 12)(font "Arial" ))
-	(text "inst" (rect 8 160 20 172)(font "Arial" ))
+	(text "inst" (rect 8 128 20 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -69,46 +69,11 @@ agreement for further details.
 	(port
 		(pt 296 48)
 		(output)
-		(text "startStop" (rect 0 0 35 12)(font "Arial" ))
-		(text "startStop" (rect 240 43 275 55)(font "Arial" ))
-		(line (pt 296 48)(pt 280 48)(line_width 1))
-	)
-	(port
-		(pt 296 64)
-		(output)
-		(text "bitCounter[17..0]" (rect 0 0 63 12)(font "Arial" ))
-		(text "bitCounter[17..0]" (rect 212 59 275 71)(font "Arial" ))
-		(line (pt 296 64)(pt 280 64)(line_width 3))
-	)
-	(port
-		(pt 296 80)
-		(output)
 		(text "waveformCounter[17..0]" (rect 0 0 96 12)(font "Arial" ))
-		(text "waveformCounter[17..0]" (rect 179 75 275 87)(font "Arial" ))
-		(line (pt 296 80)(pt 280 80)(line_width 3))
-	)
-	(port
-		(pt 296 96)
-		(output)
-		(text "byteCounter[17..0]" (rect 0 0 73 12)(font "Arial" ))
-		(text "byteCounter[17..0]" (rect 202 91 275 103)(font "Arial" ))
-		(line (pt 296 96)(pt 280 96)(line_width 3))
-	)
-	(port
-		(pt 296 112)
-		(output)
-		(text "whichByte[17..0]" (rect 0 0 63 12)(font "Arial" ))
-		(text "whichByte[17..0]" (rect 212 107 275 119)(font "Arial" ))
-		(line (pt 296 112)(pt 280 112)(line_width 3))
-	)
-	(port
-		(pt 296 128)
-		(output)
-		(text "sample[13..0]" (rect 0 0 51 12)(font "Arial" ))
-		(text "sample[13..0]" (rect 224 123 275 135)(font "Arial" ))
-		(line (pt 296 128)(pt 280 128)(line_width 3))
+		(text "waveformCounter[17..0]" (rect 179 43 275 55)(font "Arial" ))
+		(line (pt 296 48)(pt 280 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 280 160)(line_width 1))
+		(rectangle (rect 16 16 280 128)(line_width 1))
 	)
 )
