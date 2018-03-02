@@ -4,13 +4,24 @@ import serial
 import matplotlib.pyplot as plt
 import numpy as np
 import argparse
+import re
+
+defaultRate=50
+
+try:
+    for line in open("../lpm_pll.v"):
+        if "gui_output_clock_frequency0" in line:
+            result = re.search('%s(.*)%s' % ("value=\"", "\" />"), line).group(1)
+            defaultRate=float(result)
+except FileNotFoundError:
+    defaultRate=50
 
 parser = argparse.ArgumentParser(description='View a single waveform coming from UART')
 parser.add_argument('-p','--port', help='The port to listen to', default="/dev/ttyUSB0", required=False)
 parser.add_argument('-s','--save', help='Save data to a file', action='store_true', required=False)
 parser.add_argument('-f','--filename', help='Name of data file', default="UART_FIR.dat", required=False)
 parser.add_argument('-n','--noGraph', help='Suppress graphical output', action='store_true', required=False)
-parser.add_argument('-r','--freq'   , help='Sampling frequency in Megahertz',     default=50, required=False)
+parser.add_argument('-r','--freq'   , help='Sampling frequency in Megahertz (default: %(default)s)',     default=defaultRate, required=False)
 
 args = parser.parse_args()
 
