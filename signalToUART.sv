@@ -29,7 +29,7 @@ always @(posedge clk) begin
 		
 
 		
-			if(acquire==2'b10||(acquire==2'b01&&waveformCounter<500))begin 
+			if(acquire==2'b01||(acquire==2'b10&&waveformCounter<500))begin 
 				if(byteCounter==0) begin   	//start bit - serial bitstreams always start with a '0'
 					UART=0;	     
 					startStop=1;
@@ -51,7 +51,7 @@ always @(posedge clk) begin
 				else 
 					UART=0;
 			end
-			else if(acquire==2'b01&&waveformCounter>=500) begin
+			else if(acquire==2'b10&&waveformCounter>=500) begin
 				if(byteCounter==0) begin   	//start bit - serial bitstreams always start with a '0'
 					UART=0;	     
 					startStop=1;
@@ -105,7 +105,7 @@ always @(posedge clk) begin
 		byteCounter=(bitCounter%11'd36)%11'd12;  //0-9 - counts the bits in the current byte. 7'b1010=10
 		whichByte=bitCounter%11'd36/11'd12;  		//0-2 - counts the bytes in the current waveform.
 	end
-	else if(acquire==2'b11) begin	//when acqure goes to 1, reset variables
+	else if(acquire==2'b00) begin	//when acqure goes to 1, reset variables
 		done=0;
 		bitCounter=0;
 		waveformCounter=0;

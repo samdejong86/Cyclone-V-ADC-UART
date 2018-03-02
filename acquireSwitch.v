@@ -6,8 +6,8 @@ input [7:0] char;
 input newChar;
 
 input [15:0] wavenum;
-output reg acquireWave=1;
-output reg acquireFIR=1;
+output reg acquireWave=0;
+output reg acquireFIR=0;
 reg [18:0] counter=0;
 reg [15:0] lastwavenum=0;
 
@@ -46,12 +46,12 @@ always @(posedge clk) begin
 	
 	if(counter!=0&&counter<36049&&wavenum!=lastwavenum) begin
 		if(char==8'b01110111) begin //wave
-			acquireWave=0;
-			acquireFIR=1;
+			acquireWave=1;
+			acquireFIR=0;
 		end	
 		else if(char==8'b01101001) begin //wave and FIR
-			acquireFIR=0;
-			acquireWave=1;
+			acquireFIR=1;
+			acquireWave=0;
 		end
 	end
 	
@@ -59,8 +59,8 @@ always @(posedge clk) begin
 	if(counter>=36049) begin
 		counter<=0;
 		lastwavenum=wavenum;
-		acquireFIR=1;
-		acquireWave=1;
+		acquireFIR=0;
+		acquireWave=0;
 	
 	end
 	
