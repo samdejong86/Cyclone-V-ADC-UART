@@ -58,7 +58,7 @@ def fit_sin(tt, yy):
     guess_offset = (max(yy)+min(yy))/2
     guess = np.array([2.*np.pi*guess_freq, -1.7])
 
-    b=([0.1*guess_freq,-np.inf], [100*guess_freq,0])
+    b=([0.1*guess_freq,-np.inf], [100*guess_freq,np.inf])
     
 
     def sinfunc(t, w, p):  return   guess_amp*np.sin(w*t + p) + guess_offset
