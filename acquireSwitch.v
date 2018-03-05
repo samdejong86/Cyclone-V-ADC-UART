@@ -13,34 +13,9 @@ reg [15:0] lastwavenum=0;
 
 
 always @(posedge clk) begin
-/*
-	if(UART_RX==0||counter!=0) begin
-		counter <= counter+11'b1;
-	end
-	
-	
-	if(counter>=1&&counter<=8) begin
-		intermediateChar[counter-1] = UART_RX;
-	end
-	if(counter==8) 
-		char = intermediateChar;
-	
-	*/
+
 	if(newChar==1||counter!=0) begin
 		counter <= counter+11'b1;
-		/*
-		if(wavenum!=lastwavenum) begin
-			if(char==8'b01110111) begin //wave
-				acquireWave=0;
-				acquireFIR=1;
-			end	
-			else if(char==8'b01101001) begin //wave and FIR
-				acquireFIR=0;
-				acquireWave=1;
-			end		
-			
-		end
-		*/
 		
 	end
 	
