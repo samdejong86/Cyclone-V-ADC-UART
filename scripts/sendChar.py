@@ -3,7 +3,7 @@
 import serial
 import argparse
 
-parser = argparse.ArgumentParser(description='View a single waveform coming from UART')
+parser = argparse.ArgumentParser(description='Send a character to the FPGA via UART')
 parser.add_argument('-c','--char', help='character to send', default="c", required=False)
 parser.add_argument('-p','--port', help='The port to listen to', default="/dev/ttyUSB0", required=False)
 
