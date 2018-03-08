@@ -54,8 +54,8 @@ def fit_sin(tt, yy):
     ff = np.fft.fftfreq(len(tt), (tt[1]-tt[0]))   # assume uniform spacing
     Fyy = abs(np.fft.fft(yy))
     guess_freq = abs(ff[np.argmax(Fyy[1:])+1])   # excluding the zero frequency "peak", which is related to offset
-    guess_amp = (max(yy)-min(yy))/2
-    guess_offset = (max(yy)+min(yy))/2
+    guess_offset = 8192
+    guess_amp = max(yy)-guess_offset
     guess = np.array([2.*np.pi*guess_freq, -1.7])
 
     b=([0.1*guess_freq,-np.inf], [100*guess_freq,np.inf])
