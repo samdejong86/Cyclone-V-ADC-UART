@@ -1,4 +1,4 @@
-#!/bin/env python  
+#!/usr/bin/env python  
 
 import serial
 import matplotlib.pyplot as plt

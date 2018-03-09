@@ -1,4 +1,4 @@
-#!/bin/env python  
+#!/usr/bin/env python  
 
 """
 Creates an animation of the waveform send from the FPGA. 
