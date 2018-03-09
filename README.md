@@ -111,6 +111,7 @@ getData.py gets just the waveform, while getData_FIR.py gets the waveform and th
 
 
 Example output for getData_FIR.py:
+
 ![alt text](img/getData_FIR.png "getData.py example")
 
 ### slowScope.py and slowScope_FIR.py
@@ -136,6 +137,7 @@ As before, slowScope.py gets just the waveform, while slowScope_FIR.py gets the 
 
 
 Example output for slowScope.py:
+
 ![alt text](img/slowScope.png "slowScope.py example")
 
 ### Amplitude_Phase.py
@@ -160,6 +162,7 @@ This script calculates the amplitude, phase, and frequency of a sine wave, and p
 
 
 Example output:
+
 ![alt text](img/AmplitudePhaseResponse.png "Amplitude_phase.py example")
 
 
