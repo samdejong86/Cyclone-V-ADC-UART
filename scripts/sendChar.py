@@ -1,4 +1,4 @@
-#!/home/srdejong/miniconda3/bin/python
+#!/bin/env python  
 
 import serial
 import argparse
