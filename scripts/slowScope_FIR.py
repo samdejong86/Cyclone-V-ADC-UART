@@ -1,4 +1,4 @@
-#!/home/srdejong/miniconda3/bin/python
+#!/bin/env python  
 
 """
 Creates an animation of the waveform send from the FPGA. 
