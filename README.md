@@ -65,7 +65,7 @@ The SlowPll clock generates a 1MHz clock for the UART.
 
 The 'charReader' module recieves a character from the UART RX and intreprets it. newChar goes up for one clock tick everytime a new character is recieved.
 
-'acquireSwitch' determines if a waveform has been requested. If 'w' was recieved, acquireWave goes up, and if 'i' was send, acquireFIR goes up.
+'acquireSwitch' determines if a waveform has been requested. If 'w' was recieved, acquireWave goes up, and if 'i' was recieved, acquireFIR goes up.
 
 'signalToUART' sends a waveform to the UART_TX. If acquireWave is up, a 1000 sample waveform is send. If acquireFIR is up, a 500 sample waveform and 500 sample FIR waveform is sent.
 
