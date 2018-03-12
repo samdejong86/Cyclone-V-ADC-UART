@@ -34,7 +34,7 @@ set_ser.baudrate=1000000             #baud rate of 1MHz
 set_ser.parity = serial.PARITY_NONE
 set_ser.stopbits=serial.STOPBITS_ONE
 set_ser.bytesize = serial.EIGHTBITS
-set_ser.timeout=0.02
+set_ser.timeout=0.2
 
 #open the serial port
 set_ser.open()
