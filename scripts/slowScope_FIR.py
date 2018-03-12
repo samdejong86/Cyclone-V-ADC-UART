@@ -35,7 +35,7 @@ parser = argparse.ArgumentParser(description='View waveforms coming from UART')
 parser.add_argument('-p','--port', help='The port to listen to', default="/dev/ttyUSB0", required=False)
 parser.add_argument('-m','--movie', help='Save a 200 frame video', action='store_true', required=False)
 parser.add_argument('-f','--filename', help='Video filename', default="slowScope.mp4", required=False)
-parser.add_argument('-t','--timeout', help='Port timeout (controls update rate)', default=0.02, required=False)
+parser.add_argument('-t','--timeout', help='Port timeout (controls update rate)', default=0.2, required=False)
 parser.add_argument('-r','--freq'   , help='Sampling frequency in Megahertz (default: %(default)s)',     default=defaultRate, required=False)
 
 args = parser.parse_args()
