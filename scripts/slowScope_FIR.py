@@ -64,15 +64,16 @@ set_ser.open()
 # First set up the figure, the axis, and the plot element we want to animate
 fig = plt.figure()
 ax = plt.axes(xlim=(0, 500/sampleFreq), ylim=(-8000, 8000))
-#line=ax.plot([],[],lw=2, marker='',color='black')[0]
 lines = []
+plotlays, plotcols, plotstyle, linw, labelName = [2], ["r","b"], ['', ''], [1.5,1.5], ['Signal', 'FIR']
 
-lobj = ax.plot([], [], 'r-', animated=True)[0]
-lobj2 = ax.plot([], [], 'b-', animated=True)[0]
+for index in range(plotlays[0]):
+    lobj = ax.plot([],[],lw=linw[index], marker=plotstyle[index],color=plotcols[index])[0]
+    lines.append(lobj)
+
+
 wNum_text = ax.text(0.02, 0.95, '', transform=ax.transAxes)
 
-lines.append(lobj)
-lines.append(lobj2)
 lines.append(wNum_text)
 
 # initialization function: plot the background of each frame
@@ -130,10 +131,12 @@ if args.movie:
 
 plt.xlabel("Time (ns)")
 plt.ylabel("ADC counts (AU)")
-red_patch = mpatches.Patch(color='red', label='Signal')
-blue_patch = mpatches.Patch(color='blue', label='FIR')
-plt.legend(handles=[red_patch, blue_patch])
 
+legends=[]
+for i in range(2):
+    legends.append(mpatches.Patch(color=plotcols[i],label=labelName[i]));
+
+plt.legend(handles=legends)
 
 plt.show()
 
