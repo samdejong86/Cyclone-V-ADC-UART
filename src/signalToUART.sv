@@ -2,7 +2,7 @@
 module signalToUART(clk, waveform, FIR, waveNumber, acquire, UART, waveformCounter);
 
 input [13:0] waveform [1000];
-input [13:0] FIR [500];
+input [13:0] FIR [1000];
 input [15:0] waveNumber;
 input clk;
 input [1:0] acquire;
