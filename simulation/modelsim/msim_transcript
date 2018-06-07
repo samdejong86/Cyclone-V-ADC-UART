@@ -1,0 +1,347 @@
+# do ADC2UART_top_run_msim_rtl_verilog.do
+# if ![file isdirectory ADC2UART_top_iputf_libs] {
+# 	file mkdir ADC2UART_top_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/altera/16.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "/home/srdejong/Cyclone-V-ADC-UART/lpm_pll_sim/lpm_pll.vo"                                     
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:40 on Mar 19,2018
+# vlog -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/lpm_pll_sim/lpm_pll.vo 
+# -- Compiling module lpm_pll
+# 
+# Top level modules:
+# 	lpm_pll
+# End time: 14:31:40 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "/home/srdejong/Cyclone-V-ADC-UART/SlowPll_sim/SlowPll.vo"                                     
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:40 on Mar 19,2018
+# vlog -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/SlowPll_sim/SlowPll.vo 
+# -- Compiling module SlowPll
+# 
+# Top level modules:
+# 	SlowPll
+# End time: 14:31:40 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/dspba_library_package.vhd"                      
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:40 on Mar 19,2018
+# vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/dspba_library_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package dspba_library_package
+# End time: 14:31:40 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/dspba_library.vhd"                              
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:40 on Mar 19,2018
+# vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/dspba_library.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package dspba_library_package
+# -- Compiling entity dspba_delay
+# -- Compiling architecture delay of dspba_delay
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dspba_sync_reg
+# -- Compiling architecture sync_reg of dspba_sync_reg
+# End time: 14:31:40 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_math_pkg_hpfir.vhd"                   
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:40 on Mar 19,2018
+# vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_math_pkg_hpfir.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package auk_dspip_math_pkg_hpfir
+# -- Compiling package body auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_math_pkg_hpfir
+# End time: 14:31:40 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_lib_pkg_hpfir.vhd"                    
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:40 on Mar 19,2018
+# vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_lib_pkg_hpfir.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Compiling package auk_dspip_lib_pkg_hpfir
+# End time: 14:31:40 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:40 on Mar 19,2018
+# vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity auk_dspip_avalon_streaming_controller_hpfir
+# -- Compiling architecture struct of auk_dspip_avalon_streaming_controller_hpfir
+# End time: 14:31:40 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"      
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:40 on Mar 19,2018
+# vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Loading package altera_mf_components
+# -- Compiling entity auk_dspip_avalon_streaming_sink_hpfir
+# -- Compiling architecture rtl of auk_dspip_avalon_streaming_sink_hpfir
+# ** Warning: /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd(113): Nonresolved signal 'sink_next_state' may have multiple sources.
+#   Drivers:
+#     /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd(272):Process sink_comb_update_2
+#        Driven at:
+#           /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd(279)
+#     /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd(177):Process sink_comb_update_1
+#        Driven at:
+#           /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd(183)
+# End time: 14:31:40 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"    
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:40 on Mar 19,2018
+# vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package altera_mf_components
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Compiling entity auk_dspip_avalon_streaming_source_hpfir
+# -- Compiling architecture rtl of auk_dspip_avalon_streaming_source_hpfir
+# ** Warning: /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd(122): Nonresolved signal 'count_finished' may have multiple sources.
+#   Drivers:
+#     /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd(217):Conditional signal assignment line__216
+#     /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd(206):Conditional signal assignment line__205
+# ** Warning: /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd(123): Nonresolved signal 'count_started' may have multiple sources.
+#   Drivers:
+#     /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd(219):Conditional signal assignment line__218
+#     /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd(210):Conditional signal assignment line__209
+# End time: 14:31:40 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_roundsat_hpfir.vhd"                   
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:40 on Mar 19,2018
+# vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/auk_dspip_roundsat_hpfir.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity auk_dspip_roundsat_hpfir
+# -- Compiling architecture beh of auk_dspip_roundsat_hpfir
+# End time: 14:31:40 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/altera_avalon_sc_fifo.v"                        
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:40 on Mar 19,2018
+# vlog -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/altera_avalon_sc_fifo.v 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 14:31:41 on Mar 19,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/FIR_ofc_rtl_core.vhd"                           
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:41 on Mar 19,2018
+# vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/FIR_ofc_rtl_core.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package dspba_library_package
+# -- Loading package altera_mf_components
+# -- Loading package altera_lnsim_components
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity FIR_ofc_rtl_core
+# -- Compiling architecture normal of FIR_ofc_rtl_core
+# End time: 14:31:41 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/FIR_ofc_ast.vhd"                                
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:41 on Mar 19,2018
+# vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/FIR_ofc_ast.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Compiling entity FIR_ofc_ast
+# -- Compiling architecture struct of FIR_ofc_ast
+# End time: 14:31:41 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/FIR_ofc.vhd"                                    
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:41 on Mar 19,2018
+# vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/FIR_ofc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Compiling entity FIR_ofc
+# -- Compiling architecture syn of FIR_ofc
+# End time: 14:31:41 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/FIR_ofc_tb.vhd"                                 
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:41 on Mar 19,2018
+# vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR_ofc_sim/FIR_ofc_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FIR_ofc_tb
+# -- Compiling architecture rtl of FIR_ofc_tb
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Loading entity FIR_ofc
+# End time: 14:31:41 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/srdejong/Cyclone-V-ADC-UART {/home/srdejong/Cyclone-V-ADC-UART/signer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:41 on Mar 19,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/srdejong/Cyclone-V-ADC-UART" /home/srdejong/Cyclone-V-ADC-UART/signer.v 
+# -- Compiling module signer
+# 
+# Top level modules:
+# 	signer
+# End time: 14:31:41 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/srdejong/Cyclone-V-ADC-UART {/home/srdejong/Cyclone-V-ADC-UART/trigger.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:41 on Mar 19,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/srdejong/Cyclone-V-ADC-UART" /home/srdejong/Cyclone-V-ADC-UART/trigger.v 
+# -- Compiling module trigger
+# 
+# Top level modules:
+# 	trigger
+# End time: 14:31:41 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/srdejong/Cyclone-V-ADC-UART {/home/srdejong/Cyclone-V-ADC-UART/acquireSwitch.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:41 on Mar 19,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/srdejong/Cyclone-V-ADC-UART" /home/srdejong/Cyclone-V-ADC-UART/acquireSwitch.v 
+# -- Compiling module acquireSwitch
+# 
+# Top level modules:
+# 	acquireSwitch
+# End time: 14:31:41 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/srdejong/Cyclone-V-ADC-UART {/home/srdejong/Cyclone-V-ADC-UART/trigOut.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:41 on Mar 19,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/srdejong/Cyclone-V-ADC-UART" /home/srdejong/Cyclone-V-ADC-UART/trigOut.v 
+# -- Compiling module trigOut
+# 
+# Top level modules:
+# 	trigOut
+# End time: 14:31:41 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/srdejong/Cyclone-V-ADC-UART/oneChannelMux {/home/srdejong/Cyclone-V-ADC-UART/oneChannelMux/oneChannelMux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:41 on Mar 19,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/srdejong/Cyclone-V-ADC-UART/oneChannelMux" /home/srdejong/Cyclone-V-ADC-UART/oneChannelMux/oneChannelMux.v 
+# -- Compiling module oneChannelMux
+# 
+# Top level modules:
+# 	oneChannelMux
+# End time: 14:31:41 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/srdejong/Cyclone-V-ADC-UART {/home/srdejong/Cyclone-V-ADC-UART/trigger_Mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:41 on Mar 19,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/srdejong/Cyclone-V-ADC-UART" /home/srdejong/Cyclone-V-ADC-UART/trigger_Mux.v 
+# -- Compiling module trigger_Mux
+# 
+# Top level modules:
+# 	trigger_Mux
+# End time: 14:31:41 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/srdejong/Cyclone-V-ADC-UART {/home/srdejong/Cyclone-V-ADC-UART/trigLevel.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:41 on Mar 19,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/srdejong/Cyclone-V-ADC-UART" /home/srdejong/Cyclone-V-ADC-UART/trigLevel.v 
+# -- Compiling module trigLevel
+# ** Error: /home/srdejong/Cyclone-V-ADC-UART/trigLevel.v(3): (vlog-2110) Illegal reference to net "posTrigLevel".
+# ** Error: /home/srdejong/Cyclone-V-ADC-UART/trigLevel.v(4): (vlog-2110) Illegal reference to net "negTrigLevel".
+# End time: 14:31:41 on Mar 19,2018, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /home/altera/16.1/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./ADC2UART_top_run_msim_rtl_verilog.do line 39
+# /home/altera/16.1/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+/home/srdejong/Cyclone-V-ADC-UART {/home/srdejong/Cyclone-V-ADC-UART/trigLevel.v}"
+vsim cyclonev.3bcf5d7
+# vsim cyclonev.3bcf5d7 
+# Start time: 14:32:37 on Mar 19,2018
+# ** Error: (vsim-3170) Could not find '3bcf5d7'.
+#         Searched libraries:
+#             /home/altera/16.1/modelsim_ase/altera/vhdl/cyclonev
+# Error loading design
+# End time: 14:32:38 on Mar 19,2018, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim rtl_work.acquireSwitch
+# vsim rtl_work.acquireSwitch 
+# Start time: 14:33:38 on Mar 19,2018
+# Loading rtl_work.acquireSwitch
+vsim work.signer
+# End time: 14:33:57 on Mar 19,2018, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 0
+# vsim work.signer 
+# Start time: 14:33:57 on Mar 19,2018
+# Loading work.signer
+# couldn't load file "/home/altera/16.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk0.36.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
+# couldn't load file "/home/altera/16.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk0.36.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
+add wave -position end sim:/signer/#INITIAL#5/*
+vsim rtl_work.acquireSwitch
+# End time: 14:34:59 on Mar 19,2018, Elapsed time: 0:01:02
+# Errors: 2, Warnings: 0
+# vsim rtl_work.acquireSwitch 
+# Start time: 14:34:59 on Mar 19,2018
+# Loading rtl_work.acquireSwitch
+add wave -position end sim:/acquireSwitch/*
+vsim rtl_work.acquireSwitch
+# End time: 14:36:57 on Mar 19,2018, Elapsed time: 0:01:58
+# Errors: 0, Warnings: 0
+# vsim rtl_work.acquireSwitch 
+# Start time: 14:36:57 on Mar 19,2018
+# Loading rtl_work.acquireSwitch
+add wave -position end sim:/acquireSwitch/*
+run
+run -continue
+run -next
+# Nothing left to do.
+# 
+# End time: 14:52:10 on Mar 19,2018, Elapsed time: 0:15:13
+# Errors: 0, Warnings: 0
