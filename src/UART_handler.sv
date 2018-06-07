@@ -25,7 +25,7 @@ SlowPll	UART_pll(
 		.refclk(clk_50),
 		.outclk_0(clk_1MHz),
 		.locked(uart_locked),
-		.rst(reset_n)
+		.rst(0)
 );
 	
 
