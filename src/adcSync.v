@@ -1,4 +1,4 @@
-module readADC(sys_clk, DCO, ADCin, ADCout);
+module adcSync(sys_clk, DCO, ADCin, ADCout);
 
 input 					sys_clk;
 input 					DCO;

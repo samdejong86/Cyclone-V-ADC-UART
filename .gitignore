@@ -4,6 +4,7 @@ incremental_db/*
 *~
 *#
 output_files/*
+*greybox_tmp*
 greybox_tmp/*
 *.qws
 *.summary
@@ -17,3 +18,4 @@ greybox_tmp/*
 *.pof
 *.sof
 *devel*
+*.bsf
