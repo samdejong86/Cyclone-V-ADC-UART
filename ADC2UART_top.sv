@@ -20,9 +20,7 @@ module ADC2UART_top(
 	input		[13:0]	ADC_DA,
 	input		[13:0]	ADC_DB,
 	
-	output	[13:0]	DAC_DA,
-	output	[13:0]	DAC_DB,
-	
+
 	output				FPGA_CLK_A_N,
 	output				FPGA_CLK_A_P,
 	output				FPGA_CLK_B_N,
@@ -63,7 +61,7 @@ assign	FPGA_CLK_A_N	= ~sys_clk_180deg;
 assign	FPGA_CLK_B_P	=  sys_clk_270deg;
 assign	FPGA_CLK_B_N	= ~sys_clk_270deg;	
 
-assign reset_n = 1'b0;	
+//assign reset_n = 1'b0;	
 	
 	
 lpm_pll	adc_pll(
@@ -73,7 +71,7 @@ lpm_pll	adc_pll(
 		.outclk_2(sys_clk_180deg),
 		.outclk_3(sys_clk_270deg),
 		.locked(pll_locked),
-		.rst(reset_n)
+		.rst(acquire)
 );
 			
 	
@@ -117,7 +115,7 @@ ADC_handler ADC_handle(
 	.trigSlope(trigSlope),
 	.trigSource(trigSource),
 	.delay(delay),
-	.acquire(acquire),
+	//.acquire(acquire),
 	
 	.waveform(waveform),
 	.waveNumber(waveNumber),
