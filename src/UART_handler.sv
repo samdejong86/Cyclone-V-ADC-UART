@@ -21,11 +21,11 @@ module UART_handler(
 wire clk_1MHz;
 wire uart_locked;
 
-SlowPll	UART_pll(
+UART_pll	slowPll(
 		.refclk(clk_50),
 		.outclk_0(clk_1MHz),
 		.locked(uart_locked),
-		.rst(0)
+		.rst(1'b0)
 );
 	
 

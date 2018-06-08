@@ -45,9 +45,9 @@ set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:21:05  SEPTEMBER 20, 
 set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Standard Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
-set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT NONE -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -281,11 +281,9 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to FIR_test|gnd -section_id FIR_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to UART_test|vcc -section_id UART_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to UART_test|vcc -section_id UART_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to UART_test|gnd -section_id UART_test
@@ -321,8 +319,6 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=00
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=244" -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to UART_test|gnd -section_id UART_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to UART_test|vcc -section_id UART_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to UART_test|vcc -section_id UART_test
@@ -333,31 +329,6 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to ADC_test|gnd -section_id ADC_test
-set_global_assignment -name VERILOG_FILE src/tenCount.v
-set_global_assignment -name SYSTEMVERILOG_FILE src/bin2dec.sv
-set_global_assignment -name SYSTEMVERILOG_FILE src/signalToUART.sv
-set_global_assignment -name VERILOG_FILE src/acquireSwitch.v
-set_global_assignment -name SIP_FILE FIR/FIR_ofc.sip
-set_global_assignment -name QIP_FILE FIR/FIR_ofc.qip
-set_global_assignment -name VERILOG_FILE src/signer.v
-set_global_assignment -name VERILOG_FILE src/unsigner.v
-set_global_assignment -name VERILOG_FILE src/flipSwitch.v
-set_global_assignment -name VERILOG_FILE src/charReader.v
-set_global_assignment -name SIP_FILE UART_pll/SlowPll.sip
-set_global_assignment -name QIP_FILE UART_pll/SlowPll.qip
-set_global_assignment -name SYSTEMVERILOG_FILE src/waveformGenerator.sv
-set_global_assignment -name SYSTEMVERILOG_FILE src/delay.sv
-set_global_assignment -name VERILOG_FILE src/trigger.v
-set_global_assignment -name SIP_FILE lpm_pll/lpm_pll.sip
-set_global_assignment -name QIP_FILE lpm_pll/lpm_pll.qip
-set_global_assignment -name VERILOG_FILE src/adcSync.v
-set_global_assignment -name SIGNALTAP_FILE ADC2UART_top.stp
-set_global_assignment -name SOURCE_FILE ADC2UART_top.qsf
-set_global_assignment -name SDC_FILE ADC2UART_top.sdc
-set_global_assignment -name SYSTEMVERILOG_FILE ADC2UART_top.sv
-set_global_assignment -name SYSTEMVERILOG_FILE src/ADC_handler.sv
-set_global_assignment -name QIP_FILE ADC_Mux/ADC_Mux.qip
-set_global_assignment -name SYSTEMVERILOG_FILE src/UART_handler.sv
 set_location_assignment PIN_H12 -to clk_50
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to UART_TX -section_id UART_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "UART_handler:UART_handle|acquireSwitch:acqSwitch|acquireFIR" -section_id UART_test
@@ -503,7 +474,6 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -t
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "UART_handler:UART_handle|waveNumber[7]" -section_id UART_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "UART_handler:UART_handle|waveNumber[8]" -section_id UART_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "UART_handler:UART_handle|waveNumber[9]" -section_id UART_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "ADC_handler:ADC_handle|sys_clk" -section_id ADC_test
@@ -1039,12 +1009,8 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to FIR_test|gnd -section_id FIR_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to FIR_test|gnd -section_id FIR_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to FIR_test|vcc -section_id FIR_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "UART_handler:UART_handle|SlowPll:UART_pll|outclk_0" -section_id UART_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to UART_test|gnd -section_id UART_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to UART_test|gnd -section_id UART_test
-set_global_assignment -name SYSTEMVERILOG_FILE src/DSP.sv
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "ADC_handler:ADC_handle|DSP:DSP_handle|FIR_ofc:FIR_filter|ast_sink_data[0]" -section_id FIR_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "ADC_handler:ADC_handle|DSP:DSP_handle|FIR_ofc:FIR_filter|ast_sink_data[10]" -section_id FIR_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "ADC_handler:ADC_handle|DSP:DSP_handle|FIR_ofc:FIR_filter|ast_sink_data[11]" -section_id FIR_test
@@ -1867,5 +1833,47 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[386] -
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[387] -to "ADC_handler:ADC_handle|DSP:DSP_handle|waveformGenerator:FIRwaveGen|waveform[9][8]" -section_id FIR_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[388] -to "ADC_handler:ADC_handle|DSP:DSP_handle|waveformGenerator:FIRwaveGen|waveform[9][9]" -section_id FIR_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[389] -to "ADC_handler:ADC_handle|trigger:trigModule|trigger" -section_id FIR_test
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH ADC2UART_testbench -section_id eda_simulation
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "UART_handler:UART_handle|UART_pll:slowPll|outclk_0" -section_id UART_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to UART_test|vcc -section_id UART_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to UART_test|gnd -section_id UART_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to UART_test|vcc -section_id UART_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to UART_test|gnd -section_id UART_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to UART_test|gnd -section_id UART_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to UART_test|vcc -section_id UART_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to UART_test|vcc -section_id UART_test
+set_global_assignment -name SYSTEMVERILOG_FILE ADC2UART_top.sv
+set_global_assignment -name SDC_FILE ADC2UART_top.sdc
+set_global_assignment -name SIGNALTAP_FILE ADC2UART_top.stp
+set_global_assignment -name SOURCE_FILE ADC2UART_top.qsf
+set_global_assignment -name QIP_FILE FIR/FIR_ofc.qip
+set_global_assignment -name SIP_FILE FIR/FIR_ofc.sip
+set_global_assignment -name QIP_FILE UART_pll/UART_pll.qip
+set_global_assignment -name SIP_FILE UART_pll/UART_pll.sip
+set_global_assignment -name QIP_FILE lpm_pll/lpm_pll.qip
+set_global_assignment -name SIP_FILE lpm_pll/lpm_pll.sip
+set_global_assignment -name QIP_FILE ADC_Mux/ADC_Mux.qip
+set_global_assignment -name SYSTEMVERILOG_FILE src/ADC_handler.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/UART_handler.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/DSP.sv
+set_global_assignment -name VERILOG_FILE src/tenCount.v
+set_global_assignment -name SYSTEMVERILOG_FILE src/bin2dec.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/signalToUART.sv
+set_global_assignment -name VERILOG_FILE src/acquireSwitch.v
+set_global_assignment -name VERILOG_FILE src/signer.v
+set_global_assignment -name VERILOG_FILE src/unsigner.v
+set_global_assignment -name VERILOG_FILE src/flipSwitch.v
+set_global_assignment -name VERILOG_FILE src/charReader.v
+set_global_assignment -name SYSTEMVERILOG_FILE src/waveformGenerator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/delay.sv
+set_global_assignment -name VERILOG_FILE src/trigger.v
+set_global_assignment -name VERILOG_FILE src/adcSync.v
+set_global_assignment -name VERILOG_FILE testbench/ADC2UART_tb.v
+set_global_assignment -name EDA_TEST_BENCH_NAME ADC2UART_testbench -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ADC2UART_testbench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ADC2UART_tb -section_id ADC2UART_testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE testbench/ADC2UART_tb.v -section_id ADC2UART_testbench
 set_global_assignment -name SLD_FILE db/ADC2UART_top_auto_stripped.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT testbench/ADC2UART_tb.do -section_id eda_simulation

@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/srdejong/Cyclone-V-ADC-UART/simulation/modelsim
+vUART_pll
+Z1 !s110 1528491703
+!i10b 1
+!s100 ;5I9l=6Wob7_g0U7_nQe51
+IeKMh;]a?g7=;YOeUFQ`>N3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1528475599
+8/home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll.v
+F/home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll.v
+L0 8
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1528491702.000000
+!s107 /home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|UART_pll|+incdir+/home/srdejong/Cyclone-V-ADC-UART/UART_pll|/home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll.v|
+!i113 1
+Z4 o-vlog01compat -work UART_pll
+!s92 -vlog01compat -work UART_pll +incdir+/home/srdejong/Cyclone-V-ADC-UART/UART_pll
+Z5 tCvgOpt 0
+n@u@a@r@t_pll
+vUART_pll_0002
+R1
+!i10b 1
+!s100 @a=_cnMW9CD64Q;EkTocK2
+I5BJcGc=gbnR[27AnoB<z:3
+R2
+R0
+w1528475578
+8/home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll/UART_pll_0002.v
+F/home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll/UART_pll_0002.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1528491703.000000
+!s107 /home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll/UART_pll_0002.v|
+!s90 -reportprogress|300|-vlog01compat|-work|UART_pll|+incdir+/home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll|/home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll/UART_pll_0002.v|
+!i113 1
+R4
+!s92 -vlog01compat -work UART_pll +incdir+/home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll
+R5
+n@u@a@r@t_pll_0002

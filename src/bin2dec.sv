@@ -2,16 +2,16 @@ module bin2dec (clk, in, d0, d1, d2, d3, d4, d5, d6, d7, d8, d9);
 
 input clk;
 input [15:0] in;
-output [6:0] d0;
-output [6:0] d1;
-output [6:0] d2;
-output [6:0] d3;
-output [6:0] d4;
-output [6:0] d5;
-output [6:0] d6;
-output [6:0] d7;
-output [6:0] d8;
-output [6:0] d9;
+output reg [6:0] d0;
+output reg [6:0] d1;
+output reg [6:0] d2;
+output reg [6:0] d3;
+output reg [6:0] d4;
+output reg [6:0] d5;
+output reg [6:0] d6;
+output reg [6:0] d7;
+output reg [6:0] d8;
+output reg [6:0] d9;
 
 reg [15:0] num;
 reg [4:0] i;

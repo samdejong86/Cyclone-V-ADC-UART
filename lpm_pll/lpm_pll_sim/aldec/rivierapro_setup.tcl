@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 16.1 196 linux 2018.03.07.15:27:16
+# ACDS 16.1 196 linux 2018.06.08.09:53:42
 # ----------------------------------------
 # Auto-generated simulation script rivierapro_setup.tcl
 # ----------------------------------------
@@ -111,7 +111,7 @@ if ![info exists QSYS_SIMDIR] {
 }
 
 if ![info exists QUARTUS_INSTALL_DIR] { 
-  set QUARTUS_INSTALL_DIR "/home/altera/16.1/quartus/"
+  set QUARTUS_INSTALL_DIR "/home/srdejong/intelFPGA/16.1/quartus/"
 }
 
 if ![info exists USER_DEFINED_COMPILE_OPTIONS] { 
