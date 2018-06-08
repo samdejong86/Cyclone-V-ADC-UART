@@ -21,3 +21,5 @@ greybox_tmp/*
 *.bsf
 *rtl*
 *.xml
+ADC2UART_top.vo
+simulation/modelsim/ADC2UART_top.vo
