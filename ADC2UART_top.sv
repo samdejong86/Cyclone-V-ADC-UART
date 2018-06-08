@@ -63,6 +63,7 @@ assign	FPGA_CLK_B_N	= ~sys_clk_270deg;
 
 //assign reset_n = 1'b0;	
 	
+wire acquire;
 	
 lpm_pll	adc_pll(
 		.refclk(clk_50),
@@ -104,7 +105,6 @@ wire [15:0] waveNumber;
 wire trigSlope;
 wire trigSource;
 wire delay;
-wire acquire;
 
 ADC_handler ADC_handle(
 	.sys_clk(sys_clk),

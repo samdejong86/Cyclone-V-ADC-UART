@@ -17,12 +17,12 @@ signer Sign(
 
 FIR_ofc FIR_filter(
 	.clk(sys_clk),
-	.reset_n(1),
+	.reset_n(1'b1),
 	.ast_sink_data(signedSignal),
-	.ast_sink_valid(1),
+	.ast_sink_valid(1'b1),
 	
 	.ast_source_data(OFC_FIR),
-	.ast_source_ready(1)
+	.ast_source_ready(1'b1)
 );
 
 unsigner unSign(
