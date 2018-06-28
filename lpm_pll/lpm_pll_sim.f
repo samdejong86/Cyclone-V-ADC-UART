@@ -1,1 +1,1 @@
-lpm_pll_sim/lpm_pll.vo
+lpm_pll_sim/lpm_pll.vho

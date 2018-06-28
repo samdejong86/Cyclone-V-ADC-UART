@@ -47,7 +47,7 @@ set_global_assignment -entity "lpm_pll_0002" -library "lpm_pll" -name IP_COMPONE
 set_global_assignment -entity "lpm_pll_0002" -library "lpm_pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9mcmFjX211bHRpcGx5X2ZhY3RvcjA=::MQ==::QWN0dWFsIEZyYWN0aW9uYWwgTXVsdGlwbHkgRmFjdG9yIChLKQ=="
 set_global_assignment -entity "lpm_pll_0002" -library "lpm_pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9kaXZpZGVfZmFjdG9yMA==::NDA=::QWN0dWFsIERpdmlkZSBGYWN0b3I="
 set_global_assignment -entity "lpm_pll_0002" -library "lpm_pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9vdXRwdXRfY2xvY2tfZnJlcXVlbmN5MA==::MCBNSHo=::QWN0dWFsIEZyZXF1ZW5jeQ=="
-set_global_assignment -entity "lpm_pll_0002" -library "lpm_pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BzX3VuaXRzMA==::ZGVncmVlcw==::UGhhc2UgU2hpZnQgdW5pdHM="
+set_global_assignment -entity "lpm_pll_0002" -library "lpm_pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BzX3VuaXRzMA==::cHM=::UGhhc2UgU2hpZnQgdW5pdHM="
 set_global_assignment -entity "lpm_pll_0002" -library "lpm_pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BoYXNlX3NoaWZ0MA==::MA==::UGhhc2UgU2hpZnQ="
 set_global_assignment -entity "lpm_pll_0002" -library "lpm_pll" -name IP_COMPONENT_PARAMETER "Z3VpX3BoYXNlX3NoaWZ0X2RlZzA=::MC4w::UGhhc2UgU2hpZnQ="
 set_global_assignment -entity "lpm_pll_0002" -library "lpm_pll" -name IP_COMPONENT_PARAMETER "Z3VpX2FjdHVhbF9waGFzZV9zaGlmdDA=::MA==::QWN0dWFsIFBoYXNlIFNoaWZ0"
@@ -328,7 +328,7 @@ set_global_assignment -entity "lpm_pll_0002" -library "lpm_pll" -name IP_COMPONE
 set_global_assignment -entity "lpm_pll_0002" -library "lpm_pll" -name IP_COMPONENT_PARAMETER "Z3VpX2VuYWJsZV9jYXNjYWRlX291dA==::ZmFsc2U=::Q3JlYXRlIGEgJ2Nhc2NhZGVfb3V0JyBzaWduYWwgdG8gY29ubmVjdCB3aXRoIGEgZG93bnN0cmVhbSBQTEw="
 set_global_assignment -entity "lpm_pll_0002" -library "lpm_pll" -name IP_COMPONENT_PARAMETER "Z3VpX2VuYWJsZV9jYXNjYWRlX2lu::ZmFsc2U=::Q3JlYXRlIGFuIGFkanBsbGluIG9yIGNjbGsgc2lnbmFsIHRvIGNvbm5lY3Qgd2l0aCBhbiB1cHN0cmVhbSBQTEw="
 
-set_global_assignment -library "lpm_pll" -name VERILOG_FILE [file join $::quartus(qip_path) "lpm_pll.v"]
+set_global_assignment -library "lpm_pll" -name VHDL_FILE [file join $::quartus(qip_path) "lpm_pll.vhd"]
 set_global_assignment -library "lpm_pll" -name VERILOG_FILE [file join $::quartus(qip_path) "lpm_pll/lpm_pll_0002.v"]
 set_global_assignment -library "lpm_pll" -name QIP_FILE [file join $::quartus(qip_path) "lpm_pll/lpm_pll_0002.qip"]
 

@@ -1843,37 +1843,37 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -t
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to UART_test|vcc -section_id UART_test
-set_global_assignment -name SYSTEMVERILOG_FILE ADC2UART_top.sv
-set_global_assignment -name SDC_FILE ADC2UART_top.sdc
-set_global_assignment -name SIGNALTAP_FILE ADC2UART_top.stp
-set_global_assignment -name SOURCE_FILE ADC2UART_top.qsf
-set_global_assignment -name QIP_FILE FIR/FIR_ofc.qip
-set_global_assignment -name SIP_FILE FIR/FIR_ofc.sip
-set_global_assignment -name QIP_FILE UART_pll/UART_pll.qip
-set_global_assignment -name SIP_FILE UART_pll/UART_pll.sip
-set_global_assignment -name QIP_FILE lpm_pll/lpm_pll.qip
-set_global_assignment -name SIP_FILE lpm_pll/lpm_pll.sip
-set_global_assignment -name QIP_FILE ADC_Mux/ADC_Mux.qip
-set_global_assignment -name SYSTEMVERILOG_FILE src/ADC_handler.sv
-set_global_assignment -name SYSTEMVERILOG_FILE src/UART_handler.sv
-set_global_assignment -name SYSTEMVERILOG_FILE src/DSP.sv
-set_global_assignment -name VERILOG_FILE src/tenCount.v
-set_global_assignment -name SYSTEMVERILOG_FILE src/bin2dec.sv
-set_global_assignment -name SYSTEMVERILOG_FILE src/signalToUART.sv
-set_global_assignment -name VERILOG_FILE src/acquireSwitch.v
-set_global_assignment -name VERILOG_FILE src/signer.v
-set_global_assignment -name VERILOG_FILE src/unsigner.v
-set_global_assignment -name VERILOG_FILE src/flipSwitch.v
-set_global_assignment -name VERILOG_FILE src/charReader.v
-set_global_assignment -name SYSTEMVERILOG_FILE src/waveformGenerator.sv
-set_global_assignment -name SYSTEMVERILOG_FILE src/delay.sv
-set_global_assignment -name VERILOG_FILE src/trigger.v
-set_global_assignment -name VERILOG_FILE src/adcSync.v
-set_global_assignment -name VERILOG_FILE testbench/ADC2UART_tb.v
 set_global_assignment -name EDA_TEST_BENCH_NAME ADC2UART_testbench -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ADC2UART_testbench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ADC2UART_tb -section_id ADC2UART_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE testbench/ADC2UART_tb.v -section_id ADC2UART_testbench
 set_global_assignment -name EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT testbench/ADC2UART_tb.do -section_id eda_simulation
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/ADC2UART_top_auto_stripped.stp
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE ADC2UART_top.sv
+set_global_assignment -name SDC_FILE ADC2UART_top.sdc
+set_global_assignment -name SIGNALTAP_FILE ADC2UART_top.stp
+set_global_assignment -name SOURCE_FILE ADC2UART_top.qsf
+set_global_assignment -name QIP_FILE lpm_pll/lpm_pll.qip
+set_global_assignment -name SIP_FILE lpm_pll/lpm_pll.sip
+set_global_assignment -name QIP_FILE UART_pll/UART_pll.qip
+set_global_assignment -name SIP_FILE UART_pll/UART_pll.sip
+set_global_assignment -name QIP_FILE FIR/FIR_ofc.qip
+set_global_assignment -name SIP_FILE FIR/FIR_ofc.sip
+set_global_assignment -name QIP_FILE ADC_Mux/ADC_Mux.qip
+set_global_assignment -name VERILOG_FILE testbench/ADC2UART_tb.v
+set_global_assignment -name VHDL_FILE src/waveformGenerator.vhd
+set_global_assignment -name VHDL_FILE src/unsigner.vhd
+set_global_assignment -name VHDL_FILE src/UART_handler.vhd
+set_global_assignment -name VHDL_FILE src/trigger.vhd
+set_global_assignment -name VHDL_FILE src/tenCount.vhd
+set_global_assignment -name VHDL_FILE src/signer.vhd
+set_global_assignment -name VHDL_FILE src/signalToUART.vhd
+set_global_assignment -name VHDL_FILE src/flipSwitch.vhd
+set_global_assignment -name VHDL_FILE src/DSP.vhd
+set_global_assignment -name VHDL_FILE src/delayVec.vhd
+set_global_assignment -name VHDL_FILE src/delayArray.vhd
+set_global_assignment -name VHDL_FILE src/charReader.vhd
+set_global_assignment -name VHDL_FILE src/adcSync.vhd
+set_global_assignment -name VHDL_FILE src/ADC_handler.vhd
+set_global_assignment -name VHDL_FILE src/acquireSwitch.vhd
