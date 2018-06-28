@@ -29,7 +29,7 @@ set top_entity FIR_ofc
 set timing_resolution "1ps"
 set core_version 16.1
 set device_family "Cyclone V"
-set quartus_rootdir /home/altera/16.1/quartus/
+set quartus_rootdir /home/srdejong/intelFPGA/16.1/quartus/
 # Change to "gate_level" for gate-level sim
 set sim_type "rtl"
 # END MEGAWIZARD INSERT VARIABLES

@@ -52,11 +52,11 @@ set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONE
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRSZWFsVmFsdWU=::LTQyMDQ3OC4wLDI5MDQ1NC4wLDg1MzU0MC4wLDE0MDUwOC4wLC04MDk1MDAuMA==::UmVhbCBDb2VmZmljaWVudCBWYWx1ZXM="
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZOdW0=::NQ==::TnVtYmVyIG9mIENvZWZmaWNpZW50cw=="
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRSZWFsVmFsdWVJbWFn::MC4wLCAwLjAsIDAuMCwgMC4wLCAwLjAsIDAuMCwgMC4wLCAwLjAsIDAuMCwgMC4wLCAwLjAsIDAuMCwgLTAuMDUzMDA5MywgLTAuMDQ0OTgsIDAuMCwgMC4wNzQ5NjkzLCAwLjE1OTAzNCwgMC4yMjQ5MDcsIDAuMjQ5ODA5LCAwLjIyNDkwNywgMC4xNTkwMzQsIDAuMDc0OTY5MywgMC4wLCAtMC4wNDQ5OCwgLTAuMDUzMDA5MywgLTAuMDMyMTI4MywgMC4wLCAwLjAsIDAuMCwgMC4wLCAwLjAsIDAuMCwgMC4wLCAwLjAsIDAuMCwgMC4wLCAwLjA=::UmVhbCBDb2VmZmljaWVudCBWYWx1ZXMgKEltYWdpbmFyeSBDb21wb25lbnQp"
-set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRTY2FsZVZhbHVl::LTQyMDQ3OCwyOTA0NTQsODUzNTQwLDE0MDUwOCwtODA5NTAw::U2NhbGVkIENvZWZmaWNpZW50IFZhbHVlcw=="
+set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRTY2FsZVZhbHVl::LTQyMDQ3Ny43NjIzNjYzNDIsMjkwNDUyLjI5Mzk3Njk1MTUsODUzNTQwLjAsMTQwNTA2LjU2MTc2MjA5MTY3LC04MDk0OTkuMjIwNTc4MDgxNA==::U2NhbGVkIENvZWZmaWNpZW50IFZhbHVlcw=="
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRTY2FsZVZhbHVlSW1hZw==::MC4wLDAuMCwwLjAsMC4wLDAuMCwwLjAsMC4wLDAuMA==::U2NhbGVkIENvZWZmaWNpZW50IFZhbHVlcyAoSW1hZ2luYXJ5IENvbXBvbmVudCk="
-set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRGaXhlZFZhbHVl::LTQyMDQ3OCwyOTA0NTQsODUzNTQwLDE0MDUwOCwtODA5NTAw::Rml4ZWQtcG9pbnQgQ29lZmZpY2llbnQgVmFsdWVz"
+set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRGaXhlZFZhbHVl::LTEyOTEzOSw4OTIwNSwyNjIxNDMsNDMxNTMsLTI0ODYxNw==::Rml4ZWQtcG9pbnQgQ29lZmZpY2llbnQgVmFsdWVz"
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRGaXhlZFZhbHVlSW1hZw==::MCwwLDAsMCwwLDAsMCww::Rml4ZWQtcG9pbnQgQ29lZmZpY2llbnQgVmFsdWVzIChJbWFnaW5hcnkgQ29tcG9uZW50KQ=="
-set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZTY2FsaW5n::bm9uZQ==::Q29lZmZpY2llbnQgU2NhbGluZw=="
+set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZTY2FsaW5n::YXV0bw==::Q29lZmZpY2llbnQgU2NhbGluZw=="
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZUeXBl::aW50::Q29lZmZpY2llbnQgRGF0YSBUeXBl"
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZCaXRXaWR0aA==::MTk=::Q29lZmZpY2llbnQgV2lkdGg="
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y29lZmZDb21wbGV4::ZmFsc2U=::Q29tcGxleCBDb2VmZmljaWVudHM="
@@ -72,17 +72,17 @@ set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONE
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "Y2hhblBlck91dHB1dEludGVyZmFjZQ==::MQ==::TnVtYmVyIG9mIENoYW5uZWxzIHBlciBPdXRwdXQgSW50ZXJmYWNl"
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "bGF0ZW5jeQ==::MTI=::bGF0ZW5jeQ=="
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "b3V0cHV0Zmlmb2RlcHRo::NA==::b3V0cHV0Zmlmb2RlcHRo"
-set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "ZnVuY1Jlc3VsdA==::LWludGVycD0xIC1kZWNpbT0xIC1pbmN5Y2xlcz0xIC1sZW49NSAtYmFua2NvdW50PTEgLW5zeW0gLW5iYW5kPTEgLWNoYW5zPTEgLWZhbWlseT0iQ3ljbG9uZSBWIiAKfHt9fDF8MXwxfDF8MzZ8MHwxMnwzfG5vQ29kZXxMVVRTOiAyIERTUHM6IDEwIFJBTSBCaXRzOiAwfA==::ZnVuY1Jlc3VsdA=="
+set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "ZnVuY1Jlc3VsdA==::LWludGVycD0xIC1kZWNpbT0xIC1pbmN5Y2xlcz0xIC1sZW49NSAtYmFua2NvdW50PTEgLW5zeW0gLW5iYW5kPTEgLWNoYW5zPTEgLWZhbWlseT0iQ3ljbG9uZSBWIiAKfHt9fDF8MXwxfDF8MzZ8MHwxMnwzfG5vQ29kZXxMVVRTOiAyIERTUHM6IDYgUkFNIEJpdHM6IDB8::ZnVuY1Jlc3VsdA=="
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "YnVzQWRkcmVzc1dpZHRo::Mw==::YnVzQWRkcmVzc1dpZHRo"
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "YmFua0NvdW50::MQ==::TnVtYmVyIG9mIENvZWZmaWNpZW50IEJhbmtz"
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "YmFua0luV2lkdGg=::MA==::YmFua0luV2lkdGg="
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "YmFua0Rpc3BsYXk=::MA==::YmFua0Rpc3BsYXk="
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "bHV0Q291bnQ=::Mg==::TnVtYmVyIG9mIExVVHM="
-set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "ZHNwQ291bnQ=::MTA=::TnVtYmVyIG9mIERTUHM="
+set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "ZHNwQ291bnQ=::Ng==::TnVtYmVyIG9mIERTUHM="
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "bWVtQml0Q291bnQ=::MA==::TnVtYmVyIG9mIE1lbW9yeSBCaXRz"
 set_global_assignment -entity "FIR_ofc_0002" -library "FIR_ofc" -name IP_COMPONENT_PARAMETER "ZXJyb3JMaXN0::MA==::ZXJyb3JMaXN0"
 
-set_global_assignment -library "FIR_ofc" -name VERILOG_FILE [file join $::quartus(qip_path) "FIR_ofc.v"]
+set_global_assignment -library "FIR_ofc" -name VHDL_FILE [file join $::quartus(qip_path) "FIR_ofc.vhd"]
 set_global_assignment -library "FIR_ofc" -name VHDL_FILE [file join $::quartus(qip_path) "FIR_ofc/dspba_library_package.vhd"]
 set_global_assignment -library "FIR_ofc" -name VHDL_FILE [file join $::quartus(qip_path) "FIR_ofc/dspba_library.vhd"]
 set_global_assignment -library "FIR_ofc" -name VHDL_FILE [file join $::quartus(qip_path) "FIR_ofc/auk_dspip_math_pkg_hpfir.vhd"]
