@@ -34,9 +34,9 @@ architecture rtl of UART_handler is
 	signal newChar				: std_logic;
 	signal acq					: STD_LOGIC_VECTOR (1 downto 0) :="00";
 	
-	constant delayChar		: STD_LOGIC_VECTOR (13 DOWNTO 0) := "01100100"; --d
-	constant trigSourceChar : STD_LOGIC_VECTOR (13 DOWNTO 0) := "01110100"; --t
-	constant trigSlopeChar	: STD_LOGIC_VECTOR (13 DOWNTO 0) := "01110011"; --s
+	constant delayChar		: STD_LOGIC_VECTOR (7 DOWNTO 0) := "01100100"; --d
+	constant trigSourceChar : STD_LOGIC_VECTOR (7 DOWNTO 0) := "01110100"; --t
+	constant trigSlopeChar	: STD_LOGIC_VECTOR (7 DOWNTO 0) := "01110011"; --s
 
 begin
 

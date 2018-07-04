@@ -11,12 +11,16 @@ entity tenCount is
 end tenCount;
 
 architecture rtl of tenCount is
+
+	signal intermed : unsigned (15 downto 0);
+
 begin
 
 	tenProc : process(clk) is
 	begin
 		if rising_edge(clk) then
-			output <= input mod 10;
+			intermed <= input mod 10;
+			output <= intermed(3 downto 0);
 		end if;	
 	end process tenProc;
 

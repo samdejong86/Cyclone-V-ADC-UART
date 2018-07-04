@@ -23,8 +23,8 @@ architecture rtl of DSP is
 
 	signal unsignedFIR		: unsigned (13 downto 0);
 	signal signedSignal		: signed (13 downto 0);
-	signal OFC_FIR_vec		: STD_LOGIC_VECTOR (13 downto 0);
-	signal OFC_FIR				: signed (13 downto 0);
+	signal OFC_FIR_vec		: STD_LOGIC_VECTOR (35 downto 0);
+	signal OFC_FIR				: signed (35 downto 0);
 
 begin
 
