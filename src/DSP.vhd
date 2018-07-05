@@ -25,6 +25,8 @@ architecture rtl of DSP is
 	signal signedSignal		: signed (13 downto 0);
 	signal OFC_FIR_vec		: STD_LOGIC_VECTOR (35 downto 0);
 	signal OFC_FIR				: signed (35 downto 0);
+	
+	signal sinkError			: STD_LOGIC_VECTOR (1 downto 0) :="00";
 
 begin
 
@@ -40,7 +42,9 @@ begin
 		ast_sink_valid=>'1',
 	
 		ast_source_data=>OFC_FIR_vec,
-		ast_source_ready=>'1'
+		ast_source_ready=>'1',
+		
+		ast_sink_error=>sinkError
 	);
 
 	OFC_FIR <= signed(OFC_FIR_vec);
