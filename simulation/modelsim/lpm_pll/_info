@@ -8,47 +8,66 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/srdejong/Cyclone-V-ADC-UART/simulation/modelsim
-vlpm_pll
-Z1 !s110 1528491703
-!i10b 1
-!s100 jTa<[<?Qn1M`XjR0Q19IT0
-I@][iD0e_Pzf6>beAZQF4B2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+Elpm_pll
+Z1 w1530226283
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
 R0
-w1528476825
-8/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll.v
-F/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll.v
-L0 8
-Z3 OV;L;10.5b;63
-r1
-!s85 0
-31
-Z4 !s108 1528491703.000000
-!s107 /home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll.v|
-!s90 -reportprogress|300|-vlog01compat|-work|lpm_pll|+incdir+/home/srdejong/Cyclone-V-ADC-UART/lpm_pll|/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll.v|
+Z5 8/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll_sim/lpm_pll.vho
+Z6 F/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll_sim/lpm_pll.vho
+l0
+L34
+V:49?1]=gIEl=BQ<O?9P9O1
+!s100 H3BRGF[OT7OlDe8^eARMh2
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1530823716
+!i10b 1
+Z9 !s108 1530823715.000000
+Z10 !s90 -reportprogress|300|-work|lpm_pll|/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll_sim/lpm_pll.vho|
+Z11 !s107 /home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll_sim/lpm_pll.vho|
 !i113 1
-Z5 o-vlog01compat -work lpm_pll
-!s92 -vlog01compat -work lpm_pll +incdir+/home/srdejong/Cyclone-V-ADC-UART/lpm_pll
-Z6 tCvgOpt 0
+Z12 o-work lpm_pll
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 7 lpm_pll 0 22 :49?1]=gIEl=BQ<O?9P9O1
+l54
+L47
+Vkmz>UKg34c8o3JR<h=UF=2
+!s100 Wn_5RBiBfR=:<UNFj3eG>0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
 vlpm_pll_0002
-R1
+Z14 !s110 1528491703
 !i10b 1
 !s100 c8kHMBQR2[WzH9b3hnRd50
 I>9l7``N9O4F7>o;1>9DRF2
-R2
+Z15 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1528476804
 8/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll/lpm_pll_0002.v
 F/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll/lpm_pll_0002.v
 L0 2
-R3
+Z16 OV;L;10.5b;63
 r1
 !s85 0
 31
-R4
+Z17 !s108 1528491703.000000
 !s107 /home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll/lpm_pll_0002.v|
 !s90 -reportprogress|300|-vlog01compat|-work|lpm_pll|+incdir+/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll|/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll/lpm_pll_0002.v|
 !i113 1
-R5
+Z18 o-vlog01compat -work lpm_pll
 !s92 -vlog01compat -work lpm_pll +incdir+/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll
-R6
+Z19 tCvgOpt 0
