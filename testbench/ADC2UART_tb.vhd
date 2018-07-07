@@ -14,9 +14,9 @@ use work.my_types_pkg.all;
 architecture tb of ADC2UART_tb is
 		signal clk_50					: std_logic :='1';
 		
-		signal delaySwitch				: std_logic;
-		signal triggerSlopeSwitch			: std_logic;
-		signal triggerSwitch				: std_logic;
+		signal delaySwitch				: std_logic:='0';
+		signal triggerSlopeSwitch			: std_logic:='0';
+		signal triggerSwitch				: std_logic:='0';
 		
 		signal AD_SCLK					: std_logic;
 		signal AD_SDIO					: std_logic;
@@ -39,7 +39,7 @@ architecture tb of ADC2UART_tb is
 		
 		signal led						: unsigned (3 DOWNTO 0);
 		
-		signal UART_RX					: std_logic;
+		signal UART_RX					: std_logic:='1';
 		signal UART_TX					: std_logic;
 		
 		signal counter 		: integer :=0;
@@ -87,6 +87,27 @@ begin
 		UART_RX	 =>	UART_RX,
 		UART_TX	 =>	UART_TX
 	);
+
+
+	sendChar : process is
+	variable char  : std_logic_vector(7 downto 0) := "01100100";  -- 'd'
+	variable UARTctr : natural range 0 to 9:=0;
+	begin
+		wait for 2*UART_clk;
+		if(UARTctr=0) then
+			UART_RX<='0';
+			UARTctr	:= UARTctr+1;
+		elsif(UARTctr<9) and (UARTctr>0) then
+			UART_RX<=char(UARTctr-1);
+			UARTctr	:= UARTctr+1;
+		else
+			UART_RX<='1';
+		end if;
+		
+
+
+	end process sendChar;
+
 
 
 	ADC_B_gen : process is
