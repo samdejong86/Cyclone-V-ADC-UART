@@ -58,19 +58,19 @@ architecture rtl of ADC2UART_top is
 	signal ADC_A 							: unsigned (13 DOWNTO 0);
 	signal ADC_B 							: unsigned (13 DOWNTO 0);	
 	
-	signal trigSlope						: std_logic;
-	signal trigSource						: std_logic;
-	signal delay							: std_logic;
+	signal trigSlope						: std_logic:='1';
+	signal trigSource						: std_logic:='1';
+	signal delay							: std_logic:='0';
 	
 	signal waveNumber						: unsigned (15 downto 0);
 	signal waveform						: adcArray (0 to 999);
 	signal FIRwaveform					: adcArray (0 to 999);
 	
-	signal trigSlopeUART					: std_logic;
-	signal trigSourceUART				: std_logic;
-	signal delayUART						: std_logic;
+	signal trigSlopeUART					: std_logic:='0';
+	signal trigSourceUART				: std_logic:='0';
+	signal delayUART						: std_logic:='0';
 	
-	signal acquire							: std_logic;
+	signal acquire							: std_logic:='0';
 	
 	
 begin
@@ -157,7 +157,9 @@ begin
 	
 	);
 
-
+	delay <= delayUART or delaySwitch;
+	trigSlope <= trigSlopeUART or triggerSlopeSwitch;
+	trigSource <= trigSourceUART or triggerSwitch;
 
 
 end rtl;

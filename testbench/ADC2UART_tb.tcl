@@ -1,8 +1,17 @@
 
+#cd /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/
 
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll_sim/lpm_pll.vho
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd
+#source FIR_ofc_msim.tcl
+
+#quit -sim
+
+#cd /home/srdejong/Cyclone-V-ADC-UART/simulation/modelsim/
+
+
+vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd
+vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd
+
+#vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd
 
 vmap uart_pll rtl_work
 vmap lpm_pll rtl_work
@@ -37,6 +46,40 @@ add wave -position end  sim:/adc2uart_tb/ADB_DCO
 add wave -position end  sim:/adc2uart_tb/ADC_DA
 add wave -position end  sim:/adc2uart_tb/ADC_DB
 
+#UART:
+add wave -position end  sim:/adc2uart_tb/UART_RX
+add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/delayUART
+
+add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/clk
+add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/UART_RX
+add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/char
+add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/newChar
+add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/intermediateChar
+add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/counter
+
+#pll
+#add wave -position end  sim:/adc2uart_tb/testbench/adc_pll_inst/refclk
+#add wave -position end  sim:/adc2uart_tb/testbench/adc_pll_inst/outclk_0
+#add wave -position end  sim:/adc2uart_tb/testbench/adc_pll_inst/outclk_1
+#add wave -position end  sim:/adc2uart_tb/testbench/adc_pll_inst/outclk_2
+#add wave -position end  sim:/adc2uart_tb/testbench/adc_pll_inst/outclk_3
+
+#add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/slowPll/refclk
+#add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/slowPll/rst
+#add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/slowPll/outclk_0
+
+#FIR
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/clk
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/reset_n
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_data
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_valid
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_ready
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_error
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_data
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_valid
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_ready
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_error
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/coeff_in_read_sig
 
 
 

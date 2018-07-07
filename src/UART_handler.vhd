@@ -22,7 +22,7 @@ entity UART_handler is
 		delayUART		: out std_logic;
 		trigSourceUART	: out std_logic;
 		trigSlopeUART	: out std_logic;
-		acquire			: out std_logic
+		acquire			: out std_logic:='0'
 	);
 end UART_handler;
 
@@ -30,7 +30,7 @@ architecture rtl of UART_handler is
 
 	signal clk_1MHz			: std_logic := '0';
 	signal uart_locked		: std_logic;
-	signal char					: STD_LOGIC_VECTOR (7 downto 0);
+	signal char					: STD_LOGIC_VECTOR (7 downto 0):="00000000";
 	signal newChar				: std_logic;
 	signal acq					: STD_LOGIC_VECTOR (1 downto 0) :="00";
 	

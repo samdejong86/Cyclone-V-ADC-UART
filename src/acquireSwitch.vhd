@@ -14,8 +14,8 @@ entity acquireSwitch is
 		newChar		: in std_logic;
 		wavenum		: in unsigned (15 downto 0);
 		
-		acquireWave : out std_logic;
-		acquireFIR	: out std_logic
+		acquireWave : out std_logic:='0';
+		acquireFIR	: out std_logic:='0'
 	);
 end acquireSwitch;
 		

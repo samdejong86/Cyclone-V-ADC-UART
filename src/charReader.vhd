@@ -4,17 +4,17 @@ use ieee.numeric_std.all;
 
 entity charReader is
 	port(
-		clk		: in std_logic;
+		clk	: in std_logic;
 		UART_RX	: in std_logic;
-		char		: out STD_LOGIC_VECTOR (7 DOWNTO 0);
-		newChar	: out std_logic
+		char	: out STD_LOGIC_VECTOR (7 DOWNTO 0):="00000000";
+		newChar	: out std_logic:='0'
 	);
 end charReader;
 
 architecture rtl of charReader is
 
-	signal intermediateChar : STD_LOGIC_VECTOR (7 DOWNTO 0);
-	signal counter : natural range 0 to 8 :=0;
+	signal intermediateChar : STD_LOGIC_VECTOR (7 DOWNTO 0):="00000000";
+	signal counter : natural range 0 to 9 :=0;
 
 begin 
 
