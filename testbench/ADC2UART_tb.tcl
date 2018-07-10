@@ -39,23 +39,27 @@ vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/
 vsim -i -l msim_transcript work.adc2uart_tb
 
 
-add wave -position end  sim:/adc2uart_tb/clk_50
-add wave -position end  sim:/adc2uart_tb/ADA_DCO
-add wave -position end  sim:/adc2uart_tb/ADB_DCO
+#add wave -position end  sim:/adc2uart_tb/clk_50
+#add wave -position end  sim:/adc2uart_tb/ADA_DCO
+#add wave -position end  sim:/adc2uart_tb/ADB_DCO
 
-add wave -position end  sim:/adc2uart_tb/ADC_DA
-add wave -position end  sim:/adc2uart_tb/ADC_DB
+#add wave -position end  sim:/adc2uart_tb/ADC_DA
+#add wave -position end  sim:/adc2uart_tb/ADC_DB
 
 #UART:
 add wave -position end  sim:/adc2uart_tb/UART_RX
 add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/delayUART
 
-add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/clk
-add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/UART_RX
+#add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/clk
+#add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/UART_RX
+#add wave -position end  sim:/adc2uart_tb/UART_TX
 add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/char
-add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/newChar
-add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/intermediateChar
-add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/counter
+#add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/newChar
+#add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/intermediateChar
+#add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/counter
+
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/waveform
+add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/waveNumber
 
 #pll
 #add wave -position end  sim:/adc2uart_tb/testbench/adc_pll_inst/refclk
@@ -69,18 +73,27 @@ add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/counter
 #add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/slowPll/outclk_0
 
 #FIR
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/clk
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/reset_n
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_data
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_valid
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_ready
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_error
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_data
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_valid
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_ready
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_error
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/coeff_in_read_sig
+#add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/clk
+#add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/reset_n
+#add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_data
+#add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_valid
+#add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_ready
+#add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_error
+#add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_data
+#add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_valid
+#add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_ready
+#add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_error
+#add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/coeff_in_read_sig
+                                           
+add wave -position end  sim:/adc2uart_tb/UART_TX
 
+add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/signalOut/startStop
 
+#add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/signalOut/whichByte
+#add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/signalOut/byteCounter
+add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/signalOut/waveformCounter
+#add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/signalOut/bitCounter
+#add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/signalOut/waveformCounter2
+add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/signalOut/waveSample
 
-run 10000ns
+run 250000ns
