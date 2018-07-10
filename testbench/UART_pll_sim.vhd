@@ -9,7 +9,7 @@ entity UART_pll is
 	port(
 		refclk   : in  std_logic := '0'; --  refclk.clk
 		rst      : in  std_logic := '0'; --   reset.reset
-		outclk_0 : out std_logic;        -- outclk0.clk
+		outclk_0 : out std_logic := '1'; -- outclk0.clk
 		locked   : out std_logic         --  locked.export
 	);
 end entity;
