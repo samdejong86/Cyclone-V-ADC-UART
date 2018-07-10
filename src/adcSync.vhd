@@ -9,13 +9,13 @@ entity adc_sync is
 		sys_clk	: in std_logic;
 		DCO		: in std_logic;
 		ADCin		: in unsigned (13 DOWNTO 0);
-		ADCout	: out unsigned (13 DOWNTO 0)
+		ADCout	: out unsigned (13 DOWNTO 0):=to_unsigned(0, 14)
 		);
 end adc_sync;
 
 architecture rtl of adc_sync is
 
-	signal per_a2da_d :unsigned (13 DOWNTO 0);
+	signal per_a2da_d :unsigned (13 DOWNTO 0):=to_unsigned(0, 14);
 
 
 begin

@@ -10,6 +10,7 @@
 
 vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd
 vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd
+vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/FIR_ofc_sim.vhd
 
 #vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd
 

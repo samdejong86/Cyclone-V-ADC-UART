@@ -9,10 +9,10 @@ entity lpm_pll is
 	port(
 		refclk   : in  std_logic := '0'; --  refclk.clk
 		rst      : in  std_logic := '0'; --   reset.reset
-		outclk_0 : out std_logic;        -- outclk0.clk
-		outclk_1 : out std_logic;        -- outclk1.clk
-		outclk_2 : out std_logic;        -- outclk2.clk
-		outclk_3 : out std_logic;        -- outclk3.clk
+		outclk_0 : out std_logic :='1';        -- outclk0.clk
+		outclk_1 : out std_logic :='1';        -- outclk1.clk
+		outclk_2 : out std_logic :='1';        -- outclk2.clk
+		outclk_3 : out std_logic :='1';        -- outclk3.clk
 		locked   : out std_logic         --  locked.export
 	);
 end entity;

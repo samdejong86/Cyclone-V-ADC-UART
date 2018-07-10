@@ -21,7 +21,7 @@ end acquireSwitch;
 		
 architecture rtl of acquireSwitch is
 
-	signal lastwavenum : unsigned(15 downto 0);
+	signal lastwavenum : unsigned(15 downto 0):=to_unsigned(99, 16);
 
 begin
 

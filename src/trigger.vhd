@@ -8,7 +8,7 @@ entity trigger is
 	ADC_IN		: in unsigned (13 DOWNTO 0);
 	trigSlope	: in std_logic;
 	trigLevel	: in unsigned (13 DOWNTO 0);  
-	trigger 		: out std_logic
+	trigger 		: out std_logic :='0'
 	);
 end trigger;
 
