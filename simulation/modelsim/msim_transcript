@@ -20,7 +20,7 @@
 # 
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll_sim/lpm_pll.vho"                                
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:48 on Jul 07,2018
+# Start time: 08:26:09 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll_sim/lpm_pll.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -28,11 +28,11 @@
 # -- Loading package altera_lnsim_components
 # -- Compiling entity lpm_pll
 # -- Compiling architecture RTL of lpm_pll
-# End time: 14:37:48 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:09 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll_sim/UART_pll.vho"                             
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:48 on Jul 07,2018
+# Start time: 08:26:09 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/UART_pll/UART_pll_sim/UART_pll.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -40,21 +40,21 @@
 # -- Loading package altera_lnsim_components
 # -- Compiling entity UART_pll
 # -- Compiling architecture RTL of UART_pll
-# End time: 14:37:48 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:09 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library_package.vhd"                      
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:48 on Jul 07,2018
+# Start time: 08:26:09 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package dspba_library_package
-# End time: 14:37:48 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:09 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library.vhd"                              
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:48 on Jul 07,2018
+# Start time: 08:26:09 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -65,11 +65,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity dspba_sync_reg
 # -- Compiling architecture sync_reg of dspba_sync_reg
-# End time: 14:37:48 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:09 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_math_pkg_hpfir.vhd"                   
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:48 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_math_pkg_hpfir.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -78,11 +78,11 @@
 # -- Compiling package auk_dspip_math_pkg_hpfir
 # -- Compiling package body auk_dspip_math_pkg_hpfir
 # -- Loading package auk_dspip_math_pkg_hpfir
-# End time: 14:37:48 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_lib_pkg_hpfir.vhd"                    
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:48 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_lib_pkg_hpfir.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -90,11 +90,11 @@
 # -- Loading package NUMERIC_STD
 # -- Loading package auk_dspip_math_pkg_hpfir
 # -- Compiling package auk_dspip_lib_pkg_hpfir
-# End time: 14:37:48 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:48 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -102,11 +102,11 @@
 # -- Loading package std_logic_arith
 # -- Compiling entity auk_dspip_avalon_streaming_controller_hpfir
 # -- Compiling architecture struct of auk_dspip_avalon_streaming_controller_hpfir
-# End time: 14:37:48 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"      
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:48 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -125,11 +125,11 @@
 #     /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd(177):Process sink_comb_update_1
 #        Driven at:
 #           /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd(183)
-# End time: 14:37:48 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"    
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:48 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -147,11 +147,11 @@
 #   Drivers:
 #     /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd(219):Conditional signal assignment line__218
 #     /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd(210):Conditional signal assignment line__209
-# End time: 14:37:48 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 2
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_roundsat_hpfir.vhd"                   
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:48 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_roundsat_hpfir.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -159,21 +159,21 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity auk_dspip_roundsat_hpfir
 # -- Compiling architecture beh of auk_dspip_roundsat_hpfir
-# End time: 14:37:48 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/altera_avalon_sc_fifo.v"                        
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:48 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vlog -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/altera_avalon_sc_fifo.v 
 # -- Compiling module altera_avalon_sc_fifo
 # 
 # Top level modules:
 # 	altera_avalon_sc_fifo
-# End time: 14:37:48 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_rtl_core.vhd"                           
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_rtl_core.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -186,11 +186,11 @@
 # -- Loading package LPM_COMPONENTS
 # -- Compiling entity FIR_ofc_rtl_core
 # -- Compiling architecture normal of FIR_ofc_rtl_core
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_ast.vhd"                                
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_ast.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -200,11 +200,11 @@
 # -- Loading package auk_dspip_lib_pkg_hpfir
 # -- Compiling entity FIR_ofc_ast
 # -- Compiling architecture struct of FIR_ofc_ast
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd"                                    
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -214,11 +214,11 @@
 # -- Loading package auk_dspip_lib_pkg_hpfir
 # -- Compiling entity FIR_ofc
 # -- Compiling architecture syn of FIR_ofc
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom "/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_tb.vhd"                                 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -229,12 +229,12 @@
 # -- Loading package auk_dspip_math_pkg_hpfir
 # -- Loading package auk_dspip_lib_pkg_hpfir
 # -- Loading entity FIR_ofc
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/ADC_Mux/ADC_Mux.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/ADC_Mux/ADC_Mux.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -242,11 +242,11 @@
 # -- Loading package LPM_COMPONENTS
 # -- Compiling entity ADC_Mux
 # -- Compiling architecture SYN of adc_mux
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -254,11 +254,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity unsigner
 # -- Compiling architecture rtl of unsigner
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -266,11 +266,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity trigger
 # -- Compiling architecture rtl of trigger
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:10 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:10 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -278,11 +278,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity tenCount
 # -- Compiling architecture rtl of tenCount
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:11 on Jul 10,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:11 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -290,11 +290,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity signer
 # -- Compiling architecture rtl of signer
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:11 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:11 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -302,22 +302,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity flipSwitch
 # -- Compiling architecture rtl of flipSwitch
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:11 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/delayArray.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:11 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/delayArray.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package my_types_pkg
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:11 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:11 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -325,11 +325,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity charReader
 # -- Compiling architecture rtl of charReader
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:11 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:11 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -337,11 +337,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity adc_sync
 # -- Compiling architecture rtl of adc_sync
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:11 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:11 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -350,11 +350,11 @@
 # -- Loading package my_types_pkg
 # -- Compiling entity waveformGenerator
 # -- Compiling architecture rtl of waveformGenerator
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:11 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:11 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -363,11 +363,11 @@
 # -- Loading package my_types_pkg
 # -- Compiling entity signalToUART
 # -- Compiling architecture rtl of signalToUART
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:11 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:49 on Jul 07,2018
+# Start time: 08:26:11 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -376,11 +376,11 @@
 # -- Loading package my_types_pkg
 # -- Compiling entity delayVec
 # -- Compiling architecture rtl of delayVec
-# End time: 14:37:49 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:11 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/acquireSwitch.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:50 on Jul 07,2018
+# Start time: 08:26:11 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/acquireSwitch.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -389,11 +389,11 @@
 # -- Loading package my_types_pkg
 # -- Compiling entity acquireSwitch
 # -- Compiling architecture rtl of acquireSwitch
-# End time: 14:37:50 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:11 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:37:50 on Jul 07,2018
+# Start time: 08:26:11 on Jul 10,2018
 # vcom -reportprogress 300 -93 -work work /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -403,7 +403,7 @@
 # ** Error: /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd(9): (vcom-1598) Library "uart_pll" not found.
 # ** Error: /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd(10): (vcom-1136) Unknown identifier "UART_pll".
 # ** Error: /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd(12): VHDL Compiler exiting
-# End time: 14:37:50 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:11 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 3, Warnings: 0
 # ** Error: /home/srdejong/intelFPGA/16.1/modelsim_ase/linuxaloem/vcom failed.
 # Error in macro ./ADC2UART_top_run_msim_rtl_verilog.do line 46
@@ -412,7 +412,7 @@
 # "vcom -93 -work work {/home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd}"
 source ../../testbench/ADC2UART_tb.tcl
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:01 on Jul 07,2018
+# Start time: 08:26:23 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -420,10 +420,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package NUMERIC_STD
 # -- Compiling entity lpm_pll
 # -- Compiling architecture rtl of lpm_pll
-# End time: 14:38:01 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:23 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:01 on Jul 07,2018
+# Start time: 08:26:23 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -431,20 +431,20 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package NUMERIC_STD
 # -- Compiling entity UART_pll
 # -- Compiling architecture rtl of UART_pll
-# End time: 14:38:01 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:23 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:01 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/delayArray.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package my_types_pkg
-# End time: 14:38:01 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:01 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -452,10 +452,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package NUMERIC_STD
 # -- Compiling entity unsigner
 # -- Compiling architecture rtl of unsigner
-# End time: 14:38:01 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:01 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -463,10 +463,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package NUMERIC_STD
 # -- Compiling entity signer
 # -- Compiling architecture rtl of signer
-# End time: 14:38:01 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:01 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -475,10 +475,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package my_types_pkg
 # -- Compiling entity waveformGenerator
 # -- Compiling architecture rtl of waveformGenerator
-# End time: 14:38:01 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:01 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -493,10 +493,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading entity FIR_ofc
 # -- Loading entity unsigner
 # -- Loading entity waveformGenerator
-# End time: 14:38:01 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:01 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -505,10 +505,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package my_types_pkg
 # -- Compiling entity delayVec
 # -- Compiling architecture rtl of delayVec
-# End time: 14:38:01 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:01 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -516,10 +516,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package NUMERIC_STD
 # -- Compiling entity trigger
 # -- Compiling architecture rtl of trigger
-# End time: 14:38:02 on Jul 07,2018, Elapsed time: 0:00:01
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:02 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -534,10 +534,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading entity trigger
 # -- Loading entity waveformGenerator
 # -- Loading entity DSP
-# End time: 14:38:02 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:02 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -546,10 +546,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package my_types_pkg
 # -- Compiling entity signalToUART
 # -- Compiling architecture rtl of signalToUART
-# End time: 14:38:02 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:02 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -557,10 +557,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package NUMERIC_STD
 # -- Compiling entity flipSwitch
 # -- Compiling architecture rtl of flipSwitch
-# End time: 14:38:02 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:02 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/acquireSwitch.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -569,10 +569,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package my_types_pkg
 # -- Compiling entity acquireSwitch
 # -- Compiling architecture rtl of acquireSwitch
-# End time: 14:38:02 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:02 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -580,196 +580,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package NUMERIC_STD
 # -- Compiling entity charReader
 # -- Compiling architecture rtl of charReader
-# End time: 14:38:02 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:02 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# ** Error: /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd(9): (vcom-1598) Library "uart_pll" not found.
-# ** Error: /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd(10): (vcom-1136) Unknown identifier "UART_pll".
-# ** Error: /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd(12): VHDL Compiler exiting
-# End time: 14:38:02 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# /home/srdejong/intelFPGA/16.1/modelsim_ase/linuxaloem/vcom failed.
-source ../../testbench/ADC2UART_tb.tcl
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:13 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity lpm_pll
-# -- Compiling architecture rtl of lpm_pll
-# End time: 14:38:13 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:13 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity UART_pll
-# -- Compiling architecture rtl of UART_pll
-# End time: 14:38:13 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:13 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/delayArray.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling package my_types_pkg
-# End time: 14:38:13 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:13 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity unsigner
-# -- Compiling architecture rtl of unsigner
-# End time: 14:38:13 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:13 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity signer
-# -- Compiling architecture rtl of signer
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity waveformGenerator
-# -- Compiling architecture rtl of waveformGenerator
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity DSP
-# -- Compiling architecture rtl of DSP
-# -- Loading entity signer
-# -- Loading package auk_dspip_math_pkg_hpfir
-# -- Loading package auk_dspip_lib_pkg_hpfir
-# -- Loading entity FIR_ofc
-# -- Loading entity unsigner
-# -- Loading entity waveformGenerator
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity delayVec
-# -- Compiling architecture rtl of delayVec
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity trigger
-# -- Compiling architecture rtl of trigger
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity ADC_handler
-# -- Compiling architecture rtl of ADC_handler
-# -- Loading package LPM_COMPONENTS
-# -- Loading entity ADC_Mux
-# -- Loading entity delayVec
-# -- Loading entity trigger
-# -- Loading entity waveformGenerator
-# -- Loading entity DSP
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity signalToUART
-# -- Compiling architecture rtl of signalToUART
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity flipSwitch
-# -- Compiling architecture rtl of flipSwitch
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/acquireSwitch.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity acquireSwitch
-# -- Compiling architecture rtl of acquireSwitch
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity charReader
-# -- Compiling architecture rtl of charReader
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -783,10 +597,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading entity flipSwitch
 # -- Loading entity acquireSwitch
 # -- Loading entity signalToUART
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -794,10 +608,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package NUMERIC_STD
 # -- Compiling entity adc_sync
 # -- Compiling architecture rtl of adc_sync
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -805,10 +619,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package NUMERIC_STD
 # -- Compiling entity tenCount
 # -- Compiling architecture rtl of tenCount
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:24 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
+# Start time: 08:26:24 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/ADC2UART_top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -822,10 +636,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading entity ADC_handler
 # -- Loading entity UART_handler
 # -- Loading entity tenCount
-# End time: 14:38:14 on Jul 07,2018, Elapsed time: 0:00:00
+# End time: 08:26:25 on Jul 10,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:14 on Jul 07,2018
+# Start time: 08:26:25 on Jul 10,2018
 # vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/ADC2UART_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -835,10 +649,10 @@ source ../../testbench/ADC2UART_tb.tcl
 # -- Loading package my_types_pkg
 # -- Compiling architecture tb of ADC2UART_tb
 # -- Loading entity ADC2UART_top
-# End time: 14:38:15 on Jul 07,2018, Elapsed time: 0:00:01
+# End time: 08:26:25 on Jul 10,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -i -l msim_transcript work.adc2uart_tb 
-# Start time: 14:38:15 on Jul 07,2018
+# Start time: 08:26:25 on Jul 10,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -918,872 +732,287 @@ source ../../testbench/ADC2UART_tb.tcl
 #    Time: 80 ns  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/trigModule
 # ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
 #    Time: 120 ns  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/trigModule
-source ../../testbench/ADC2UART_tb.tcl
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:46 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity lpm_pll
-# -- Compiling architecture rtl of lpm_pll
-# End time: 14:38:46 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:46 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity UART_pll
-# -- Compiling architecture rtl of UART_pll
-# End time: 14:38:46 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:46 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/delayArray.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling package my_types_pkg
-# End time: 14:38:46 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:46 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity unsigner
-# -- Compiling architecture rtl of unsigner
-# End time: 14:38:46 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:46 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity signer
-# -- Compiling architecture rtl of signer
-# End time: 14:38:46 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:46 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity waveformGenerator
-# -- Compiling architecture rtl of waveformGenerator
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity DSP
-# -- Compiling architecture rtl of DSP
-# -- Loading entity signer
-# -- Loading package auk_dspip_math_pkg_hpfir
-# -- Loading package auk_dspip_lib_pkg_hpfir
-# -- Loading entity FIR_ofc
-# -- Loading entity unsigner
-# -- Loading entity waveformGenerator
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity delayVec
-# -- Compiling architecture rtl of delayVec
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity trigger
-# -- Compiling architecture rtl of trigger
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity ADC_handler
-# -- Compiling architecture rtl of ADC_handler
-# -- Loading package LPM_COMPONENTS
-# -- Loading entity ADC_Mux
-# -- Loading entity delayVec
-# -- Loading entity trigger
-# -- Loading entity waveformGenerator
-# -- Loading entity DSP
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity signalToUART
-# -- Compiling architecture rtl of signalToUART
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity flipSwitch
-# -- Compiling architecture rtl of flipSwitch
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/acquireSwitch.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity acquireSwitch
-# -- Compiling architecture rtl of acquireSwitch
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity charReader
-# -- Compiling architecture rtl of charReader
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity UART_handler
-# -- Compiling architecture rtl of UART_handler
-# -- Loading entity UART_pll
-# -- Loading entity charReader
-# -- Loading entity flipSwitch
-# -- Loading entity acquireSwitch
-# -- Loading entity signalToUART
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity adc_sync
-# -- Compiling architecture rtl of adc_sync
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tenCount
-# -- Compiling architecture rtl of tenCount
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/ADC2UART_top.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity ADC2UART_top
-# -- Compiling architecture rtl of ADC2UART_top
-# -- Loading entity lpm_pll
-# -- Loading entity adc_sync
-# -- Loading entity ADC_handler
-# -- Loading entity UART_handler
-# -- Loading entity tenCount
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:38:47 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/ADC2UART_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ADC2UART_tb
-# -- Loading package my_types_pkg
-# -- Compiling architecture tb of ADC2UART_tb
-# -- Loading entity ADC2UART_top
-# End time: 14:38:47 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 14:38:49 on Jul 07,2018, Elapsed time: 0:00:34
-# Errors: 0, Warnings: 18
-# vsim -i -l msim_transcript work.adc2uart_tb 
-# Start time: 14:38:49 on Jul 07,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.my_types_pkg
-# Loading work.adc2uart_tb(tb)
-# Loading work.adc2uart_top(rtl)
-# Loading work.lpm_pll(rtl)
-# Loading work.adc_sync(rtl)
-# Loading lpm.lpm_components
-# Loading work.adc_handler(rtl)
-# Loading work.adc_mux(syn)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading lpm.lpm_mux(lpm_syn)
-# Loading work.delayvec(rtl)
-# Loading work.trigger(rtl)
-# Loading work.waveformgenerator(rtl)
-# Loading work.auk_dspip_math_pkg_hpfir(body)
-# Loading work.auk_dspip_lib_pkg_hpfir
-# Loading work.dsp(rtl)
-# Loading work.signer(rtl)
-# Loading work.fir_ofc(syn)
-# Loading work.fir_ofc_ast(struct)
-# Loading altera_mf.altera_mf_components
-# Loading work.auk_dspip_avalon_streaming_sink_hpfir(rtl)
-# Loading work.auk_dspip_avalon_streaming_source_hpfir(rtl)
-# Loading work.altera_avalon_sc_fifo
-# Loading work.auk_dspip_avalon_streaming_controller_hpfir(struct)
-# Loading ieee.math_real(body)
-# Loading work.dspba_library_package
-# Loading altera_lnsim.altera_lnsim_components
-# Loading work.fir_ofc_rtl_core(normal)
-# Loading work.dspba_delay(delay)
-# Loading work.auk_dspip_roundsat_hpfir(beh)
-# Loading work.unsigner(rtl)
-# Loading work.uart_handler(rtl)
-# Loading work.uart_pll(rtl)
-# Loading work.charreader(rtl)
-# Loading work.flipswitch(rtl)
-# Loading work.acquireswitch(rtl)
-# Loading work.signaltouart(rtl)
-# Loading work.tencount(rtl)
-# ** Warning: (vsim-8683) Uninitialized out port /adc2uart_tb/testbench/adc_pll_inst/locked has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /adc2uart_tb/testbench/UART_handle/slowPll/locked has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSourceMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSourceMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSlopeMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSlopeMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/delayMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/delayMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSourceMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSourceMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSlopeMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSlopeMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/delayMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/delayMux/LPM_MUX_component
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 40 ns  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/trigModule
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 80 ns  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/trigModule
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 120 ns  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/trigModule
-source ../../testbench/ADC2UART_tb.tcl
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:35 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity lpm_pll
-# -- Compiling architecture rtl of lpm_pll
-# End time: 14:39:35 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:35 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity UART_pll
-# -- Compiling architecture rtl of UART_pll
-# End time: 14:39:35 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:35 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/delayArray.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling package my_types_pkg
-# End time: 14:39:35 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:35 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity unsigner
-# -- Compiling architecture rtl of unsigner
-# End time: 14:39:35 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity signer
-# -- Compiling architecture rtl of signer
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity waveformGenerator
-# -- Compiling architecture rtl of waveformGenerator
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity DSP
-# -- Compiling architecture rtl of DSP
-# -- Loading entity signer
-# -- Loading package auk_dspip_math_pkg_hpfir
-# -- Loading package auk_dspip_lib_pkg_hpfir
-# -- Loading entity FIR_ofc
-# -- Loading entity unsigner
-# -- Loading entity waveformGenerator
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity delayVec
-# -- Compiling architecture rtl of delayVec
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity trigger
-# -- Compiling architecture rtl of trigger
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity ADC_handler
-# -- Compiling architecture rtl of ADC_handler
-# -- Loading package LPM_COMPONENTS
-# -- Loading entity ADC_Mux
-# -- Loading entity delayVec
-# -- Loading entity trigger
-# -- Loading entity waveformGenerator
-# -- Loading entity DSP
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity signalToUART
-# -- Compiling architecture rtl of signalToUART
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity flipSwitch
-# -- Compiling architecture rtl of flipSwitch
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/acquireSwitch.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity acquireSwitch
-# -- Compiling architecture rtl of acquireSwitch
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity charReader
-# -- Compiling architecture rtl of charReader
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity UART_handler
-# -- Compiling architecture rtl of UART_handler
-# -- Loading entity UART_pll
-# -- Loading entity charReader
-# -- Loading entity flipSwitch
-# -- Loading entity acquireSwitch
-# -- Loading entity signalToUART
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity adc_sync
-# -- Compiling architecture rtl of adc_sync
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tenCount
-# -- Compiling architecture rtl of tenCount
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/ADC2UART_top.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_types_pkg
-# -- Compiling entity ADC2UART_top
-# -- Compiling architecture rtl of ADC2UART_top
-# -- Loading entity lpm_pll
-# -- Loading entity adc_sync
-# -- Loading entity ADC_handler
-# -- Loading entity UART_handler
-# -- Loading entity tenCount
-# End time: 14:39:36 on Jul 07,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:39:36 on Jul 07,2018
-# vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/ADC2UART_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ADC2UART_tb
-# -- Loading package my_types_pkg
-# -- Compiling architecture tb of ADC2UART_tb
-# -- Loading entity ADC2UART_top
-# End time: 14:39:37 on Jul 07,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 14:39:38 on Jul 07,2018, Elapsed time: 0:00:49
-# Errors: 0, Warnings: 18
-# vsim -i -l msim_transcript work.adc2uart_tb 
-# Start time: 14:39:38 on Jul 07,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.my_types_pkg
-# Loading work.adc2uart_tb(tb)
-# Loading work.adc2uart_top(rtl)
-# Loading work.lpm_pll(rtl)
-# Loading work.adc_sync(rtl)
-# Loading lpm.lpm_components
-# Loading work.adc_handler(rtl)
-# Loading work.adc_mux(syn)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading lpm.lpm_mux(lpm_syn)
-# Loading work.delayvec(rtl)
-# Loading work.trigger(rtl)
-# Loading work.waveformgenerator(rtl)
-# Loading work.auk_dspip_math_pkg_hpfir(body)
-# Loading work.auk_dspip_lib_pkg_hpfir
-# Loading work.dsp(rtl)
-# Loading work.signer(rtl)
-# Loading work.fir_ofc(syn)
-# Loading work.fir_ofc_ast(struct)
-# Loading altera_mf.altera_mf_components
-# Loading work.auk_dspip_avalon_streaming_sink_hpfir(rtl)
-# Loading work.auk_dspip_avalon_streaming_source_hpfir(rtl)
-# Loading work.altera_avalon_sc_fifo
-# Loading work.auk_dspip_avalon_streaming_controller_hpfir(struct)
-# Loading ieee.math_real(body)
-# Loading work.dspba_library_package
-# Loading altera_lnsim.altera_lnsim_components
-# Loading work.fir_ofc_rtl_core(normal)
-# Loading work.dspba_delay(delay)
-# Loading work.auk_dspip_roundsat_hpfir(beh)
-# Loading work.unsigner(rtl)
-# Loading work.uart_handler(rtl)
-# Loading work.uart_pll(rtl)
-# Loading work.charreader(rtl)
-# Loading work.flipswitch(rtl)
-# Loading work.acquireswitch(rtl)
-# Loading work.signaltouart(rtl)
-# Loading work.tencount(rtl)
-# ** Warning: (vsim-8683) Uninitialized out port /adc2uart_tb/testbench/adc_pll_inst/locked has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /adc2uart_tb/testbench/UART_handle/slowPll/locked has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSourceMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSourceMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSlopeMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSlopeMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/delayMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/delayMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSourceMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSourceMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSlopeMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSlopeMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/delayMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/delayMux/LPM_MUX_component
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 40 ns  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/trigModule
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 80 ns  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/trigModule
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 120 ns  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/trigModule
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/Sign/unsign
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/Sign/sign
-add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/Sign/pedistal
-restart -f
-# ** Warning: (vsim-8683) Uninitialized out port /adc2uart_tb/testbench/adc_pll_inst/locked has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /adc2uart_tb/testbench/UART_handle/slowPll/locked has no driver.
-# This port will contribute value (U) to the signal network.
-run 100000ns
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSourceMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSourceMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSlopeMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSlopeMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/delayMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/delayMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSourceMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSourceMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSlopeMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/triggerSlopeMux/LPM_MUX_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/delayMux/LPM_MUX_component
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 3  Instance: /adc2uart_tb/testbench/ADC_handle/delayMux/LPM_MUX_component
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 40 ns  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/trigModule
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 80 ns  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/trigModule
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 120 ns  Iteration: 0  Instance: /adc2uart_tb/testbench/ADC_handle/trigModule
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 11 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 12 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 13 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 14 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 15 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 16 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 17 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 18 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 19 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 20 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 21 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 22 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 23 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 24 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 25 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 26 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 27 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 28 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 29 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 30 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 31 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 32 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 33 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 34 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 35 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 36 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 37 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 38 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 39 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 40 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 41 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 42 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 43 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 44 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 45 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 46 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 47 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 48 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 49 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 50 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 51 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 52 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 53 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 54 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 55 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 56 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 57 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 58 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 59 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 60 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 61 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 62 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 63 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 64 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 65 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 66 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 67 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 68 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 69 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 70 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 71 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 72 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 73 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 74 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 75 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 76 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 77 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 78 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 79 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 80 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 81 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 82 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 83 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 84 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 85 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 86 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 87 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 88 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 89 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 90 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 91 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 92 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 93 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 94 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 95 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 96 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 97 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 98 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 99 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 100 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 110 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 111 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 112 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 113 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 114 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 115 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 116 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 117 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 118 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 119 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 120 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 121 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 122 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 123 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 124 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 125 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 126 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 127 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 128 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 129 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 130 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 131 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 132 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 133 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 134 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 135 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 136 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 137 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 138 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 139 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 140 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 141 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 142 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 143 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 144 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 145 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 146 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 147 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 148 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 149 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 150 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 151 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 152 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 153 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 154 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 155 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 156 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 157 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 158 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 159 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 160 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 161 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 162 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 163 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 164 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 165 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 166 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 167 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 168 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 169 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 170 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 171 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 172 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 173 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 174 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 175 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 176 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 177 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 178 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 179 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 180 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 181 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 182 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 183 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 184 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 185 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 186 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 187 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 188 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 189 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 190 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 191 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 192 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 193 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 194 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 195 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 196 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 197 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 198 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 199 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 200 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 201 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 202 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 203 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 204 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 205 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 206 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 207 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 208 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 209 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 210 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 211 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 212 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 213 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 214 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 215 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 216 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 217 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 218 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 219 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 220 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 221 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 222 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 223 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 224 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 225 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 226 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 227 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 228 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 229 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 230 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 231 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 232 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 233 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 234 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 235 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 236 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 237 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 238 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 239 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 240 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 241 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 242 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 243 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 244 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 245 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 246 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 247 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 248 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 249 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 250 us  Iteration: 0  Instance: /adc2uart_tb/testbench/UART_handle/acqSwitch
+# End time: 08:52:23 on Jul 10,2018, Elapsed time: 0:25:58
+# Errors: 0, Warnings: 159

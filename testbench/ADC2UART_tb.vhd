@@ -43,6 +43,8 @@ architecture tb of ADC2UART_tb is
 		signal UART_TX					: std_logic;
 		
 		signal counter 		: integer :=0;
+		signal UARTcounter 		: integer :=0;
+		--signal UARTclk		: std_logic:=0;
 		
 		constant Tpw_clk : time := 25 ns;
 		constant dco_clk : time := 20 ns;
@@ -55,6 +57,14 @@ begin
 			clk_50 <= '0' after Tpw_clk, '1' after 2*Tpw_clk;
 			Wait for 2*Tpw_clk;
 	end process clock_gen;
+
+	UARTclock_gen : process is
+		begin
+			--UARTclk <= '0' after UART_clk, '1' after 2*UART_clk;
+			UARTcounter <=UARTcounter+1;
+			Wait for 2*UART_clk;
+	end process UARTclock_gen;
+
 
 	dco_gen : process is
 		begin
@@ -89,24 +99,41 @@ begin
 	);
 
 
-	sendChar : process is
-	variable char  : std_logic_vector(7 downto 0) := "01100100";  -- 'd'
-	variable UARTctr : natural range 0 to 9:=0;
+	--sendChar : process is
+	--variable char  : std_logic_vector(7 downto 0) := "01100100";  -- 'd'
+	--variable CHARctr : natural range 0 to 9:=0;
+	--begin
+	--	wait for 2*UART_clk;
+	--	
+	--	if(CHARctr=0) then
+	--		UART_RX<='0';
+	--		CHARctr	:= CHARctr+1;
+	--	elsif(CHARctr<9) and (CHARctr>0) then
+	--		UART_RX<=char(CHARctr-1);
+	--		UARTctr	:= CHARctr+1;
+	--	else
+	--		UART_RX<='1';
+	--	end if;
+	--end process sendChar;
+
+
+	startAcq: process is
+	variable char  : std_logic_vector(7 downto 0) := "01110111";  -- 'w'
+	variable CHARctr : natural range 0 to 9:=0;
 	begin
-		wait for 2*UART_clk;
-		if(UARTctr=0) then
+		if UARTcounter = 100 then
 			UART_RX<='0';
-			UARTctr	:= UARTctr+1;
-		elsif(UARTctr<9) and (UARTctr>0) then
-			UART_RX<=char(UARTctr-1);
-			UARTctr	:= UARTctr+1;
+		elsif UARTcounter > 100 and UARTcounter <108 then
+			UART_RX<=char(CHARctr);
+			CHARctr:=CHARctr+1;
 		else
 			UART_RX<='1';
 		end if;
-		
+		wait for 2*UART_clk;
+	end process startAcq;
+	
 
 
-	end process sendChar;
 
 
 

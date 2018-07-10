@@ -23,9 +23,9 @@ VnzUg63YMhWmKAV_e@[jOz0
 !s100 =F74@h2nRo_Zb@l4H2R2;1
 Z8 OV;C;10.5b;63
 32
-Z9 !s110 1530999576
+Z9 !s110 1531236384
 !i10b 1
-Z10 !s108 1530999576.000000
+Z10 !s108 1531236384.000000
 Z11 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/acquireSwitch.vhd|
 Z12 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/acquireSwitch.vhd|
 !i113 1
@@ -52,7 +52,7 @@ R12
 R13
 R14
 Eadc2uart_tb
-Z16 w1530997090
+Z16 w1531001518
 R3
 R4
 R5
@@ -65,92 +65,92 @@ VkeP9;:KWWZ>`j40YG8^Jg1
 !s100 Wc0;mm9<Fd3R@V_9YLgYO2
 R8
 32
-Z19 !s110 1530999577
+Z19 !s110 1531236385
 !i10b 1
-R10
-Z20 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/testbench/ADC2UART_tb.vhd|
-Z21 !s107 /home/srdejong/Cyclone-V-ADC-UART/testbench/ADC2UART_tb.vhd|
+Z20 !s108 1531236385.000000
+Z21 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/testbench/ADC2UART_tb.vhd|
+Z22 !s107 /home/srdejong/Cyclone-V-ADC-UART/testbench/ADC2UART_tb.vhd|
 !i113 1
 R13
 R14
 Atb
-Z22 DEx4 work 12 adc2uart_top 0 22 3@[J[8j@MBnZj9W@S@_a>3
-Z23 DEx4 work 11 adc2uart_tb 0 22 keP9;:KWWZ>`j40YG8^Jg1
+Z23 DEx4 work 12 adc2uart_top 0 22 3@[J[8j@MBnZj9W@S@_a>3
+DEx4 work 11 adc2uart_tb 0 22 keP9;:KWWZ>`j40YG8^Jg1
 R3
 R4
 R5
 R2
-l51
+l53
 L14
-Z24 VoK]oYXEfTWo<Ri:V<`h6H2
-Z25 !s100 UJ>>h[DLB<:6Id>oR[g[43
+VYzb]NWQRK]:Uc>UP_kP4H2
+!s100 G6h4ID@6A02:>Q^>k;J513
 R8
 32
 R19
 !i10b 1
-R10
 R20
 R21
+R22
 !i113 1
 R13
 R14
 Eadc2uart_top
-Z26 w1530997500
+Z24 w1530997500
 R2
 R3
 R4
 R5
 R0
-Z27 8/home/srdejong/Cyclone-V-ADC-UART/ADC2UART_top.vhd
-Z28 F/home/srdejong/Cyclone-V-ADC-UART/ADC2UART_top.vhd
+Z25 8/home/srdejong/Cyclone-V-ADC-UART/ADC2UART_top.vhd
+Z26 F/home/srdejong/Cyclone-V-ADC-UART/ADC2UART_top.vhd
 l0
 L12
 V3@[J[8j@MBnZj9W@S@_a>3
 !s100 <mHeKPDj7`8EEh8;O^7m;1
 R8
 32
-R9
+R19
 !i10b 1
 R10
-Z29 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/ADC2UART_top.vhd|
-Z30 !s107 /home/srdejong/Cyclone-V-ADC-UART/ADC2UART_top.vhd|
+Z27 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/ADC2UART_top.vhd|
+Z28 !s107 /home/srdejong/Cyclone-V-ADC-UART/ADC2UART_top.vhd|
 !i113 1
 R13
 R14
 Artl
-Z31 DEx4 work 8 tencount 0 22 ^E]`<c;UPS]>BS<_]z?M`2
-Z32 DEx4 work 12 uart_handler 0 22 VTl[9bobCE=8VjnOZN]bH3
-Z33 DEx4 work 11 adc_handler 0 22 08ZHjzghL`VRea10Uk7fe1
-Z34 DEx4 work 8 adc_sync 0 22 VlY;nm0aIB7:3aW:1oARg0
+Z29 DEx4 work 8 tencount 0 22 ^E]`<c;UPS]>BS<_]z?M`2
+Z30 DEx4 work 12 uart_handler 0 22 VTl[9bobCE=8VjnOZN]bH3
+Z31 DEx4 work 11 adc_handler 0 22 08ZHjzghL`VRea10Uk7fe1
+Z32 DEx4 work 8 adc_sync 0 22 VlY;nm0aIB7:3aW:1oARg0
 DEx7 lpm_pll 7 lpm_pll 0 22 EMnn6R>BWil:czfkOi2860
 R2
 R3
 R4
 R5
-R22
+R23
 l76
 L46
 VQSc5M8[^UYGAFA>WgGf1]2
 !s100 jH8g<<Nnn3KeOAAL:5ZII3
 R8
 32
-R9
+R19
 !i10b 1
 R10
-R29
-R30
+R27
+R28
 !i113 1
 R13
 R14
 Eadc_handler
-Z35 w1530218843
+Z33 w1530218843
 R2
 R3
 R4
 R5
 R0
-Z36 8/home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd
-Z37 F/home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd
+Z34 8/home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd
+Z35 F/home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd
 l0
 L9
 V08ZHjzghL`VRea10Uk7fe1
@@ -160,23 +160,23 @@ R8
 R9
 !i10b 1
 R10
-Z38 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd|
-Z39 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd|
+Z36 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd|
+Z37 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd|
 !i113 1
 R13
 R14
 Artl
-Z40 DEx4 work 3 dsp 0 22 9L8<64cf^KRmJ7Q>C14;m2
-Z41 DEx4 work 17 waveformgenerator 0 22 4J8Y;PUkMAP2QmaGRBN:82
-Z42 DEx4 work 7 trigger 0 22 J8>bX`NcZiA20MZnO4fkm3
-Z43 DEx4 work 8 delayvec 0 22 VbWh3X43BaCL6;mA7NSIW2
-Z44 DPx3 lpm 14 lpm_components 0 22 0DgdZ0FA1O:[J5aQOXi891
-Z45 DEx4 work 7 adc_mux 0 22 5Lco3Z]]gSBQTBj4cR3OY1
+Z38 DEx4 work 3 dsp 0 22 9L8<64cf^KRmJ7Q>C14;m2
+Z39 DEx4 work 17 waveformgenerator 0 22 4J8Y;PUkMAP2QmaGRBN:82
+Z40 DEx4 work 7 trigger 0 22 J8>bX`NcZiA20MZnO4fkm3
+Z41 DEx4 work 8 delayvec 0 22 VbWh3X43BaCL6;mA7NSIW2
+Z42 DPx3 lpm 14 lpm_components 0 22 0DgdZ0FA1O:[J5aQOXi891
+Z43 DEx4 work 7 adc_mux 0 22 5Lco3Z]]gSBQTBj4cR3OY1
 R2
 R3
 R4
 R5
-R33
+R31
 l42
 L24
 V^BHBBCP^6nY3Jzlj4;Eln0
@@ -186,60 +186,60 @@ R8
 R9
 !i10b 1
 R10
-R38
-R39
+R36
+R37
 !i113 1
 R13
 R14
 Eadc_mux
-Z46 w1530215873
-R44
+Z44 w1530215873
+R42
 R4
 R5
 R0
-Z47 8/home/srdejong/Cyclone-V-ADC-UART/ADC_Mux/ADC_Mux.vhd
-Z48 F/home/srdejong/Cyclone-V-ADC-UART/ADC_Mux/ADC_Mux.vhd
+Z45 8/home/srdejong/Cyclone-V-ADC-UART/ADC_Mux/ADC_Mux.vhd
+Z46 F/home/srdejong/Cyclone-V-ADC-UART/ADC_Mux/ADC_Mux.vhd
 l0
 L43
 V5Lco3Z]]gSBQTBj4cR3OY1
 !s100 NARz^b2BKeA8QVfDBbDoN3
 R8
 31
-Z49 !s110 1530999469
+Z47 !s110 1531236370
 !i10b 1
-Z50 !s108 1530999469.000000
-Z51 !s90 -reportprogress|300|-93|-work|work|/home/srdejong/Cyclone-V-ADC-UART/ADC_Mux/ADC_Mux.vhd|
-Z52 !s107 /home/srdejong/Cyclone-V-ADC-UART/ADC_Mux/ADC_Mux.vhd|
+Z48 !s108 1531236370.000000
+Z49 !s90 -reportprogress|300|-93|-work|work|/home/srdejong/Cyclone-V-ADC-UART/ADC_Mux/ADC_Mux.vhd|
+Z50 !s107 /home/srdejong/Cyclone-V-ADC-UART/ADC_Mux/ADC_Mux.vhd|
 !i113 1
-Z53 o-93 -work work
+Z51 o-93 -work work
 R14
 Asyn
-R44
+R42
 R4
 R5
-R45
+R43
 l65
 L54
 VTPncbnLj4aiO:[BWZ7HOM0
 !s100 n4U[H__RTc[VTf>Hbbb@L2
 R8
 31
-R49
+R47
 !i10b 1
+R48
+R49
 R50
-R51
-R52
 !i113 1
-R53
+R51
 R14
 Eadc_sync
-Z54 w1530204531
+Z52 w1530204531
 R3
 R4
 R5
 R0
-Z55 8/home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd
-Z56 F/home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd
+Z53 8/home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd
+Z54 F/home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd
 l0
 L7
 VVlY;nm0aIB7:3aW:1oARg0
@@ -249,8 +249,8 @@ R8
 R9
 !i10b 1
 R10
-Z57 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd|
-Z58 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd|
+Z55 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd|
+Z56 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd|
 !i113 1
 R13
 R14
@@ -258,7 +258,7 @@ Artl
 R3
 R4
 R5
-R34
+R32
 l21
 L16
 V:f^MNffY_D@3Qa97L7>7H1
@@ -268,19 +268,19 @@ R8
 R9
 !i10b 1
 R10
-R57
-R58
+R55
+R56
 !i113 1
 R13
 R14
 valtera_avalon_sc_fifo
-Z59 !s110 1530999468
+R47
 !i10b 1
 !s100 4mK@em][G=j]om3zJIhOc0
 I[5dJ01G2JBc>mDc3_`j6C0
 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z60 w1530215206
+Z57 w1530215206
 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/altera_avalon_sc_fifo.v
 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/altera_avalon_sc_fifo.v
 L0 21
@@ -288,34 +288,34 @@ OV;L;10.5b;63
 r1
 !s85 0
 31
-Z61 !s108 1530999468.000000
+R48
 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/altera_avalon_sc_fifo.v|
 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/altera_avalon_sc_fifo.v|
 !i113 1
 tCvgOpt 0
 Eauk_dspip_avalon_streaming_controller_hpfir
-R60
-Z62 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R57
+Z58 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R4
 R5
 R0
-Z63 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd
-Z64 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd
+Z59 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd
+Z60 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd
 l0
 L41
 VmzLKcb3?XGg7F;Pc`g^U30
 !s100 ORMaER9G]`b[YkFGoXo<C3
 R8
 32
-R59
+R47
 !i10b 1
-R61
-Z65 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd|
-Z66 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd|
+R48
+Z61 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd|
+Z62 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd|
 !i113 1
 R14
 Astruct
-R62
+R58
 R4
 R5
 DEx4 work 43 auk_dspip_avalon_streaming_controller_hpfir 0 22 mzLKcb3?XGg7F;Pc`g^U30
@@ -325,41 +325,41 @@ V5[9N9aCPWceEVmzW7?haR3
 !s100 MWO51>Fz`WN=CIY16D1gH2
 R8
 32
-R59
+R47
 !i10b 1
+R48
 R61
-R65
-R66
+R62
 !i113 1
 R14
 Eauk_dspip_avalon_streaming_sink_hpfir
-R60
-Z67 DPx9 altera_mf 20 altera_mf_components 0 22 m2K6F5NmQKkFhQa^^]15g3
-Z68 DPx4 work 24 auk_dspip_math_pkg_hpfir 0 22 SMh<mnKIT3f?e`UL8YAf30
-Z69 DPx4 work 23 auk_dspip_lib_pkg_hpfir 0 22 ]n@P0Cg`Kmfb@EQ`hbJ3C2
+R57
+Z63 DPx9 altera_mf 20 altera_mf_components 0 22 m2K6F5NmQKkFhQa^^]15g3
+Z64 DPx4 work 24 auk_dspip_math_pkg_hpfir 0 22 SMh<mnKIT3f?e`UL8YAf30
+Z65 DPx4 work 23 auk_dspip_lib_pkg_hpfir 0 22 ]n@P0Cg`Kmfb@EQ`hbJ3C2
 R3
 R4
 R5
 R0
-Z70 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd
-Z71 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd
+Z66 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd
+Z67 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd
 l0
 L56
 Vc3aP]jD`FWLDmMbL02M?71
 !s100 0WO5KznO2MM4IEKTLL4ea1
 R8
 32
-R59
+R47
 !i10b 1
-R61
-Z72 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd|
-Z73 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd|
+R48
+Z68 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd|
+Z69 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd|
 !i113 1
 R14
 Artl
-R67
-R68
-R69
+R63
+R64
+R65
 R3
 R4
 R5
@@ -370,39 +370,39 @@ V>JXTP:[nnkgAK4J09X0Y10
 !s100 aKlIFR2DezO>78LXQeZZW1
 R8
 32
-R59
+R47
 !i10b 1
-R61
-R72
-R73
+R48
+R68
+R69
 !i113 1
 R14
 Eauk_dspip_avalon_streaming_source_hpfir
-R60
-R68
-R67
+R57
+R64
+R63
 R3
 R4
 R5
 R0
-Z74 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd
-Z75 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd
+Z70 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd
+Z71 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd
 l0
 L70
 Vh0^KLKk9RPWE9FkPV688a0
 !s100 z_E>RhDjTK@iSkAe6<CzM1
 R8
 32
-R59
+R47
 !i10b 1
-R61
-Z76 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd|
-Z77 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd|
+R48
+Z72 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd|
+Z73 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_avalon_streaming_source_hpfir.vhd|
 !i113 1
 R14
 Artl
-R68
-R67
+R64
+R63
 R3
 R4
 R5
@@ -413,19 +413,19 @@ Vam1ie5h2KMKXT`jCDKfMG0
 !s100 9_^:d_>A;JGb2ekO`XAiL1
 R8
 32
-R59
+R47
 !i10b 1
-R61
-R76
-R77
+R48
+R72
+R73
 !i113 1
 R14
 Pauk_dspip_lib_pkg_hpfir
-R68
+R64
 R3
 R4
 R5
-R60
+R57
 R0
 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_lib_pkg_hpfir.vhd
 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_lib_pkg_hpfir.vhd
@@ -435,9 +435,9 @@ V]n@P0Cg`Kmfb@EQ`hbJ3C2
 !s100 f?>LI6^Y:?0:4C>aOS6?X2
 R8
 32
-R59
+R47
 !i10b 1
-R61
+R48
 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_lib_pkg_hpfir.vhd|
 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_lib_pkg_hpfir.vhd|
 !i113 1
@@ -446,10 +446,10 @@ Pauk_dspip_math_pkg_hpfir
 R3
 R4
 R5
-R60
+R57
 R0
-Z78 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_math_pkg_hpfir.vhd
-Z79 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_math_pkg_hpfir.vhd
+Z74 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_math_pkg_hpfir.vhd
+Z75 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_math_pkg_hpfir.vhd
 l0
 L54
 VSMh<mnKIT3f?e`UL8YAf30
@@ -457,15 +457,15 @@ VSMh<mnKIT3f?e`UL8YAf30
 R8
 32
 b1
-R59
+R47
 !i10b 1
-R61
-Z80 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_math_pkg_hpfir.vhd|
-Z81 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_math_pkg_hpfir.vhd|
+R48
+Z76 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_math_pkg_hpfir.vhd|
+Z77 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_math_pkg_hpfir.vhd|
 !i113 1
 R14
 Bbody
-R68
+R64
 R3
 R4
 R5
@@ -475,32 +475,32 @@ V`OCm?;Q96zD:4j0=aCH`Y0
 !s100 EDZNSThdcYV1lkL7HbnIz0
 R8
 32
-R59
+R47
 !i10b 1
-R61
-R80
-R81
+R48
+R76
+R77
 !i113 1
 R14
 Eauk_dspip_roundsat_hpfir
-R60
+R57
 R3
 R4
 R5
 R0
-Z82 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_roundsat_hpfir.vhd
-Z83 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_roundsat_hpfir.vhd
+Z78 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_roundsat_hpfir.vhd
+Z79 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_roundsat_hpfir.vhd
 l0
 L39
 VL8Q=Q6XfD:5e:WVJZ6k@E3
 !s100 S`Ha]KjQXV0CDDgljgCX;0
 R8
 32
-R59
+R47
 !i10b 1
-R61
-Z84 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_roundsat_hpfir.vhd|
-Z85 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_roundsat_hpfir.vhd|
+R48
+Z80 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_roundsat_hpfir.vhd|
+Z81 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/auk_dspip_roundsat_hpfir.vhd|
 !i113 1
 R14
 Abeh
@@ -514,21 +514,21 @@ Va<FU3bo7Iz2RgbS_<XQf52
 !s100 SAz6VWg0=:KiPPFk<lih43
 R8
 32
-R59
+R47
 !i10b 1
-R61
-R84
-R85
+R48
+R80
+R81
 !i113 1
 R14
 Echarreader
-Z86 w1530997018
+Z82 w1530997018
 R3
 R4
 R5
 R0
-Z87 8/home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd
-Z88 F/home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd
+Z83 8/home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd
+Z84 F/home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd
 l0
 L5
 VciI81Gl8S93;:GUgmonPg3
@@ -538,8 +538,8 @@ R8
 R9
 !i10b 1
 R10
-Z89 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd|
-Z90 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd|
+Z85 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd|
+Z86 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd|
 !i113 1
 R13
 R14
@@ -547,7 +547,7 @@ Artl
 R3
 R4
 R5
-Z91 DEx4 work 10 charreader 0 22 ciI81Gl8S93;:GUgmonPg3
+Z87 DEx4 work 10 charreader 0 22 ciI81Gl8S93;:GUgmonPg3
 l19
 L14
 V5a_>h=WJ5n[JkR^J?0M6G0
@@ -557,20 +557,20 @@ R8
 R9
 !i10b 1
 R10
-R89
-R90
+R85
+R86
 !i113 1
 R13
 R14
 Edelayvec
-Z92 w1530204503
+Z88 w1530204503
 R2
 R3
 R4
 R5
 R0
-Z93 8/home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd
-Z94 F/home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd
+Z89 8/home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd
+Z90 F/home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd
 l0
 L11
 VVbWh3X43BaCL6;mA7NSIW2
@@ -580,8 +580,8 @@ R8
 R9
 !i10b 1
 R10
-Z95 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd|
-Z96 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd|
+Z91 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd|
+Z92 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd|
 !i113 1
 R13
 R14
@@ -590,7 +590,7 @@ R2
 R3
 R4
 R5
-R43
+R41
 l23
 L19
 V7eX<ZbfSFJIRf[Tz_dj=T3
@@ -600,20 +600,20 @@ R8
 R9
 !i10b 1
 R10
-R95
-R96
+R91
+R92
 !i113 1
 R13
 R14
 Edsp
-Z97 w1530824355
+Z93 w1530824355
 R2
 R3
 R4
 R5
 R0
-Z98 8/home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd
-Z99 F/home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd
+Z94 8/home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd
+Z95 F/home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd
 l0
 L13
 V9L8<64cf^KRmJ7Q>C14;m2
@@ -623,23 +623,23 @@ R8
 R9
 !i10b 1
 R10
-Z100 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd|
-Z101 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd|
+Z96 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd|
+Z97 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd|
 !i113 1
 R13
 R14
 Artl
-R41
-Z102 DEx4 work 8 unsigner 0 22 <S<Z4<onPonBc2BhZfFYV1
+R39
+Z98 DEx4 work 8 unsigner 0 22 <S<Z4<onPonBc2BhZfFYV1
 DPx7 fir_ofc 24 auk_dspip_math_pkg_hpfir 0 22 SMh<mnKIT3f?e`UL8YAf30
 DPx7 fir_ofc 23 auk_dspip_lib_pkg_hpfir 0 22 ]n@P0Cg`Kmfb@EQ`hbJ3C2
 DEx7 fir_ofc 7 fir_ofc 0 22 WdYMKzmVI=QgQ2KJ]6Zo`3
-Z103 DEx4 work 6 signer 0 22 SZ=11bL97j_7@401G2hVR0
+Z99 DEx4 work 6 signer 0 22 SZ=11bL97j_7@401G2hVR0
 R2
 R3
 R4
 R5
-R40
+R38
 l31
 L22
 VSkgPB7He?=Q8<;Q4`cl2c1
@@ -649,34 +649,34 @@ R8
 R9
 !i10b 1
 R10
-R100
-R101
+R96
+R97
 !i113 1
 R13
 R14
 Edspba_delay
-R60
-Z104 DPx4 work 21 dspba_library_package 0 22 fYkAYAo1R93H>N5=5L^P51
+R57
+Z100 DPx4 work 21 dspba_library_package 0 22 fYkAYAo1R93H>N5=5L^P51
 R4
 R5
 R0
-Z105 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library.vhd
-Z106 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library.vhd
+Z101 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library.vhd
+Z102 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library.vhd
 l0
 L17
 VXEzL4EI6QF7B:S[W1R0o23
 !s100 ^TiG3k=nd2oZ:zDO86VNb1
 R8
 32
-R59
+Z103 !s110 1531236369
 !i10b 1
-R61
-Z107 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library.vhd|
-Z108 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library.vhd|
+Z104 !s108 1531236369.000000
+Z105 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library.vhd|
+Z106 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library.vhd|
 !i113 1
 R14
 Adelay
-R104
+R100
 R4
 R5
 DEx4 work 11 dspba_delay 0 22 XEzL4EI6QF7B:S[W1R0o23
@@ -686,17 +686,17 @@ V[^=SMA?O`7jZ;ZXRnE>4m3
 !s100 j]g:M?2k]LeVG21D9S<fR1
 R8
 32
-R59
+R103
 !i10b 1
-R61
-R107
-R108
+R104
+R105
+R106
 !i113 1
 R14
 Pdspba_library_package
 R4
 R5
-R60
+R57
 R0
 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library_package.vhd
 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library_package.vhd
@@ -706,37 +706,37 @@ VfYkAYAo1R93H>N5=5L^P51
 !s100 Kkg3D5QbeHdNM2YFz@ZF=2
 R8
 32
-R59
+R103
 !i10b 1
-R61
+R104
 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library_package.vhd|
 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/dspba_library_package.vhd|
 !i113 1
 R14
 Edspba_sync_reg
-R60
-R104
+R57
+R100
 R3
 R4
 R5
 R0
-R105
-R106
+R101
+R102
 l0
 L91
 VH>a0>37FX60ROQYLIa?n82
 !s100 LBWk;n`f_bk?X_QJICA5i3
 R8
 32
-R59
+R103
 !i10b 1
-R61
-R107
-R108
+R104
+R105
+R106
 !i113 1
 R14
 Async_reg
-R104
+R100
 R3
 R4
 R5
@@ -747,82 +747,82 @@ VXVNkaamGCJ=?DXE@F=CiA3
 !s100 EMlEXT<EU621V40LT:5fK3
 R8
 32
-R59
+R103
 !i10b 1
-R61
-R107
-R108
+R104
+R105
+R106
 !i113 1
 R14
 Efir_ofc
-R60
-R68
+R57
+R64
 R3
-R69
+R65
 R4
 R5
 R0
-Z109 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd
-Z110 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd
+Z107 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd
+Z108 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd
 l0
 L19
 VWdYMKzmVI=QgQ2KJ]6Zo`3
 !s100 ?>><_X7P_K4:koRNe]NzX3
 R8
 32
-R49
+R47
 !i10b 1
-R50
-Z111 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd|
-Z112 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd|
+R48
+Z109 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd|
+Z110 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd|
 !i113 1
 R14
 Asyn
-R68
+R64
 R3
-R69
+R65
 R4
 R5
-Z113 DEx4 work 7 fir_ofc 0 22 WdYMKzmVI=QgQ2KJ]6Zo`3
+Z111 DEx4 work 7 fir_ofc 0 22 WdYMKzmVI=QgQ2KJ]6Zo`3
 l58
 L35
 V669oD:DfEkNiENd]eV_CE3
 !s100 cP>RCjSMl:@caNiF]?9jO2
 R8
 32
-R49
+R47
 !i10b 1
-R50
-R111
-R112
+R48
+R109
+R110
 !i113 1
 R14
 Efir_ofc_ast
-R60
-R68
-R69
+R57
+R64
+R65
 R3
 R4
 R5
 R0
-Z114 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_ast.vhd
-Z115 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_ast.vhd
+Z112 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_ast.vhd
+Z113 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_ast.vhd
 l0
 L9
 V@ZeLiPz_8SfaYfCF=e@zO1
 !s100 gg;jegR:EURlGKTob5Gd:1
 R8
 32
-R49
+R47
 !i10b 1
-R50
-Z116 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_ast.vhd|
-Z117 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_ast.vhd|
+R48
+Z114 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_ast.vhd|
+Z115 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_ast.vhd|
 !i113 1
 R14
 Astruct
-R68
-R69
+R64
+R65
 R3
 R4
 R5
@@ -833,45 +833,45 @@ VBfAYP7T@6XKUJ;M_8BGJ`3
 !s100 XNlmfe4EVXAY4MD1l38[A0
 R8
 32
-R49
+R47
 !i10b 1
-R50
-R116
-R117
+R48
+R114
+R115
 !i113 1
 R14
 Efir_ofc_rtl_core
-R60
-R44
-Z118 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
-R67
-R104
-Z119 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+R57
+R42
+Z116 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
+R63
+R100
+Z117 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
 R3
 R4
 R5
 R0
-Z120 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_rtl_core.vhd
-Z121 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_rtl_core.vhd
+Z118 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_rtl_core.vhd
+Z119 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_rtl_core.vhd
 l0
 L36
 VQFL2cNn18;4KWLiG_cn871
 !s100 5P8hj0WHQEJ00h@gO2LNF2
 R8
 32
-R49
+R47
 !i10b 1
-R50
-Z122 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_rtl_core.vhd|
-Z123 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_rtl_core.vhd|
+R48
+Z120 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_rtl_core.vhd|
+Z121 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_rtl_core.vhd|
 !i113 1
 R14
 Anormal
-R44
-R118
-R67
-R104
-R119
+R42
+R116
+R63
+R100
+R117
 R3
 R4
 R5
@@ -882,38 +882,38 @@ VjLcD]@@PhbOafHMS=Y2Ka3
 !s100 llB;loHMMg2ZEW;DfBjd;0
 R8
 32
-R49
+R47
 !i10b 1
-R50
-R122
-R123
+R48
+R120
+R121
 !i113 1
 R14
 Efir_ofc_tb
-R60
+R57
 R3
 R4
 R5
 R0
-Z124 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_tb.vhd
-Z125 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_tb.vhd
+Z122 8/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_tb.vhd
+Z123 F/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_tb.vhd
 l0
 L20
 ViS5N>>PYJ3N3aeiWnO^@d1
 !s100 QeJk_[1=M_;12Z=6n[=oB3
 R8
 32
-R49
+R47
 !i10b 1
-R50
-Z126 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_tb.vhd|
-Z127 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_tb.vhd|
+R48
+Z124 !s90 -reportprogress|300|/home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_tb.vhd|
+Z125 !s107 /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc_tb.vhd|
 !i113 1
 R14
 Artl
-R68
-R69
-R113
+R64
+R65
+R111
 R3
 R4
 R5
@@ -924,21 +924,21 @@ VU1zn0>nlU9Ld18;lI9:8_3
 !s100 DWiTcFmg2i;MInCDI<8gN1
 R8
 32
-R49
+R47
 !i10b 1
-R50
-R126
-R127
+R48
+R124
+R125
 !i113 1
 R14
 Eflipswitch
-Z128 w1530207332
+Z126 w1530207332
 R3
 R4
 R5
 R0
-Z129 8/home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd
-Z130 F/home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd
+Z127 8/home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd
+Z128 F/home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd
 l0
 L5
 VGEdNG]TiXJXc8hTQ@jKQ81
@@ -948,8 +948,8 @@ R8
 R9
 !i10b 1
 R10
-Z131 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd|
-Z132 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd|
+Z129 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd|
+Z130 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd|
 !i113 1
 R13
 R14
@@ -957,7 +957,7 @@ Artl
 R3
 R4
 R5
-Z133 DEx4 work 10 flipswitch 0 22 GEdNG]TiXJXc8hTQ@jKQ81
+Z131 DEx4 work 10 flipswitch 0 22 GEdNG]TiXJXc8hTQ@jKQ81
 l20
 L15
 VNRI9^oN^L2OziMDBke;<80
@@ -967,30 +967,30 @@ R8
 R9
 !i10b 1
 R10
-R131
-R132
+R129
+R130
 !i113 1
 R13
 R14
 Elpm_pll
-Z134 w1530999435
+Z132 w1530999435
 R3
 R4
 R5
 R0
-Z135 8/home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd
-Z136 F/home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd
+Z133 8/home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd
+Z134 F/home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd
 l0
 L8
 VEMnn6R>BWil:czfkOi2860
 !s100 <czo8JDE:RUNGnABNGgFT0
 R8
 32
-Z137 !s110 1530999575
+Z135 !s110 1531236383
 !i10b 1
-Z138 !s108 1530999575.000000
-Z139 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd|
-Z140 !s107 /home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd|
+Z136 !s108 1531236383.000000
+Z137 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd|
+Z138 !s107 /home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd|
 !i113 1
 R13
 R14
@@ -1005,11 +1005,11 @@ VX?Ka929_M>8Gl1j`bMM0H0
 !s100 G0N0MGILXk[Y4XkTKC4MY3
 R8
 32
-R137
+R135
 !i10b 1
+R136
+R137
 R138
-R139
-R140
 !i113 1
 R13
 R14
@@ -1027,23 +1027,23 @@ VkGH>oA4PXZdgSY9jOJZG31
 !s100 1DSE5BadONYHhzQPHj^Mh1
 R8
 32
-R137
+R9
 !i10b 1
-R138
+R10
 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/delayArray.vhd|
 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/delayArray.vhd|
 !i113 1
 R13
 R14
 Esignaltouart
-Z141 w1530224550
+Z139 w1531108750
 R2
 R3
 R4
 R5
 R0
-Z142 8/home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd
-Z143 F/home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd
+Z140 8/home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd
+Z141 F/home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd
 l0
 L10
 VeZo7ML2I4R?R1znBU7;SW2
@@ -1053,8 +1053,8 @@ R8
 R9
 !i10b 1
 R10
-Z144 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd|
-Z145 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd|
+Z142 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd|
+Z143 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd|
 !i113 1
 R13
 R14
@@ -1063,29 +1063,29 @@ R2
 R3
 R4
 R5
-Z146 DEx4 work 12 signaltouart 0 22 eZo7ML2I4R?R1znBU7;SW2
-l28
+Z144 DEx4 work 12 signaltouart 0 22 eZo7ML2I4R?R1znBU7;SW2
+l35
 L22
-V?Dhcm`^1;P1<onIZ1DT>B0
-!s100 f4dZ3g3:4i7h440h><c0i0
+V5DD6HOCKfE1<BaP:RG;=L0
+!s100 9AI;ijE56TgNz;PZ8Of2G2
 R8
 32
 R9
 !i10b 1
 R10
-R144
-R145
+R142
+R143
 !i113 1
 R13
 R14
 Esigner
-Z147 w1530206289
+Z145 w1530206289
 R3
 R4
 R5
 R0
-Z148 8/home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd
-Z149 F/home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd
+Z146 8/home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd
+Z147 F/home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd
 l0
 L5
 VSZ=11bL97j_7@401G2hVR0
@@ -1095,8 +1095,8 @@ R8
 R9
 !i10b 1
 R10
-Z150 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd|
-Z151 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd|
+Z148 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd|
+Z149 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd|
 !i113 1
 R13
 R14
@@ -1104,7 +1104,7 @@ Artl
 R3
 R4
 R5
-R103
+R99
 l16
 L12
 Vi8Di>[cfDgY^F`Uh@fQdf3
@@ -1114,19 +1114,19 @@ R8
 R9
 !i10b 1
 R10
-R150
-R151
+R148
+R149
 !i113 1
 R13
 R14
 Etencount
-Z152 w1530723127
+Z150 w1530723127
 R3
 R4
 R5
 R0
-Z153 8/home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd
-Z154 F/home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd
+Z151 8/home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd
+Z152 F/home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd
 l0
 L5
 V^E]`<c;UPS]>BS<_]z?M`2
@@ -1136,8 +1136,8 @@ R8
 R9
 !i10b 1
 R10
-Z155 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd|
-Z156 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd|
+Z153 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd|
+Z154 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd|
 !i113 1
 R13
 R14
@@ -1145,7 +1145,7 @@ Artl
 R3
 R4
 R5
-R31
+R29
 l17
 L13
 VZHH>@7R3kCMKY8Z`TaHC;0
@@ -1155,19 +1155,19 @@ R8
 R9
 !i10b 1
 R10
-R155
-R156
+R153
+R154
 !i113 1
 R13
 R14
 Etrigger
-Z157 w1530204754
+Z155 w1530204754
 R3
 R4
 R5
 R0
-Z158 8/home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd
-Z159 F/home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd
+Z156 8/home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd
+Z157 F/home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd
 l0
 L5
 VJ8>bX`NcZiA20MZnO4fkm3
@@ -1177,8 +1177,8 @@ R8
 R9
 !i10b 1
 R10
-Z160 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd|
-Z161 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd|
+Z158 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd|
+Z159 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd|
 !i113 1
 R13
 R14
@@ -1186,7 +1186,7 @@ Artl
 R3
 R4
 R5
-R42
+R40
 l16
 L15
 VOZHT^PJdY4Vnga9bOLGZK0
@@ -1196,20 +1196,20 @@ R8
 R9
 !i10b 1
 R10
-R160
-R161
+R158
+R159
 !i113 1
 R13
 R14
 Euart_handler
-Z162 w1530996551
+Z160 w1530996551
 R2
 R3
 R4
 R5
 R0
-Z163 8/home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd
-Z164 F/home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd
+Z161 8/home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd
+Z162 F/home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd
 l0
 L12
 VVTl[9bobCE=8VjnOZN]bH3
@@ -1219,22 +1219,22 @@ R8
 R9
 !i10b 1
 R10
-Z165 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd|
-Z166 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd|
+Z163 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd|
+Z164 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd|
 !i113 1
 R13
 R14
 Artl
-R146
+R144
 R15
-R133
-R91
+R131
+R87
 DEx8 uart_pll 8 uart_pll 0 22 4BZLnoCNGURnAT?M3<:IJ0
 R2
 R3
 R4
 R5
-R32
+R30
 l41
 L29
 VZ>L5Q6`BWXZcK@Ln;50To3
@@ -1244,30 +1244,30 @@ R8
 R9
 !i10b 1
 R10
-R165
-R166
+R163
+R164
 !i113 1
 R13
 R14
 Euart_pll
-Z167 w1530999445
+Z165 w1530999445
 R3
 R4
 R5
 R0
-Z168 8/home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd
-Z169 F/home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd
+Z166 8/home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd
+Z167 F/home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd
 l0
 L8
 V4BZLnoCNGURnAT?M3<:IJ0
 !s100 ;4IDQ5bn8faT4;6oG>MOT0
 R8
 32
-R137
+R135
 !i10b 1
-R138
-Z170 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd|
-Z171 !s107 /home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd|
+R136
+Z168 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd|
+Z169 !s107 /home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd|
 !i113 1
 R13
 R14
@@ -1282,33 +1282,33 @@ V;199IZk1IZ``>8o;hI_5o2
 !s100 YB7PONli7ljNWFd]TO^U61
 R8
 32
-R137
+R135
 !i10b 1
-R138
-R170
-R171
+R136
+R168
+R169
 !i113 1
 R13
 R14
 Eunsigner
-Z172 w1530206297
+Z170 w1530206297
 R3
 R4
 R5
 R0
-Z173 8/home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd
-Z174 F/home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd
+Z171 8/home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd
+Z172 F/home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd
 l0
 L5
 V<S<Z4<onPonBc2BhZfFYV1
 !s100 LnTUQHo8RETcCcBRZEOSO0
 R8
 32
-R137
+R9
 !i10b 1
-R138
-Z175 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd|
-Z176 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd|
+R10
+Z173 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd|
+Z174 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd|
 !i113 1
 R13
 R14
@@ -1316,30 +1316,30 @@ Artl
 R3
 R4
 R5
-R102
+R98
 l16
 L12
 V4cML;D[dc]T5bUdR`YLAA2
 !s100 Z;3T>TDz;21OXWh72<jeE1
 R8
 32
-R137
+R9
 !i10b 1
-R138
-R175
-R176
+R10
+R173
+R174
 !i113 1
 R13
 R14
 Ewaveformgenerator
-Z177 w1530215277
+Z175 w1530215277
 R2
 R3
 R4
 R5
 R0
-Z178 8/home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd
-Z179 F/home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd
+Z176 8/home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd
+Z177 F/home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd
 l0
 L10
 V4J8Y;PUkMAP2QmaGRBN:82
@@ -1349,8 +1349,8 @@ R8
 R9
 !i10b 1
 R10
-Z180 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd|
-Z181 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd|
+Z178 !s90 -reportprogress|300|-work|work|/home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd|
+Z179 !s107 /home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd|
 !i113 1
 R13
 R14
@@ -1359,7 +1359,7 @@ R2
 R3
 R4
 R5
-R41
+R39
 l22
 L20
 V2[AON1IAcCcdJnR5_BKa:1
@@ -1369,8 +1369,8 @@ R8
 R9
 !i10b 1
 R10
-R180
-R181
+R178
+R179
 !i113 1
 R13
 R14
