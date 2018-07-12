@@ -72,11 +72,11 @@ begin
         end if;
         
         bitCounter<=bitCounter+1;
-        waveformCounter<=bitCounter/(36);
+        waveformCounter<=bitCounter/(30);
         waveformCounter2<=to_unsigned(waveformCounter,16);
-        temp <= (bitCounter mod 36);
-        byteCounter<= temp mod 12;
-        whichByte<=  temp/12; 
+        temp <= (bitCounter mod 30);
+        byteCounter<= temp mod 10;
+        whichByte<=  temp/10; 
         
       elsif (acquire="00") then
         done<='0';
@@ -101,12 +101,15 @@ begin
   begin
     if rising_edge(clk) then 
       if ((acquire="01") or (acquire="10")) then
-        if byteCounter = 0 or byteCounter = 10 or byteCounter=11 then
-          UART<='1';
-        elsif byteCounter = 1 then 
+        --if byteCounter = 0 or byteCounter = 10 or byteCounter=11 then
+        --  UART<='1';
+        --els
+		  if byteCounter = 1 and not (bitCounter = 1) then 
           UART<='0';
-        else
+        elsif byteCounter >= 2 and byteCounter <= 9 then
           UART<=waveSample(byteCounter-2);
+		  else 
+			 UART<='1';
         end if;
       else
         UART<='1';
