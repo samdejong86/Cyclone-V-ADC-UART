@@ -68,7 +68,7 @@ end architecture rtl; -- of UART_pll
 -- Retrieval info: 	<generic name="debug_print_output" value="false" />
 -- Retrieval info: 	<generic name="debug_use_rbc_taf_method" value="false" />
 -- Retrieval info: 	<generic name="device_family" value="Cyclone V" />
--- Retrieval info: 	<generic name="device" value="Unknown" />
+-- Retrieval info: 	<generic name="device" value="5CEBA2F17A7" />
 -- Retrieval info: 	<generic name="gui_device_speed_grade" value="1" />
 -- Retrieval info: 	<generic name="gui_pll_mode" value="Fractional-N PLL" />
 -- Retrieval info: 	<generic name="gui_reference_clock_frequency" value="50.0" />
