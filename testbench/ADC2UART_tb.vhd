@@ -46,8 +46,8 @@ architecture tb of ADC2UART_tb is
 		signal UARTcounter 		: integer :=0;
 		--signal UARTclk		: std_logic:=0;
 		
-		constant Tpw_clk : time := 25 ns;
-		constant dco_clk : time := 20 ns;
+		constant Tpw_clk : time := 10 ns;
+		constant dco_clk : time := 12.5 ns;
 		constant UART_clk: time := 500 ns;
 		
 begin
