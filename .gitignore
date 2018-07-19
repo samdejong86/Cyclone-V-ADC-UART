@@ -17,3 +17,4 @@ greybox_tmp/*
 *.pof
 *.sof
 *devel*
+simulation/modelsim/ADC2UART_top.vo
