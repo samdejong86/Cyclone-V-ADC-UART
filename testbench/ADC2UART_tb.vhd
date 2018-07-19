@@ -49,7 +49,10 @@ architecture tb of ADC2UART_tb is
 		constant Tpw_clk : time := 10 ns;
 		constant dco_clk : time := 12.5 ns;
 		constant UART_clk: time := 500 ns;
-		
+
+                signal charToSend : std_logic_vector(7 downto 0) := "00000000";  --default is blank
+                                                                                                                                          
+                
 begin
 
 	clock_gen : process is
@@ -99,38 +102,22 @@ begin
 	);
 
 
-	--sendChar : process is
-	--variable char  : std_logic_vector(7 downto 0) := "01100100";  -- 'd'
-	--variable CHARctr : natural range 0 to 9:=0;
-	--begin
-	--	wait for 2*UART_clk;
-	--	
-	--	if(CHARctr=0) then
-	--		UART_RX<='0';
-	--		CHARctr	:= CHARctr+1;
-	--	elsif(CHARctr<9) and (CHARctr>0) then
-	--		UART_RX<=char(CHARctr-1);
-	--		UARTctr	:= CHARctr+1;
-	--	else
-	--		UART_RX<='1';
-	--	end if;
-	--end process sendChar;
 
-
-	startAcq: process is
-	variable char  : std_logic_vector(7 downto 0) := "01110111";  -- 'w'
+	sendChar: process is
+	--variable char  : std_logic_vector(7 downto 0) := "01110111";  -- 'w'
 	variable CHARctr : natural range 0 to 9:=0;
 	begin
 		if UARTcounter = 100 then
 			UART_RX<='0';
-		elsif UARTcounter > 100 and UARTcounter <108 then
-			UART_RX<=char(CHARctr);
+		elsif UARTcounter > 100 and UARTcounter <109 then
+			UART_RX<=charToSend(CHARctr);
 			CHARctr:=CHARctr+1;
 		else
 			UART_RX<='1';
+			CHARctr:=0;
 		end if;
 		wait for 2*UART_clk;
-	end process startAcq;
+	end process sendChar;
 	
 
 
@@ -306,13 +293,27 @@ begin
 	end process ADC_B_gen;
 
 	ADC_A_gen : process is
+	variable ADCctr : natural range 0 to 40:=0;
 	begin
-		if ADC_DB > 9000 then
-			ADC_DA<=to_unsigned(16383, 14);
-		else
-			ADC_DA<=to_unsigned(0,14);
+		if ADC_DB < 7600 and ADCctr=0 then
+			ADCctr:=1;			
 		end if;
-		
+	
+		if ADCctr>=1 and ADCctr<25 then
+			ADC_DA<=to_unsigned(16383, 14);
+			ADCctr:=ADCctr+1;
+		else 
+			ADC_DA<=to_unsigned(0,14);
+			ADCctr:=0;
+		end if;
+
+		--if ADCctr>=20 and ADCctr>40  then
+			--ADC_DA<=to_unsigned(16383, 14);
+		--else
+			--ADC_DA<=to_unsigned(0,14);
+		--end if;
+
+
 		Wait for 2*dco_clk;
 	end process ADC_A_gen;
 

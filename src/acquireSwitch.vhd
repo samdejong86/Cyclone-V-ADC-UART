@@ -26,14 +26,19 @@ architecture rtl of acquireSwitch is
 begin
 
 	acquireProc : process(clk) is
-	variable counter 		: natural range 0 to 36049:=0;
+	variable counter 		: natural range 0 to 31000:=0;
 	begin
 		if rising_edge(clk) then
-			if (newChar='1') or not (counter=0) then
+			if ((newChar='1') or not (counter=0)) and not (wavenum = lastwavenum) then
 				counter:=counter+1;
+				lastwavenum<=wavenum;
 			end if;
 			
-			if not (counter=0) and (counter < 36049) and not (wavenum = lastwavenum) then
+			if counter > 0 then
+				counter:=counter+1;
+			end if;
+
+			if not (counter=0) and (counter < 30999) then
 				if (char="01110111") then
 					acquireWave<='1';
 					acquireFIR<='0';
@@ -43,9 +48,9 @@ begin
 				end if;				
 			end if;
 	
-			if (counter >=36049) then
+			if (counter >=30999) then
 				counter:=0;
-				lastwavenum<=wavenum;
+				
 				acquireFIR<='0';
 				acquireWave<='0';
 			

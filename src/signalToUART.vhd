@@ -101,9 +101,6 @@ begin
   begin
     if rising_edge(clk) then 
       if ((acquire="01") or (acquire="10")) then
-        --if byteCounter = 0 or byteCounter = 10 or byteCounter=11 then
-        --  UART<='1';
-        --els
 		  if byteCounter = 1 and not (bitCounter = 1) then 
           UART<='0';
         elsif byteCounter >= 2 and byteCounter <= 9 then

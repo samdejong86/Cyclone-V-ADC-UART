@@ -19,7 +19,7 @@ end entity;
 
 
 architecture rtl of lpm_pll is
-	constant clockHalfPeriod : time := 20 ns;
+	constant clockHalfPeriod : time := 12.5 ns;
 begin
 
 	clock_gen_0 : process is
