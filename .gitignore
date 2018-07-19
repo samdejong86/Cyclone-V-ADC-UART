@@ -23,6 +23,10 @@ greybox_tmp/*
 *.xml
 ADC2UART_top.vo
 simulation/modelsim/ADC2UART_top.vo
+<<<<<<< .merge_file_6s6nOe
 *.bak*
 simulation/modelsim/wlf*
 simulation/modelsim/ADC2UART_top.vho
+=======
+*.bak*
+>>>>>>> .merge_file_YU6Yjf
