@@ -29,4 +29,5 @@ simulation/*
 *.qpg
 *.qtl
 simulation/modelsim/msim_transcript
-simulation/modelsim/UART_pll/_info
+*_info
+*.wlf

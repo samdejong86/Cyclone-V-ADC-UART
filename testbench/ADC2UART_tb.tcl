@@ -1,4 +1,6 @@
-
+#vmap uart_pll rtl_work
+#vmap lpm_pll rtl_work
+#vmap fir_ofc rtl_work
 
 
 onerror {resume}
