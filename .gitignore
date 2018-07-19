@@ -24,3 +24,5 @@ greybox_tmp/*
 ADC2UART_top.vo
 simulation/modelsim/ADC2UART_top.vo
 *.bak*
+simulation/modelsim/wlf*
+simulation/modelsim/ADC2UART_top.vho
