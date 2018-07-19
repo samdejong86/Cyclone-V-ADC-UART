@@ -18,7 +18,7 @@ entity waveformGenerator is
 end waveformGenerator;
 
 architecture rtl of waveformGenerator is
-
+	signal intermediateWaveform	: adcArray (0 to 999);
 begin
 	waveformProc 			: process(clk) is
 	variable waveNumBuf 	: unsigned (15 DOWNTO 0) :=to_unsigned(0, 16);
@@ -28,7 +28,7 @@ begin
 
 		if rising_edge(clk) then
 			if ( triggerIn='1' ) or not (counter = 0) then --start generating a waveform when trigger goes high, continue after the counter is started
-				waveform(counter) <= signal_in;
+				intermediateWaveform(counter) <= signal_in;
 				counter := counter+1;
 			else
 				counter :=0;
@@ -37,6 +37,7 @@ begin
 			if counter=1000 then
 				counter :=0;  --reset counter
 				waveNumBuf := waveNumBuf + 1 ;  --increment the waveform counter
+				waveform<=intermediateWaveform;
 			end if;
 		end if;
 		waveNumber<=waveNumBuf;

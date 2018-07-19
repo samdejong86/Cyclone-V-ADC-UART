@@ -30,10 +30,11 @@ begin
 				counter <= counter+1;
 			end if;
 			
-			if counter = 8 then
+			if counter = 9 then
 				char <= intermediateChar;
 				newChar<='1';
 				counter <= 0;
+				intermediateChar<="00000000";
 			else
 				newChar<='0';
 			end if;
