@@ -1,10 +1,11 @@
+transcript off
+
 #vmap uart_pll rtl_work
 #vmap lpm_pll rtl_work
 #vmap fir_ofc rtl_work
 
-
 onerror {resume}
-quietly WaveActivateNextPane {} 0
+WaveActivateNextPane {} 0
 delete wave *
 
 add wave -radix unsigned -format analog-step -height 60 -max 15000 -min 7000  -position end  sim:/adc2uart_tb/testbench/ADC_DB
@@ -73,15 +74,15 @@ proc sendChar {CHAR} {
       #convert char to hex	
      set c  [format %2.2X [scan $CHAR %c]]   
 
-     #convert hex to binart
+     #convert hex to binary
      binary scan [binary format H* $c] B* bits
 
      force -deposit sim:/adc2uart_tb/UARTcounter 90 0us
      force -freeze sim:/adc2uart_tb/charToSend 2#$bits 0us
 
-     puts $CHAR
-     puts $c
-     puts $bits
+     echo $CHAR
+     echo $c
+     echo $bits
 
      run 30us	
 
@@ -129,9 +130,9 @@ proc UARTsim {{CHAR w} {DURATION 250000ns}} {
 
      force -freeze sim:/adc2uart_tb/charToSend 2#$bits 10
      run $DURATION  
-     puts $CHAR
-     puts $c
-     puts $bits
+     echo $CHAR
+     echo $c
+     echo $bits
      wave zoom full
 
 }
@@ -161,24 +162,24 @@ proc FIRsim { {DURATION 10000ns}} {
 run 25000 ns
 wave zoom full
 
-puts "Testbench for ADC2UART"
-puts ""
-puts "run FIRsim to simulate the OFC FIR filter"
-puts ""
-puts "run UARTsim CHAR DURATION to run the UART simulation"
-puts "   CHAR is a character to send. Characters that should elicit a response:"
-puts "      w - generate a waveform"
-puts "      i - generate a waveform containing FIR data"
-puts "      t - toggle the trigger source"
-puts "      s - toggle the trigger slope"
-puts "      d - toggle the delay"
-puts "   DURATION is the duration of the run"
-puts "      waveform takes 32000us to fully send"
-puts ""
-puts "run sendChar CHAR to send a character on the UART_RX."
-puts ""
-puts "run TRIGsim to simulate triggering"
-puts ""
-puts "run signalOff to set the ADC signals to baseline"
-puts "run signalOn  to restore the ADC signals"
-puts ""
+echo "Testbench for ADC2UART
+
+run FIRsim to simulate the OFC FIR filter
+
+run UARTsim CHAR DURATION to run the UART simulation
+      CHAR is a character to send. Characters that should elicit a response:
+      w - generate a waveform
+      i - generate a waveform containing FIR data
+      t - toggle the trigger source
+      s - toggle the trigger slope
+      d - toggle the delay
+   DURATION is the duration of the run
+      waveform takes 32000us to fully send
+
+run sendChar CHAR to send a character on the UART_RX.
+
+run TRIGsim to simulate triggering
+
+run signalOff to set the ADC signals to baseline
+run signalOn  to restore the ADC signals
+"
