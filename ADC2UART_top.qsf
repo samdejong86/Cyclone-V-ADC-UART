@@ -45,9 +45,9 @@ set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:21:05  SEPTEMBER 20, 
 set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Standard Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -931,16 +931,12 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[81] -t
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[82] -to "ADC_handler:ADC_handle|DSP:DSP_handle|unsigner:unSign|unsign[8]" -section_id FIR_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[83] -to "ADC_handler:ADC_handle|DSP:DSP_handle|unsigner:unSign|unsign[9]" -section_id FIR_test
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH ADC2UART_testbench -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH adc2uart_tb -section_id eda_simulation
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "UART_handler:UART_handle|UART_pll:slowPll|outclk_0" -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to UART_test|vcc -section_id UART_test
-set_global_assignment -name EDA_TEST_BENCH_NAME ADC2UART_testbench -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ADC2UART_testbench
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ADC2UART_tb -section_id ADC2UART_testbench
-set_global_assignment -name EDA_TEST_BENCH_FILE testbench/ADC2UART_tb.v -section_id ADC2UART_testbench
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT testbench/ADC2UART_tb.do -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT testbench/ADC2UART_tb.tcl -section_id eda_simulation
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to UART_test|gnd -section_id UART_test
@@ -2228,4 +2224,9 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -t
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name EDA_SIMULATION_RUN_SCRIPT testbench/ADC2UART_tb.tcl -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME adc2uart_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id adc2uart_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME adc2uart_tb -section_id adc2uart_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE testbench/ADC2UART_tb.vhd -section_id adc2uart_tb
 set_global_assignment -name SLD_FILE db/ADC2UART_top_auto_stripped.stp
