@@ -8,74 +8,8 @@ Information on the Cyclone V GX starter kit can be found [here](https://www.alte
 
 Information on the Data Conversion Card can be found [here](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=360)
 
-The Quartus project uses a block diagram format, with small modules built using verilog. The block diagram is split into eight sections:
+The Quartus project is build in VHDL. 
 
-### Clock setup
-
-![alt text](img/clock.png "Clock setup")
-
-lpm_pll takes in the 50MHz FPGA clock and creates four 40MHz clocks with phases of 0, 90, 180, and 270 degrees. These clocks are sent to the Data Conversion Card (DCC).
-
-The DCO clocks indicate when the ADC is ready.
-
-The MUX switches the 'running' clock off during UART acquisition
-
-### ADC setup
-
-![alt text](img/adc.png "ADC setup")
-
-The 'readADC' perform ADC capture and sync.
-
-### Triggering
-
-![alt text](img/trigger.png "Triggering")
-
-The 'trigger' modules generate a trigger when the input is above or below a threshold. The trigger source can be switched between channel B (self trigger) and channel A (external trigger). The trigger slope can be switched between positive and negative
-
-The 'trigOut' module sends a trigger to DAC channel A every eight clock ticks. This can be used to synchronize the input.
-
-### Counter
-
-![alt text](img/counter.png "Counter")
-
-This section outputs the current value of the waveform counter to the 7-segment display and the first four leds.
-
-### Delay and Waveform Generation
-
-![alt text](img/delay.png "Delay and Waveform Generation")
-
-The 'delayVec' module delays the ADC signal by up to 100 clock ticks. The delay can be enabled or disabled.
-
-The 'waveformGenerator' module creates a 1000 sample long waveform every time a trigger occurs, as long as the 'running' clock is not disabled by acquisition. It also outputs a waveform counter.
-
-
-### Digital Signal Processing
-
-![alt text](img/FIR.png "DSP")
-
-This section contains the finite impulse response (FIR) filter. The FIR requires a signed input, so the 'signer' module subtracts the baseline (8192, or 10000000000000 in binary). After the FIR, the 'unsigner' subtracts off this same value to create an unsigned output.
-
-The 'waveformGenerator' generates a waveform of the FIR output.
-
-### PC Communication: sending waveforms
-
-![alt text](img/toPC.png "PC communication")
-
-The SlowPll clock generates a 1MHz clock for the UART.
-
-The 'charReader' module recieves a character from the UART RX and intreprets it. newChar goes up for one clock tick everytime a new character is recieved.
-
-'acquireSwitch' determines if a waveform has been requested. If 'w' was recieved, acquireWave goes up, and if 'i' was recieved, acquireFIR goes up.
-
-'signalToUART' sends a waveform to the UART_TX. If acquireWave is up, a 1000 sample waveform is send. If acquireFIR is up, a 500 sample waveform and 500 sample FIR waveform is sent.
-
-### PC Communication: recieving settings
-
-![alt text](img/fromPC.png "PC communication")
-
-This section recieves settings from the PC. Other than the 'w' and 'i' characters that control the waveform output, 'd', 't', and 's' can be sent to control the delay, trigger source, and trigger slope.
-
-The 'flipSwitch' module's out goes up for one clock tick if char is equal to trigChar. The 'flipflop' module's out flips between up and down everytime in goes up.
 
 ## Scripts
 
