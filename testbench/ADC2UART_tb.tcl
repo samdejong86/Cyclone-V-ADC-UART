@@ -1,46 +1,4 @@
 
-#cd /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/
-
-#source FIR_ofc_msim.tcl
-
-#quit -sim
-
-#cd /home/srdejong/Cyclone-V-ADC-UART/simulation/modelsim/
-
-
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/lpm_pll_sim.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/UART_pll_sim.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/FIR_ofc_sim.vhd
-
-#vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/FIR/FIR_ofc_sim/FIR_ofc.vhd
-
-vmap uart_pll rtl_work
-vmap lpm_pll rtl_work
-vmap fir_ofc rtl_work
-
-
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/ADC_Mux/ADC_Mux.vhd
-
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/delayArray.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/unsigner.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/signer.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/waveformGenerator.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/DSP.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/delayVec.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/trigger.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/ADC_handler.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/signalToUART.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/flipSwitch.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/acquireSwitch.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/charReader.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/UART_handler.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/adcSync.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/src/tenCount.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/ADC2UART_top.vhd
-vcom -reportprogress 300 -work work /home/srdejong/Cyclone-V-ADC-UART/testbench/ADC2UART_tb.vhd
-
-
-vsim -i -l msim_transcript work.adc2uart_tb
 
 
 onerror {resume}
@@ -119,9 +77,9 @@ proc sendChar {CHAR} {
      force -deposit sim:/adc2uart_tb/UARTcounter 90 0us
      force -freeze sim:/adc2uart_tb/charToSend 2#$bits 0us
 
-     echo $CHAR
-     echo $c
-     echo $bits
+     puts $CHAR
+     puts $c
+     puts $bits
 
      run 30us	
 
@@ -169,9 +127,9 @@ proc UARTsim {{CHAR w} {DURATION 250000ns}} {
 
      force -freeze sim:/adc2uart_tb/charToSend 2#$bits 10
      run $DURATION  
-     echo $CHAR
-     echo $c
-     echo $bits
+     puts $CHAR
+     puts $c
+     puts $bits
      wave zoom full
 
 }
@@ -185,9 +143,9 @@ proc FIRsim { {DURATION 10000ns}} {
      add wave -radix unsigned -format analog-step -height 60 -max 15000 -min 7000 -position end  sim:/adc2uart_tb/testbench/ADC_DB
      add wave -radix unsigned -format analog-step -height 60 -max 15000 -min 7000 -position end  sim:/adc2uart_tb/testbench/ADC_handle/ADC_B
 
-     add wave -radix decimal -format analog-step -height 60 -max 6000 -min -800 -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/fir_compiler_ii_0_avalon_streaming_sink_data
+     add wave -radix decimal -format analog-step -height 60 -max 6000 -min -800 -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_data
 
-     add wave -radix decimal -format analog-step -height 60 -max 3500000000 -min -900000000  -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/fir_compiler_ii_0_avalon_streaming_source_data
+     add wave -radix decimal -format analog-step -height 60 -max 3500000000 -min -900000000  -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_data
 
      add wave -radix unsigned -format analog-step -height 60 -max 16000 -min 6000  -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/unsignedFIR
      
@@ -201,24 +159,24 @@ proc FIRsim { {DURATION 10000ns}} {
 run 25000 ns
 wave zoom full
 
-echo "Testbench for ADC2UART"
-echo ""
-echo "run FIRsim to simulate the OFC FIR filter"
-echo ""
-echo "run UARTsim CHAR DURATION to run the UART simulation"
-echo "   CHAR is a character to send. Characters that should elicit a response:"
-echo "      w - generate a waveform"
-echo "      i - generate a waveform containing FIR data"
-echo "      t - toggle the trigger source"
-echo "      s - toggle the trigger slope"
-echo "      d - toggle the delay"
-echo "   DURATION is the duration of the run"
-echo "      waveform takes 32000us to fully send"
-echo ""
-echo "run sendChar CHAR to send a character on the UART_RX."
-echo ""
-echo "run TRIGsim to simulate triggering"
-echo ""
-echo "run signalOff to set the ADC signals to baseline"
-echo "run signalOn  to restore the ADC signals"
-echo ""
+puts "Testbench for ADC2UART"
+puts ""
+puts "run FIRsim to simulate the OFC FIR filter"
+puts ""
+puts "run UARTsim CHAR DURATION to run the UART simulation"
+puts "   CHAR is a character to send. Characters that should elicit a response:"
+puts "      w - generate a waveform"
+puts "      i - generate a waveform containing FIR data"
+puts "      t - toggle the trigger source"
+puts "      s - toggle the trigger slope"
+puts "      d - toggle the delay"
+puts "   DURATION is the duration of the run"
+puts "      waveform takes 32000us to fully send"
+puts ""
+puts "run sendChar CHAR to send a character on the UART_RX."
+puts ""
+puts "run TRIGsim to simulate triggering"
+puts ""
+puts "run signalOff to set the ADC signals to baseline"
+puts "run signalOn  to restore the ADC signals"
+puts ""
