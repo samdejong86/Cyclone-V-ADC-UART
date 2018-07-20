@@ -3,6 +3,9 @@
 library IEEE;
 use	IEEE.std_logic_1164.all;
 use	IEEE.numeric_std.all;
+use ieee.math_real.all;
+
+
 
 entity ADC2UART_tb is
 end entity;
@@ -51,9 +54,23 @@ architecture tb of ADC2UART_tb is
 		constant UART_clk: time := 500 ns;
 
                 signal charToSend : std_logic_vector(7 downto 0) := "00000000";  --default is blank
+
+		signal rand_num : integer := 0;
                                                                                                                                           
                 
 begin
+
+	process
+    		variable seed1, seed2: positive;               -- seed values for random generator
+   		variable rand: real;   -- random real-number value in range 0 to 1.0  
+    		variable range_of_rand : real := 10.0;    -- the range of random values created will be 0 to +1000.
+	begin
+    		uniform(seed1, seed2, rand);   -- generate random number
+    		rand_num <= integer(rand*range_of_rand);  -- rescale to 0..1000, convert integer part 
+	    	wait for 10 ns;
+	end process;
+
+
 
 	clock_gen : process is
 		begin
@@ -145,7 +162,7 @@ begin
                 elsif counter mod 80 =8 then
                 ADC_DB<=to_unsigned(7439, 14);
                 elsif counter mod 80 =9 then
-                ADC_DB<=to_unsigned(7477, 14);
+                ADC_DB<=to_unsigned(7477, 14)+to_unsigned(rand_num,14);
                 elsif counter mod 80 =10 then
                 ADC_DB<=to_unsigned(7495, 14);
                 elsif counter mod 80 =11 then
@@ -197,7 +214,7 @@ begin
                 elsif counter mod 80 =34 then
                 ADC_DB<=to_unsigned(7945, 14);
                 elsif counter mod 80 =35 then
-                ADC_DB<=to_unsigned(7959, 14);
+                ADC_DB<=to_unsigned(7959, 14)+to_unsigned(rand_num,14);
                 elsif counter mod 80 =36 then
                 ADC_DB<=to_unsigned(7948, 14);
                 elsif counter mod 80 =37 then
@@ -233,7 +250,7 @@ begin
                 elsif counter mod 80 =52 then
                 ADC_DB<=to_unsigned(8048, 14);
                 elsif counter mod 80 =53 then
-                ADC_DB<=to_unsigned(8053, 14);
+                ADC_DB<=to_unsigned(8053, 14)+to_unsigned(rand_num,14);
                 elsif counter mod 80 =54 then
                 ADC_DB<=to_unsigned(8067, 14);
                 elsif counter mod 80 =55 then
