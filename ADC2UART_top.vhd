@@ -35,10 +35,10 @@ entity ADC2UART_top is
 		
 
 		
-		--hex0						: out unsigned (6 DOWNTO 0);
-		--hex1						: out unsigned (6 DOWNTO 0);
-		--hex2						: out unsigned (6 DOWNTO 0);
-		--hex3						: out unsigned (6 DOWNTO 0);
+		hex0						: out unsigned (6 DOWNTO 0);
+		hex1						: out unsigned (6 DOWNTO 0);
+		hex2						: out unsigned (6 DOWNTO 0);
+		hex3						: out unsigned (6 DOWNTO 0);
 
 		led						: out unsigned (3 DOWNTO 0);
 		
@@ -180,14 +180,14 @@ begin
 	trigSource <= trigSourceUART or triggerSwitch;
 
 
-	--binCounter : entity work.bin2dec PORT MAP (
-	--	clk 		=> sys_clk,
-	--	input 	=> waveNumber,
-	--	d1	=> hex0,
-	--	d2	=> hex1,
-	--	d3	=> hex2,
-	--	d4	=> hex3	
-	--);
+	binCounter : entity work.bin2dec PORT MAP (
+		clk 		=> sys_clk,
+		input 	=> waveNumber,
+		d1	=> hex0,
+		d2	=> hex1,
+		d3	=> hex2,
+		d4	=> hex3	
+	);
 
 end rtl;
 

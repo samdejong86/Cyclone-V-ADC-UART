@@ -114,35 +114,35 @@ set_location_assignment PIN_E20 -to DAC_DB[1] -disable
 set_location_assignment PIN_E19 -to DAC_DB[0] -disable
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE ADC2UART_top.stp
-set_location_assignment PIN_Y18 -to hex0[6] -disable
-set_location_assignment PIN_Y19 -to hex0[5] -disable
-set_location_assignment PIN_Y20 -to hex0[4] -disable
-set_location_assignment PIN_W18 -to hex0[3] -disable
-set_location_assignment PIN_V17 -to hex0[2] -disable
-set_location_assignment PIN_V18 -to hex0[1] -disable
-set_location_assignment PIN_V19 -to hex0[0] -disable
-set_location_assignment PIN_AF24 -to hex1[6] -disable
-set_location_assignment PIN_AC19 -to hex1[5] -disable
-set_location_assignment PIN_AE25 -to hex1[4] -disable
-set_location_assignment PIN_AE26 -to hex1[3] -disable
-set_location_assignment PIN_AB19 -to hex1[2] -disable
-set_location_assignment PIN_AD26 -to hex1[1] -disable
-set_location_assignment PIN_AA18 -to hex1[0] -disable
-set_location_assignment PIN_W20 -to hex2[6] -disable
-set_location_assignment PIN_W21 -to hex2[5] -disable
-set_location_assignment PIN_V20 -to hex2[4] -disable
-set_location_assignment PIN_V22 -to hex2[3] -disable
-set_location_assignment PIN_U20 -to hex2[2] -disable
-set_location_assignment PIN_AD6 -to hex2[1] -disable
-set_location_assignment PIN_AD7 -to hex2[0] -disable
-set_location_assignment PIN_AC22 -to hex3[6] -disable
-set_location_assignment PIN_AC23 -to hex3[5] -disable
-set_location_assignment PIN_AC24 -to hex3[4] -disable
-set_location_assignment PIN_AA22 -to hex3[3] -disable
-set_location_assignment PIN_AA23 -to hex3[2] -disable
-set_location_assignment PIN_Y23 -to hex3[1] -disable
-set_location_assignment PIN_Y24 -to hex3[0] -disable
-set_location_assignment PIN_P11 -to counterReset -disable
+set_location_assignment PIN_Y18 -to hex0[6]
+set_location_assignment PIN_Y19 -to hex0[5]
+set_location_assignment PIN_Y20 -to hex0[4]
+set_location_assignment PIN_W18 -to hex0[3]
+set_location_assignment PIN_V17 -to hex0[2]
+set_location_assignment PIN_V18 -to hex0[1]
+set_location_assignment PIN_V19 -to hex0[0]
+set_location_assignment PIN_AF24 -to hex1[6]
+set_location_assignment PIN_AC19 -to hex1[5]
+set_location_assignment PIN_AE25 -to hex1[4]
+set_location_assignment PIN_AE26 -to hex1[3]
+set_location_assignment PIN_AB19 -to hex1[2]
+set_location_assignment PIN_AD26 -to hex1[1]
+set_location_assignment PIN_AA18 -to hex1[0]
+set_location_assignment PIN_W20 -to hex2[6]
+set_location_assignment PIN_W21 -to hex2[5]
+set_location_assignment PIN_V20 -to hex2[4]
+set_location_assignment PIN_V22 -to hex2[3]
+set_location_assignment PIN_U20 -to hex2[2]
+set_location_assignment PIN_AD6 -to hex2[1]
+set_location_assignment PIN_AD7 -to hex2[0]
+set_location_assignment PIN_AC22 -to hex3[6]
+set_location_assignment PIN_AC23 -to hex3[5]
+set_location_assignment PIN_AC24 -to hex3[4]
+set_location_assignment PIN_AA22 -to hex3[3]
+set_location_assignment PIN_AA23 -to hex3[2]
+set_location_assignment PIN_Y23 -to hex3[1]
+set_location_assignment PIN_Y24 -to hex3[0]
+set_location_assignment PIN_P11 -to counterReset
 set_location_assignment PIN_L9 -to UART_TX
 set_location_assignment PIN_M9 -to UART_RX
 set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id UART_test

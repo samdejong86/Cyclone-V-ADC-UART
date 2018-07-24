@@ -10,43 +10,23 @@ entity bin2dec is
 		d1			: out unsigned(6 downto 0);
 		d2			: out unsigned(6 downto 0);
 		d3			: out unsigned(6 downto 0);
-		d4			: out unsigned(6 downto 0);
-		d5			: out unsigned(6 downto 0);
-		d6			: out unsigned(6 downto 0);
-		d7			: out unsigned(6 downto 0);
-		d8			: out unsigned(6 downto 0);
-		d9			: out unsigned(6 downto 0)	
+		d4			: out unsigned(6 downto 0)
 	);
 end bin2dec;
 
 architecture rtl of bin2dec is 
 
-	signal number			: integer;
-
 
 begin
 
-	number<=to_integer(input);
-
-	bin2decProc : process(clk) is
+	bin2decProc : process(input) is
 	variable digit	    : integer:=0;
 	variable thisDigit  : integer:=64;
 	variable num2	    : integer;
 	variable i	    : integer:=0;
-	variable dig0 : unsigned (6 downto 0):=to_unsigned(64,7);
-	variable dig1 : unsigned (6 downto 0):=to_unsigned(64,7);
-	variable dig2 : unsigned (6 downto 0):=to_unsigned(64,7);
-	variable dig3 : unsigned (6 downto 0):=to_unsigned(64,7);
-	variable dig4 : unsigned (6 downto 0):=to_unsigned(64,7);
-	variable dig5 : unsigned (6 downto 0):=to_unsigned(64,7);
-	variable dig6 : unsigned (6 downto 0):=to_unsigned(64,7);
-	variable dig7 : unsigned (6 downto 0):=to_unsigned(64,7);
-	variable dig8 : unsigned (6 downto 0):=to_unsigned(64,7);
-	variable dig9 : unsigned (6 downto 0):=to_unsigned(64,7);
           
 	begin
-		if rising_edge(clk) then
-			num2:=number;
+			num2:=to_integer(input);
 			i:=0;
 			
 			thisDigit:=64;
@@ -56,11 +36,6 @@ begin
 			d2<=to_unsigned(thisDigit,7);
 			d3<=to_unsigned(thisDigit,7);
 			d4<=to_unsigned(thisDigit,7);
-			d5<=to_unsigned(thisDigit,7);
-			d6<=to_unsigned(thisDigit,7);
-			d7<=to_unsigned(thisDigit,7);
-			d8<=to_unsigned(thisDigit,7);
-			d9<=to_unsigned(thisDigit,7);
 		
 			while i <= 10 loop
 				digit:= num2 mod 10;
@@ -88,30 +63,19 @@ begin
 				end if;
 
 				if i=0 then
-					dig0:=to_unsigned(thisDigit,7);
+					d0<=to_unsigned(thisDigit,7);
 				elsif i=1 then
-					dig1:=to_unsigned(thisDigit,7);
+					d1<=to_unsigned(thisDigit,7);
 				elsif i=2 then
-					dig2:=to_unsigned(thisDigit,7);
+					d2<=to_unsigned(thisDigit,7);
 				elsif i=3 then
-					dig3:=to_unsigned(thisDigit,7);
+					d3<=to_unsigned(thisDigit,7);
 				elsif i=4 then
-					dig4:=to_unsigned(thisDigit,7);
-				elsif i=5 then
-					dig5:=to_unsigned(thisDigit,7);
-				elsif i=6 then
-					dig6:=to_unsigned(thisDigit,7);
-				elsif i=7 then
-					dig7:=to_unsigned(thisDigit,7);
-				elsif i=8 then
-					dig8:=to_unsigned(thisDigit,7);
-				elsif i=9 then
-					dig9:=to_unsigned(thisDigit,7);
+					d4<=to_unsigned(thisDigit,7);
 				end if;			
 
-
 	
-				if i=10 then
+				if i=5 then
 					exit;
 				end if;
 				
@@ -120,20 +84,6 @@ begin
 			
 			end loop;
 		
-			d0<=dig0;
-			d1<=dig1;
-			d2<=dig2;
-			d3<=dig3;
-			d4<=dig4;
-			d5<=dig5;
-			d6<=dig6;
-			d7<=dig7;
-			d8<=dig8;
-			d9<=dig9;
-		
-		
-
-		end if;	
 	end process bin2decProc;
 
 

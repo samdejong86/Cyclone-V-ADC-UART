@@ -22,9 +22,9 @@ VN=nH41ciWZPRg_@;ANL^n0
 !s100 jgoi4=]F<C61>:F`DVM]^2
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1532455736
+Z8 !s110 1532461956
 !i10b 1
-Z9 !s108 1532455736.000000
+Z9 !s108 1532461956.000000
 Z10 !s90 -reportprogress|300|-93|-work|lpm_pll|/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/lpm_pll.vhd|
 Z11 !s107 /home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/lpm_pll.vhd|
 !i113 1
@@ -34,11 +34,11 @@ Artl
 R2
 R3
 R4
-DEx4 work 7 lpm_pll 0 22 N=nH41ciWZPRg_@;ANL^n0
+Z14 DEx4 work 7 lpm_pll 0 22 N=nH41ciWZPRg_@;ANL^n0
 l34
 L21
-Vb;PnDR1SRVJ@a6ShV4ITN1
-!s100 iWRd8;Ci8M5zWK<>LlOB62
+Z15 Vb;PnDR1SRVJ@a6ShV4ITN1
+Z16 !s100 iWRd8;Ci8M5zWK<>LlOB62
 R7
 31
 R8
@@ -54,13 +54,13 @@ vlpm_pll_0002
 !i10b 1
 !s100 c8kHMBQR2[WzH9b3hnRd50
 I>9l7``N9O4F7>o;1>9DRF2
-Z14 VDg1SIo80bB@j0V0VzS_@n1
+Z17 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1528476804
 8/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll/lpm_pll_0002.v
 F/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll/lpm_pll_0002.v
 L0 2
-Z15 OV;L;10.5b;63
+Z18 OV;L;10.5b;63
 r1
 !s85 0
 31
@@ -68,21 +68,21 @@ r1
 !s107 /home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll/lpm_pll_0002.v|
 !s90 -reportprogress|300|-vlog01compat|-work|lpm_pll|+incdir+/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll|/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll/lpm_pll_0002.v|
 !i113 1
-Z16 o-vlog01compat -work lpm_pll
+Z19 o-vlog01compat -work lpm_pll
 !s92 -vlog01compat -work lpm_pll +incdir+/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll
-Z17 tCvgOpt 0
+Z20 tCvgOpt 0
 vlpm_pll_pll_0
 R8
 !i10b 1
 !s100 VYJO;TBV@Lm?GXT^kEDCT1
 I1>^WJ]S`CZJ_G`>nA=[Ph2
-R14
+R17
 R0
 R1
 8/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/submodules/lpm_pll_pll_0.v
 F/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/submodules/lpm_pll_pll_0.v
 L0 2
-R15
+R18
 r1
 !s85 0
 31
@@ -90,6 +90,6 @@ R9
 !s107 /home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/submodules/lpm_pll_pll_0.v|
 !s90 -reportprogress|300|-vlog01compat|-work|lpm_pll|+incdir+/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/submodules|/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/submodules/lpm_pll_pll_0.v|
 !i113 1
-R16
+R19
 !s92 -vlog01compat -work lpm_pll +incdir+/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/submodules
-R17
+R20
