@@ -6,10 +6,6 @@ use ieee.numeric_std.all;
 library work;
 use work.my_types_pkg.all;
 
-library FIR_ofc;
-use FIR_ofc.all;
-
-
 entity DSP is
 	port(
 		sys_clk			: in std_logic;
