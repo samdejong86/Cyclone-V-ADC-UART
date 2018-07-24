@@ -6,9 +6,6 @@ use ieee.numeric_std.all;
 library work;
 use work.my_types_pkg.all;
 
-library lpm_pll;
-use lpm_pll.all;
-
 entity ADC2UART_top is
 	port(
 		clk_50					: in std_logic;
@@ -36,6 +33,13 @@ entity ADC2UART_top is
 		FPGA_CLK_B_N			: out std_logic;
 		FPGA_CLK_B_P			: out std_logic;
 		
+
+		
+		--hex0						: out unsigned (6 DOWNTO 0);
+		--hex1						: out unsigned (6 DOWNTO 0);
+		--hex2						: out unsigned (6 DOWNTO 0);
+		--hex3						: out unsigned (6 DOWNTO 0);
+
 		led						: out unsigned (3 DOWNTO 0);
 		
 		UART_RX					: in std_logic;
@@ -55,14 +59,14 @@ architecture rtl of ADC2UART_top is
 
 
 	--synced adc signals
-	signal ADC_A 							: unsigned (13 DOWNTO 0);
-	signal ADC_B 							: unsigned (13 DOWNTO 0);	
+	signal ADC_A 							: unsigned (13 DOWNTO 0):=to_unsigned(0, 14);
+	signal ADC_B 							: unsigned (13 DOWNTO 0):=to_unsigned(0, 14);	
 	
 	signal trigSlope						: std_logic:='1';
 	signal trigSource						: std_logic:='1';
 	signal delay							: std_logic:='0';
 	
-	signal waveNumber						: unsigned (15 downto 0);
+	signal waveNumber						: unsigned (15 downto 0):=to_unsigned(0, 16);
 	signal waveform						: adcArray (0 to 999);
 	signal FIRwaveform					: adcArray (0 to 999);
 	
@@ -71,6 +75,18 @@ architecture rtl of ADC2UART_top is
 	signal delayUART						: std_logic:='0';
 	
 	signal acquire							: std_logic:='0';
+
+	component lpm_pll is
+        port (
+            pll_0_locked_export : out std_logic;        -- export
+            pll_0_outclk0_clk   : out std_logic;        -- clk
+            pll_0_outclk1_clk   : out std_logic;        -- clk
+            pll_0_outclk2_clk   : out std_logic;        -- clk
+            pll_0_outclk3_clk   : out std_logic;        -- clk
+            pll_0_refclk_clk    : in  std_logic := 'X'; -- clk
+            pll_0_reset_reset   : in  std_logic := 'X'  -- reset
+        );
+    end component lpm_pll;
 	
 	
 begin
@@ -91,16 +107,18 @@ begin
 
 	reset_n <= '0';
 
-	--initialize the adc pll
-	adc_pll_inst : entity lpm_pll.lpm_pll PORT MAP (
-		refclk 		=>	clk_50,
-		outclk_0 	=> sys_clk,
-		outclk_1 	=> sys_clk_90deg,
-		outclk_2 	=> sys_clk_180deg,
-		outclk_3 	=> sys_clk_270deg,
-		locked 		=> pll_locked,
-		rst 			=> acquire
-	);
+
+   adc_pll_inst : component lpm_pll
+        port map (
+            pll_0_locked_export => pll_locked, --  pll_0_locked.export
+            pll_0_outclk0_clk   => sys_clk,   -- pll_0_outclk0.clk
+            pll_0_outclk1_clk   => sys_clk_90deg,   -- pll_0_outclk1.clk
+            pll_0_outclk2_clk   => sys_clk_180deg,   -- pll_0_outclk2.clk
+            pll_0_outclk3_clk   => sys_clk_270deg,   -- pll_0_outclk3.clk
+            pll_0_refclk_clk    => clk_50,    --  pll_0_refclk.clk
+            pll_0_reset_reset   =>  acquire   --   pll_0_reset.reset
+        );	
+
 	
 	--sync for channel a
 	sync_a : entity work.adc_sync PORT MAP (
@@ -161,6 +179,15 @@ begin
 	trigSlope <= trigSlopeUART or triggerSlopeSwitch;
 	trigSource <= trigSourceUART or triggerSwitch;
 
+
+	--binCounter : entity work.bin2dec PORT MAP (
+	--	clk 		=> sys_clk,
+	--	input 	=> waveNumber,
+	--	d1	=> hex0,
+	--	d2	=> hex1,
+	--	d3	=> hex2,
+	--	d4	=> hex3	
+	--);
 
 end rtl;
 

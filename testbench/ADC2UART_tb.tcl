@@ -138,7 +138,6 @@ proc UARTsim {{CHAR w} {DURATION 250000ns}} {
 }
 
 
-
 proc FIRsim { {DURATION 10000ns}} {
 
      delete wave *
@@ -146,9 +145,9 @@ proc FIRsim { {DURATION 10000ns}} {
      add wave -radix unsigned -format analog-step -height 60 -max 15000 -min 7000 -position end  sim:/adc2uart_tb/testbench/ADC_DB
      add wave -radix unsigned -format analog-step -height 60 -max 15000 -min 7000 -position end  sim:/adc2uart_tb/testbench/ADC_handle/ADC_B
 
-     add wave -radix decimal -format analog-step -height 60 -max 6000 -min -800 -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_sink_data
+     add wave -radix decimal -format analog-step -height 60 -max 6000 -min -800 -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/fir_compiler_ii_0_avalon_streaming_sink_data
 
-     add wave -radix decimal -format analog-step -height 60 -max 3500000000 -min -900000000  -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/ast_source_data
+     add wave -radix decimal -format analog-step -height 60 -max 3500000000 -min -900000000  -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/FIR_filter/fir_compiler_ii_0_avalon_streaming_source_data
 
      add wave -radix unsigned -format analog-step -height 60 -max 16000 -min 6000  -position end  sim:/adc2uart_tb/testbench/ADC_handle/DSP_handle/unsignedFIR
      

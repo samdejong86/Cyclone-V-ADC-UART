@@ -1,0 +1,12 @@
+	component lpm_pll is
+		port (
+			pll_0_locked_export : out std_logic;        -- export
+			pll_0_outclk0_clk   : out std_logic;        -- clk
+			pll_0_outclk1_clk   : out std_logic;        -- clk
+			pll_0_outclk2_clk   : out std_logic;        -- clk
+			pll_0_outclk3_clk   : out std_logic;        -- clk
+			pll_0_refclk_clk    : in  std_logic := 'X'; -- clk
+			pll_0_reset_reset   : in  std_logic := 'X'  -- reset
+		);
+	end component lpm_pll;
+

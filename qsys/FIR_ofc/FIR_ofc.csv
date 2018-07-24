@@ -1,0 +1,37 @@
+# system info FIR_ofc on 2018.07.24.10:37:00
+system_info:
+name,value
+DEVICE,5CGXFC5C6F27C7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1532453819
+#
+#
+# Files generated for FIR_ofc on 2018.07.24.10:37:00
+files:
+filepath,kind,attributes,module,is_top
+simulation/FIR_ofc.vhd,VHDL,,FIR_ofc,true
+simulation/submodules/dspba_library_package.vhd,VHDL,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/dspba_library.vhd,VHDL,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/auk_dspip_math_pkg_hpfir.vhd,VHDL,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/auk_dspip_lib_pkg_hpfir.vhd,VHDL,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd,VHDL,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd,VHDL,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd,VHDL,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/auk_dspip_roundsat_hpfir.vhd,VHDL,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/altera_avalon_sc_fifo.v,VERILOG,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/FIR_ofc_fir_compiler_ii_0_rtl_core.vhd,VHDL,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/FIR_ofc_fir_compiler_ii_0_ast.vhd,VHDL,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/FIR_ofc_fir_compiler_ii_0.vhd,VHDL,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/FIR_ofc_fir_compiler_ii_0_nativelink.tcl,OTHER,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/FIR_ofc_fir_compiler_ii_0_msim.tcl,OTHER,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/FIR_ofc_fir_compiler_ii_0_tb.vhd,VHDL,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/FIR_ofc_fir_compiler_ii_0_mlab.m,OTHER,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/FIR_ofc_fir_compiler_ii_0_model.m,OTHER,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/FIR_ofc_fir_compiler_ii_0_coef_int.txt,OTHER,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/FIR_ofc_fir_compiler_ii_0_input.txt,OTHER,,FIR_ofc_fir_compiler_ii_0,false
+simulation/submodules/FIR_ofc_fir_compiler_ii_0_param.txt,OTHER,,FIR_ofc_fir_compiler_ii_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+FIR_ofc.fir_compiler_ii_0,FIR_ofc_fir_compiler_ii_0

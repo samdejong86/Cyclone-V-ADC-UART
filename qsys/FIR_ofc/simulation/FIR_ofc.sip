@@ -1,0 +1,27 @@
+set_global_assignment -entity "FIR_ofc" -library "lib_FIR_ofc" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "FIR_ofc" -library "lib_FIR_ofc" -name IP_TOOL_VERSION "17.1"
+set_global_assignment -entity "FIR_ofc" -library "lib_FIR_ofc" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "lib_FIR_ofc" -name SPD_FILE [file join $::quartus(sip_path) "../FIR_ofc.spd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "../../FIR_ofc.qsys"]
+
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "FIR_ofc.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/dspba_library_package.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/dspba_library.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/auk_dspip_math_pkg_hpfir.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/auk_dspip_lib_pkg_hpfir.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/auk_dspip_avalon_streaming_source_hpfir.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/auk_dspip_roundsat_hpfir.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/FIR_ofc_fir_compiler_ii_0_rtl_core.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/FIR_ofc_fir_compiler_ii_0_ast.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/FIR_ofc_fir_compiler_ii_0.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/FIR_ofc_fir_compiler_ii_0_nativelink.tcl"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/FIR_ofc_fir_compiler_ii_0_msim.tcl"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/FIR_ofc_fir_compiler_ii_0_tb.vhd"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/FIR_ofc_fir_compiler_ii_0_mlab.m"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/FIR_ofc_fir_compiler_ii_0_model.m"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/FIR_ofc_fir_compiler_ii_0_coef_int.txt"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/FIR_ofc_fir_compiler_ii_0_input.txt"]
+set_global_assignment -library "lib_FIR_ofc" -name MISC_FILE [file join $::quartus(sip_path) "submodules/FIR_ofc_fir_compiler_ii_0_param.txt"]

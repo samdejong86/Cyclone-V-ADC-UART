@@ -1,0 +1,9 @@
+	component UART_pll is
+		port (
+			uart_pll_locked_export : out std_logic;        -- export
+			uart_pll_outclk0_clk   : out std_logic;        -- clk
+			uart_pll_refclk_clk    : in  std_logic := 'X'; -- clk
+			uart_pll_reset_reset   : in  std_logic := 'X'  -- reset
+		);
+	end component UART_pll;
+

@@ -1,0 +1,18 @@
+# system info lpm_pll on 2018.07.24.10:36:40
+system_info:
+name,value
+DEVICE,5CGXFC5C6F27C7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1532453784
+#
+#
+# Files generated for lpm_pll on 2018.07.24.10:36:40
+files:
+filepath,kind,attributes,module,is_top
+simulation/lpm_pll.vhd,VHDL,,lpm_pll,true
+simulation/submodules/lpm_pll_pll_0.vo,VERILOG,,lpm_pll_pll_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+lpm_pll.pll_0,lpm_pll_pll_0

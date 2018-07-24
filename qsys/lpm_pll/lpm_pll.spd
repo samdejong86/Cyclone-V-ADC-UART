@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/lpm_pll_pll_0.vo"
+   type="VERILOG"
+   library="pll_0" />
+ <file path="simulation/lpm_pll.vhd" type="VHDL" />
+ <topLevel name="lpm_pll" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

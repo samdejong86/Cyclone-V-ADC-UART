@@ -9,38 +9,38 @@ z2
 cModel Technology
 Z0 d/home/srdejong/Cyclone-V-ADC-UART/simulation/modelsim
 Elpm_pll
-Z1 w1530226283
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
+Z1 w1532453803
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll_sim/lpm_pll.vho
-Z6 F/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll_sim/lpm_pll.vho
+Z5 8/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/lpm_pll.vhd
+Z6 F/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/lpm_pll.vhd
 l0
-L34
-V:49?1]=gIEl=BQ<O?9P9O1
-!s100 H3BRGF[OT7OlDe8^eARMh2
+L9
+VN=nH41ciWZPRg_@;ANL^n0
+!s100 jgoi4=]F<C61>:F`DVM]^2
 Z7 OV;C;10.5b;63
-32
-Z8 !s110 1530823716
+31
+Z8 !s110 1532455736
 !i10b 1
-Z9 !s108 1530823715.000000
-Z10 !s90 -reportprogress|300|-work|lpm_pll|/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll_sim/lpm_pll.vho|
-Z11 !s107 /home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll_sim/lpm_pll.vho|
+Z9 !s108 1532455736.000000
+Z10 !s90 -reportprogress|300|-93|-work|lpm_pll|/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/lpm_pll.vhd|
+Z11 !s107 /home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/lpm_pll.vhd|
 !i113 1
-Z12 o-work lpm_pll
+Z12 o-93 -work lpm_pll
 Z13 tExplicit 1 CvgOpt 0
 Artl
 R2
 R3
 R4
-DEx4 work 7 lpm_pll 0 22 :49?1]=gIEl=BQ<O?9P9O1
-l54
-L47
-Vkmz>UKg34c8o3JR<h=UF=2
-!s100 Wn_5RBiBfR=:<UNFj3eG>0
+DEx4 work 7 lpm_pll 0 22 N=nH41ciWZPRg_@;ANL^n0
+l34
+L21
+Vb;PnDR1SRVJ@a6ShV4ITN1
+!s100 iWRd8;Ci8M5zWK<>LlOB62
 R7
-32
+31
 R8
 !i10b 1
 R9
@@ -50,24 +50,46 @@ R11
 R12
 R13
 vlpm_pll_0002
-Z14 !s110 1528491703
+!s110 1528491703
 !i10b 1
 !s100 c8kHMBQR2[WzH9b3hnRd50
 I>9l7``N9O4F7>o;1>9DRF2
-Z15 VDg1SIo80bB@j0V0VzS_@n1
+Z14 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1528476804
 8/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll/lpm_pll_0002.v
 F/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll/lpm_pll_0002.v
 L0 2
-Z16 OV;L;10.5b;63
+Z15 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z17 !s108 1528491703.000000
+!s108 1528491703.000000
 !s107 /home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll/lpm_pll_0002.v|
 !s90 -reportprogress|300|-vlog01compat|-work|lpm_pll|+incdir+/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll|/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll/lpm_pll_0002.v|
 !i113 1
-Z18 o-vlog01compat -work lpm_pll
+Z16 o-vlog01compat -work lpm_pll
 !s92 -vlog01compat -work lpm_pll +incdir+/home/srdejong/Cyclone-V-ADC-UART/lpm_pll/lpm_pll
-Z19 tCvgOpt 0
+Z17 tCvgOpt 0
+vlpm_pll_pll_0
+R8
+!i10b 1
+!s100 VYJO;TBV@Lm?GXT^kEDCT1
+I1>^WJ]S`CZJ_G`>nA=[Ph2
+R14
+R0
+R1
+8/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/submodules/lpm_pll_pll_0.v
+F/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/submodules/lpm_pll_pll_0.v
+L0 2
+R15
+r1
+!s85 0
+31
+R9
+!s107 /home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/submodules/lpm_pll_pll_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lpm_pll|+incdir+/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/submodules|/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/submodules/lpm_pll_pll_0.v|
+!i113 1
+R16
+!s92 -vlog01compat -work lpm_pll +incdir+/home/srdejong/Cyclone-V-ADC-UART/qsys/lpm_pll/synthesis/submodules
+R17

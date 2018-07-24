@@ -1,0 +1,13 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst lpm_pll.pll_0 -pg 1 -lvl 1 -y 30
+preplace inst lpm_pll -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>lpm_pll</net_container>(MASTER)pll_0.outclk1,(MASTER)lpm_pll.pll_0_outclk1) 1 1 1 NJ
+preplace netloc EXPORT<net_container>lpm_pll</net_container>(SLAVE)lpm_pll.pll_0_reset,(SLAVE)pll_0.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>lpm_pll</net_container>(SLAVE)pll_0.refclk,(SLAVE)lpm_pll.pll_0_refclk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>lpm_pll</net_container>(SLAVE)pll_0.locked,(SLAVE)lpm_pll.pll_0_locked) 1 0 1 NJ
+preplace netloc EXPORT<net_container>lpm_pll</net_container>(MASTER)lpm_pll.pll_0_outclk3,(MASTER)pll_0.outclk3) 1 1 1 NJ
+preplace netloc EXPORT<net_container>lpm_pll</net_container>(MASTER)lpm_pll.pll_0_outclk2,(MASTER)pll_0.outclk2) 1 1 1 NJ
+preplace netloc EXPORT<net_container>lpm_pll</net_container>(MASTER)pll_0.outclk0,(MASTER)lpm_pll.pll_0_outclk0) 1 1 1 NJ
+levelinfo -pg 1 0 90 370
+levelinfo -hier lpm_pll 100 130 260

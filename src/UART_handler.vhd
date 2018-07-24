@@ -6,8 +6,6 @@ use ieee.numeric_std.all;
 library work;
 use work.my_types_pkg.all;
 
-library UART_pll;
-use UART_pll.all;
 
 entity UART_handler is
 	port(
@@ -37,16 +35,28 @@ architecture rtl of UART_handler is
 	constant delayChar		: STD_LOGIC_VECTOR (7 DOWNTO 0) := "01100100"; --d
 	constant trigSourceChar : STD_LOGIC_VECTOR (7 DOWNTO 0) := "01110100"; --t
 	constant trigSlopeChar	: STD_LOGIC_VECTOR (7 DOWNTO 0) := "01110011"; --s
+	
+	component UART_pll is
+        port (
+            uart_pll_locked_export : out std_logic;        -- export
+            uart_pll_outclk0_clk   : out std_logic;        -- clk
+            uart_pll_refclk_clk    : in  std_logic := 'X'; -- clk
+            uart_pll_reset_reset   : in  std_logic := 'X'  -- reset
+        );
+    end component UART_pll;
 
 begin
 
-	slowPll : entity UART_pll.UART_pll PORT MAP(
-		refclk		=>	clk_50,
-		outclk_0		=>	clk_1MHz,
-		locked		=>	uart_locked,
-		rst			=>	'0'
+	slowPll : component UART_pll
+		port map (
+			uart_pll_locked_export => uart_locked, --  uart_pll_locked.export
+         uart_pll_outclk0_clk   => clk_1MHz,   -- uart_pll_outclk0.clk
+         uart_pll_refclk_clk    => clk_50,    --  uart_pll_refclk.clk
+         uart_pll_reset_reset   => '0'    --   uart_pll_reset.reset
 	);
 
+	
+	
 	readChar : entity work.charReader  PORT MAP(
 		clk			=>	clk_1MHz,
 		UART_RX		=>	UART_RX,
