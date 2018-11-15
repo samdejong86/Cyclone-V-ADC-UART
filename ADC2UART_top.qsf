@@ -190,42 +190,6 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=2048" -section_id UART_test
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=2048" -section_id UART_test
 set_location_assignment PIN_AC9 -to triggerSwitch
-set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id Delay_test
-set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334530" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to Delay_test|vcc -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_PIPELINE=0" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_PIPELINE=0" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_COUNTER_PIPELINE=0" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to Delay_test|vcc -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to Delay_test|vcc -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to Delay_test|vcc -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to Delay_test|vcc -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=512" -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to Delay_test|vcc -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to Delay_test|vcc -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=512" -section_id Delay_test
 set_location_assignment PIN_AE10 -to triggerSlopeSwitch
 set_location_assignment PIN_AD13 -to delaySwitch
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to ADC_test|gnd -section_id ADC_test
@@ -241,10 +205,7 @@ set_location_assignment PIN_F12 -to AD_SCLK
 set_location_assignment PIN_A21 -to AD_SDIO
 set_location_assignment PIN_L8 -to ADA_DCO
 set_location_assignment PIN_K9 -to ADB_DCO
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to ADC_test|gnd -section_id ADC_test
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=2048" -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to ADC_test|gnd -section_id ADC_test
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=2048" -section_id ADC_test
 set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id FIR_test
 set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id FIR_test
@@ -278,23 +239,6 @@ set_location_assignment PIN_G6 -to led[2]
 set_location_assignment PIN_F6 -to led[1]
 set_location_assignment PIN_F7 -to led[0]
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to ADC_test|vcc -section_id ADC_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=155" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=155" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=155" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id Delay_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=488" -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to Delay_test|vcc -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to Delay_test|vcc -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to Delay_test|vcc -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to Delay_test|vcc -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to Delay_test|vcc -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to Delay_test|gnd -section_id Delay_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to UART_test|vcc -section_id UART_test
 set_location_assignment PIN_H12 -to clk_50
@@ -413,329 +357,8 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -t
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "ADC_handler:ADC_handle|ADC_B[7]" -section_id ADC_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "ADC_handler:ADC_handle|ADC_B[8]" -section_id ADC_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to "ADC_handler:ADC_handle|ADC_B[9]" -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "ADC_handler:ADC_handle|sys_clk" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "ADC_handler:ADC_handle|ADC_B[0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "ADC_handler:ADC_handle|ADC_B[10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "ADC_handler:ADC_handle|ADC_B[11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "ADC_handler:ADC_handle|ADC_B[12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "ADC_handler:ADC_handle|ADC_B[13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "ADC_handler:ADC_handle|ADC_B[1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "ADC_handler:ADC_handle|ADC_B[2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "ADC_handler:ADC_handle|ADC_B[3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "ADC_handler:ADC_handle|ADC_B[4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "ADC_handler:ADC_handle|ADC_B[5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "ADC_handler:ADC_handle|ADC_B[6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "ADC_handler:ADC_handle|ADC_B[7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "ADC_handler:ADC_handle|ADC_B[8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "ADC_handler:ADC_handle|ADC_B[9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[44] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[45] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[46] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[47] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[48] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[49] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[50] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[51] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[52] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[53] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[54] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[55] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[56] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[57] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[58] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[59] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[60] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[61] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[62] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[63] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[64] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[65] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[72] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[73] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[74] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[75] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[76] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[77] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[78] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[79] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[80] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[81] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[82] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[83] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[84] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[85] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[86] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[87] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[88] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[89] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[90] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[91] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[92] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[93] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[94] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[95] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[96] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[97] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[98] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[99] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[100] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[101] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[102] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[103] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[104] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[105] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[106] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[107] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[108] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[109] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[110] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[111] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[112] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[113] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[114] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[115] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[116] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[117] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[118] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[119] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[120] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[121] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[122] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[123] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[124] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[125] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[126] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[127] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[128] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[129] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[130] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[131] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[132] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[133] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[134] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[135] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[136] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[137] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[138] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[139] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[140] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[141] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[142] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[143] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[144] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[145] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[146] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[147] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[148] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[149] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[150] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[151] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[152] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[153] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[154] -to "ADC_handler:ADC_handle|trigger:trigModule|trigger" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "ADC_handler:ADC_handle|ADC_B[0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "ADC_handler:ADC_handle|ADC_B[10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "ADC_handler:ADC_handle|ADC_B[11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "ADC_handler:ADC_handle|ADC_B[12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "ADC_handler:ADC_handle|ADC_B[13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "ADC_handler:ADC_handle|ADC_B[1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "ADC_handler:ADC_handle|ADC_B[2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "ADC_handler:ADC_handle|ADC_B[3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "ADC_handler:ADC_handle|ADC_B[4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "ADC_handler:ADC_handle|ADC_B[5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "ADC_handler:ADC_handle|ADC_B[6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "ADC_handler:ADC_handle|ADC_B[7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "ADC_handler:ADC_handle|ADC_B[8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "ADC_handler:ADC_handle|ADC_B[9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "ADC_handler:ADC_handle|ADC_Mux:delayMux|result[9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[0][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[1][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[2][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[73] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[76] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[77] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[78] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[79] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[80] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[81] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[82] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[83] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[49][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[84] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[85] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[86] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[87] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[88] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[89] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[90] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[91] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[92] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[93] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[94] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[95] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[96] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[97] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[50][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[98] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[99] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[100] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[101] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[102] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[51][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[118] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[119] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[120] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[121] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[122] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[123] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[124] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[125] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[97][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[126] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[127] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[128] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[129] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[130] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[131] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[132] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[133] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[134] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[135] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[136] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[137] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[138] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[139] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[98][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[140] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][0]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[141] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][10]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[142] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][11]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[143] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][12]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[144] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][13]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[145] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][1]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[146] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][2]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[147] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][3]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[148] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][4]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[149] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][5]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[150] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][6]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[151] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][7]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[152] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][8]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[153] -to "ADC_handler:ADC_handle|delayVec:delayModule|DelayVec[99][9]" -section_id Delay_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[154] -to "ADC_handler:ADC_handle|trigger:trigModule|trigger" -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to Delay_test|vcc -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to Delay_test|vcc -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to Delay_test|gnd -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to Delay_test|vcc -section_id Delay_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to Delay_test|vcc -section_id Delay_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "ADC_handler:ADC_handle|sys_clk" -section_id FIR_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to FIR_test|gnd -section_id FIR_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to FIR_test|gnd -section_id FIR_test
@@ -749,9 +372,6 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "ADC_handler:ADC_handle|DSP:DSP_handle|signer:Sign|sign[0]" -section_id FIR_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "ADC_handler:ADC_handle|DSP:DSP_handle|signer:Sign|sign[10]" -section_id FIR_test
@@ -879,57 +499,10 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to UART_test|gnd -section_id UART_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[56] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[0]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[57] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[10]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[58] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[11]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[59] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[12]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[60] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[13]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[61] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[1]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[62] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[2]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[63] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[3]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[64] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[4]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[65] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[5]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[6]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[7]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[8]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[9]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "ADC_handler:ADC_handle|trigger:trigModule|trigger" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to triggerSlopeSwitch -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[0]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[10]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[11]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[12]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[13]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[1]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[2]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[3]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[4]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[5]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[6]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[7]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[8]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "ADC_handler:ADC_handle|trigger:trigModule|trigLevel[9]" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "ADC_handler:ADC_handle|trigger:trigModule|trigger" -section_id ADC_test
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to triggerSlopeSwitch -section_id ADC_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=72" -section_id ADC_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=72" -section_id ADC_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=72" -section_id ADC_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id ADC_test
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=241" -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to ADC_test|gnd -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to ADC_test|gnd -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[84] -to "ADC_handler:ADC_handle|DSP:DSP_handle|waveformGenerator:FIRwaveGen|waveform[0][0]" -section_id FIR_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[85] -to "ADC_handler:ADC_handle|DSP:DSP_handle|waveformGenerator:FIRwaveGen|waveform[0][10]" -section_id FIR_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[86] -to "ADC_handler:ADC_handle|DSP:DSP_handle|waveformGenerator:FIRwaveGen|waveform[0][11]" -section_id FIR_test
@@ -2137,34 +1710,6 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -t
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to UART_test|vcc -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to UART_test|gnd -section_id UART_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to UART_test|vcc -section_id UART_test
-set_global_assignment -name VHDL_FILE ADC2UART_top.vhd
-set_global_assignment -name SDC_FILE ADC2UART_top.sdc
-set_global_assignment -name SIGNALTAP_FILE ADC2UART_top.stp
-set_global_assignment -name SOURCE_FILE ADC2UART_top.qsf
-set_global_assignment -name QIP_FILE qsys/UART_pll/synthesis/UART_pll.qip
-set_global_assignment -name SIP_FILE qsys/UART_pll/simulation/UART_pll.sip
-set_global_assignment -name QIP_FILE qsys/lpm_pll/synthesis/lpm_pll.qip
-set_global_assignment -name SIP_FILE qsys/lpm_pll/simulation/lpm_pll.sip
-set_global_assignment -name QIP_FILE qsys/FIR_ofc/synthesis/FIR_ofc.qip
-set_global_assignment -name SIP_FILE qsys/FIR_ofc/simulation/FIR_ofc.sip
-set_global_assignment -name QIP_FILE ADC_Mux/ADC_Mux.qip
-set_global_assignment -name VHDL_FILE src/bin2dec.vhd
-set_global_assignment -name VHDL_FILE src/waveformGenerator.vhd
-set_global_assignment -name VHDL_FILE src/unsigner.vhd
-set_global_assignment -name VHDL_FILE src/UART_handler.vhd
-set_global_assignment -name VHDL_FILE src/trigger.vhd
-set_global_assignment -name VHDL_FILE src/tenCount.vhd
-set_global_assignment -name VHDL_FILE src/signer.vhd
-set_global_assignment -name VHDL_FILE src/signalToUART.vhd
-set_global_assignment -name VHDL_FILE src/flipSwitch.vhd
-set_global_assignment -name VHDL_FILE src/DSP.vhd
-set_global_assignment -name VHDL_FILE src/delayVec.vhd
-set_global_assignment -name VHDL_FILE src/delayArray.vhd
-set_global_assignment -name VHDL_FILE src/charReader.vhd
-set_global_assignment -name VHDL_FILE src/adcSync.vhd
-set_global_assignment -name VHDL_FILE src/ADC_handler.vhd
-set_global_assignment -name VHDL_FILE src/acquireSwitch.vhd
-set_global_assignment -name VHDL_FILE testbench/ADC2UART_tb.vhd
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "ADC_handler:ADC_handle|DSP:DSP_handle|FIR_ofc:FIR_filter|fir_compiler_ii_0_avalon_streaming_sink_data[0]" -section_id FIR_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "ADC_handler:ADC_handle|DSP:DSP_handle|FIR_ofc:FIR_filter|fir_compiler_ii_0_avalon_streaming_sink_data[10]" -section_id FIR_test
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "ADC_handler:ADC_handle|DSP:DSP_handle|FIR_ofc:FIR_filter|fir_compiler_ii_0_avalon_streaming_sink_data[11]" -section_id FIR_test
@@ -2229,5 +1774,101 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -t
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to FIR_test|vcc -section_id FIR_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to FIR_test|vcc -section_id FIR_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to FIR_test|gnd -section_id FIR_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to ADC_test|gnd -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to ADC_test|gnd -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to ADC_test|gnd -section_id ADC_test
+set_global_assignment -name VHDL_FILE ADC2UART_top.vhd
+set_global_assignment -name SDC_FILE ADC2UART_top.sdc
+set_global_assignment -name SIGNALTAP_FILE ADC2UART_top.stp
+set_global_assignment -name SOURCE_FILE ADC2UART_top.qsf
+set_global_assignment -name QIP_FILE qsys/UART_pll/synthesis/UART_pll.qip
+set_global_assignment -name SIP_FILE qsys/UART_pll/simulation/UART_pll.sip
+set_global_assignment -name QIP_FILE qsys/lpm_pll/synthesis/lpm_pll.qip
+set_global_assignment -name SIP_FILE qsys/lpm_pll/simulation/lpm_pll.sip
+set_global_assignment -name QIP_FILE qsys/FIR_ofc/synthesis/FIR_ofc.qip
+set_global_assignment -name SIP_FILE qsys/FIR_ofc/simulation/FIR_ofc.sip
+set_global_assignment -name QIP_FILE ADC_Mux/ADC_Mux.qip
+set_global_assignment -name VHDL_FILE src/bin2dec.vhd
+set_global_assignment -name VHDL_FILE src/waveformGenerator.vhd
+set_global_assignment -name VHDL_FILE src/unsigner.vhd
+set_global_assignment -name VHDL_FILE src/UART_handler.vhd
+set_global_assignment -name VHDL_FILE src/trigger.vhd
+set_global_assignment -name VHDL_FILE src/trigger_bus.vhd
+set_global_assignment -name VHDL_FILE src/tenCount.vhd
+set_global_assignment -name VHDL_FILE src/signer.vhd
+set_global_assignment -name VHDL_FILE src/signalToUART.vhd
+set_global_assignment -name VHDL_FILE src/flipSwitch.vhd
+set_global_assignment -name VHDL_FILE src/DSP.vhd
+set_global_assignment -name VHDL_FILE src/delayVec.vhd
+set_global_assignment -name VHDL_FILE src/delayArray.vhd
+set_global_assignment -name VHDL_FILE src/charReader.vhd
+set_global_assignment -name VHDL_FILE src/adcSync.vhd
+set_global_assignment -name VHDL_FILE src/ADC_handler.vhd
+set_global_assignment -name VHDL_FILE src/acquireSwitch.vhd
+set_global_assignment -name VHDL_FILE testbench/ADC2UART_tb.vhd
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=76" -section_id ADC_test
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=76" -section_id ADC_test
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=76" -section_id ADC_test
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id ADC_test
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=253" -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to ADC_test|gnd -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to ADC_test|gnd -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to ADC_test|gnd -section_id ADC_test
+set_location_assignment PIN_U22 -to gpioTrigger
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to gpioTrigger
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[56] -to "ADC_handler:ADC_handle|trigSlope" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[57] -to "ADC_handler:ADC_handle|trigSource" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[58] -to "ADC_handler:ADC_handle|trigger" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[59] -to "ADC_handler:ADC_handle|trigger:trigModule|trigger" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[60] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[0]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[61] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[10]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[62] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[11]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[63] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[12]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[64] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[13]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[65] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[1]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[2]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[3]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[4]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[5]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[6]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[7]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[72] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[8]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[73] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[9]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[74] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigger" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[75] -to gpioTrigger -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "ADC_handler:ADC_handle|trigSlope" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "ADC_handler:ADC_handle|trigSource" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "ADC_handler:ADC_handle|trigger" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "ADC_handler:ADC_handle|trigger:trigModule|trigger" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[0]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[10]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[11]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[12]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[13]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[1]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[2]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[3]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[4]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[5]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[6]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[7]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[8]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[73] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigLevel[9]" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -to "ADC_handler:ADC_handle|trigger_bus:trigBusModule|trigger" -section_id ADC_test
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to gpioTrigger -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to ADC_test|vcc -section_id ADC_test
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/ADC2UART_top_auto_stripped.stp

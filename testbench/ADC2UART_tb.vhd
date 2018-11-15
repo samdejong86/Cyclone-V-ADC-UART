@@ -52,6 +52,8 @@ architecture tb of ADC2UART_tb is
 		constant Tpw_clk : time := 10 ns;
 		constant dco_clk : time := 12.5 ns;
 		constant UART_clk: time := 500 ns;
+		
+		signal gpioTrig : std_logic :='0';
 
                 signal charToSend : std_logic_vector(7 downto 0) := "00000000";  --default is blank
 
@@ -115,7 +117,8 @@ begin
 		FPGA_CLK_B_P	 =>	FPGA_CLK_B_P,
 		led	 =>	led,
 		UART_RX	 =>	UART_RX,
-		UART_TX	 =>	UART_TX
+		UART_TX	 =>	UART_TX,
+		gpioTrigger => gpioTrig
 	);
 
 
@@ -317,10 +320,12 @@ begin
 		end if;
 	
 		if ADCctr>=1 and ADCctr<25 then
-			ADC_DA<=to_unsigned(16383, 14);
+			--ADC_DA<=to_unsigned(16383, 14);
+			gpioTrig<='1';
 			ADCctr:=ADCctr+1;
 		else 
-			ADC_DA<=to_unsigned(0,14);
+			--ADC_DA<=to_unsigned(0,14);
+			gpioTrig<='0';
 			ADCctr:=0;
 		end if;
 

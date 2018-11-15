@@ -27,21 +27,26 @@ proc TRIGsim {} {
      delete wave *
      restart -f
 
-     add wave -radix unsigned -format analog-step -height 60 -max 15000 -min 7000  -position end  sim:/adc2uart_tb/testbench/ADC_DB
-     add wave -radix unsigned -format analog-step -height 60 -max 16383 -min 0  -position end  sim:/adc2uart_tb/testbench/ADC_DA
-     add wave -radix unsigned -format analog-step -height 60 -max 15000 -min 7000 -position end  sim:/adc2uart_tb/testbench/ADC_handle/ADC_B
-     add wave -radix unsigned -format analog-step -height 60 -max 16383 -min 0 -position end  sim:/adc2uart_tb/testbench/ADC_handle/ADC_A
-     add wave -radix unsigned -format analog-step -height 60 -max 16383 -min 0  -position end  sim:/adc2uart_tb/testbench/ADC_handle/triggerBus     
+     add wave -radix unsigned -format analog-step -height 60 -max 15000 -min 7000   sim:/adc2uart_tb/testbench/ADC_DB
+     add wave -radix unsigned -format analog-step -height 60 -max 15000 -min 7000   sim:/adc2uart_tb/testbench/ADC_handle/ADC_B
+     add wave sim:/adc2uart_tb/testbench/ADC_handle/gpiotrig
 
-     add wave -position end  sim:/adc2uart_tb/testbench/trigSlope
-     add wave -position end  sim:/adc2uart_tb/testbench/trigSource
+     add wave -label "trigger slope" sim:/adc2uart_tb/testbench/trigSlope
+     add wave -label "trigger source" sim:/adc2uart_tb/testbench/trigSource
 
-     add wave -position end  sim:/adc2uart_tb/testbench/ADC_handle/trigger
 
-     add wave -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/UART_RX
-     add wave -radix ASCII  -position end  sim:/adc2uart_tb/testbench/UART_handle/readChar/char
+     add wave -label "self trigger" sim:/adc2uart_tb/testbench/ADC_handle/trigger_self
+     add wave -label "external trigger (GPIO)" sim:/adc2uart_tb/testbench/ADC_handle/trigger_ext
+     add wave sim:/adc2uart_tb/testbench/ADC_handle/trigger
 
-     add wave -radix unsigned -position end  sim:/adc2uart_tb/testbench/ADC_handle/triggerLevel
+     add wave  sim:/adc2uart_tb/testbench/UART_handle/readChar/UART_RX
+     add wave -radix ASCII sim:/adc2uart_tb/testbench/UART_handle/readChar/char
+
+     add wave -radix unsigned  sim:/adc2uart_tb/testbench/ADC_handle/triggerLevel
+	
+
+
+
 
      #01110011 : s
      #01110100 : t

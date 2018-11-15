@@ -42,6 +42,8 @@ entity ADC2UART_top is
 
 		led						: out unsigned (3 DOWNTO 0);
 		
+		gpioTrigger				: in std_logic;
+		
 		UART_RX					: in std_logic;
 		UART_TX					: out std_logic
 	);
@@ -144,6 +146,7 @@ begin
 		trigSlope 	=> trigSlope,
 		trigSource 	=> trigSource,
 		delay 		=> delay,
+		gpiotrig		=> gpioTrigger,
 		
 		waveNumber 	=> waveNumber,
 		waveform 	=> waveform,

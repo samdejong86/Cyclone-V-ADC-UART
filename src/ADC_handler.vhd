@@ -14,6 +14,7 @@ entity ADC_handler is
 		trigSlope 	: in std_logic;
 		trigSource 	: in std_logic;
 		delay			: in std_logic;
+		gpiotrig 	: in std_logic;
 	
 		waveNumber	: out unsigned (15 DOWNTO 0) :=to_unsigned(0, 16);
 		waveform 	: out adcArray (0 to 999);
@@ -24,6 +25,8 @@ end ADC_handler;
 architecture rtl of ADC_handler is 
 
 	signal trigger					: std_logic;
+	signal trigger_self			: std_logic;
+	signal trigger_ext			: std_logic;
 	signal DelayVec				: adcArray (0 to 99);
 
 	signal delayedSignal			: unsigned (13 DOWNTO 0);
@@ -32,8 +35,6 @@ architecture rtl of ADC_handler is
 	signal triggerLevel			: unsigned (13 DOWNTO 0);
 	signal triggerLevel_std		: STD_LOGIC_VECTOR (13 DOWNTO 0);
 	
-	signal triggerBus				: STD_LOGIC_VECTOR (13 DOWNTO 0);
-
 	--negative and positive trigger thresholds
 	constant negVal 				: STD_LOGIC_VECTOR (13 DOWNTO 0) := "01101101011000";
 	constant posVal 				: STD_LOGIC_VECTOR (13 DOWNTO 0) := "10010010111000";
@@ -57,14 +58,6 @@ begin
 		result   => triggerLevel_std
    );
 
-	triggerSourceMux : entity work.ADC_Mux PORT MAP (
-		data0x   => std_logic_vector(ADC_A),
-		data1x   => std_logic_vector(ADC_B),
-		sel      => trigSource,
-		result   => triggerBus
-   );	
-	
-	
 	triggerLevel <= unsigned(triggerLevel_std);
 	delayedSignal <= unsigned(delayedSignal_std);
 	
@@ -78,13 +71,23 @@ begin
 	);
 	
 	
-	trigModule : entity work.trigger PORT MAP (
+	trigBusModule : entity work.trigger_bus PORT MAP (
 		clk 				=> sys_clk,
-		ADC_IN 			=> unsigned(triggerBus), 
+		ADC_IN 			=> unsigned(ADC_B), 
 		trigSlope 		=> trigSlope, 
 		trigLevel 		=> triggerLevel, 
-		trigger 			=> trigger
+		trigger 			=> trigger_self
 	);
+	
+	trigModule : entity work.trigger PORT MAP (
+		clk 				=> sys_clk,
+		trig_in 			=> gpiotrig, 
+		trigSlope 		=> trigSlope, 
+		trigger 			=> trigger_ext
+	);
+	
+	trigger <= trigger_self when trigSource = '0' else trigger_ext;
+	
 	
 	--generate a waveform
 	waveGen : entity work.waveformGenerator PORT MAP (

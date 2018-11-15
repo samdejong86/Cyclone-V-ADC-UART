@@ -2,28 +2,29 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity trigger is
+entity trigger_bus is
 	port(
 	clk			: in std_logic;
-	trig_in		: in std_logic;
-	trigSlope	: in std_logic;  
+	ADC_IN		: in unsigned (13 DOWNTO 0);
+	trigSlope	: in std_logic;
+	trigLevel	: in unsigned (13 DOWNTO 0);  
 	trigger 		: out std_logic :='0'
 	);
-end trigger;
+end trigger_bus;
 
-architecture rtl of trigger is 	
+architecture rtl of trigger_bus is 	
 begin
 
 
 trigProc : process(clk) is
-	variable lastVal 		: std_logic :='0'; 
+	variable lastVal 		: unsigned (13 DOWNTO 0)   :="00000000000000"; 
 	variable trigCount 	: natural range 0 to 999:=0;
 
 	begin
 		if rising_edge(clk) then
 			--positive trigger
 			if trigSlope = '1' then
-				if trig_in = '1' then  
+				if ADC_IN > trigLevel and ADC_IN>=lastVal then  --want the trigger to be above theshold and above previous value
 					trigCount:=trigCount+1;
 					if trigCount=2 then
 						trigger <= '1'; --only set the trigger high on second clock cycle.
@@ -37,7 +38,7 @@ trigProc : process(clk) is
 				end if;	
 			else 
 				--negative trigger
-				if trig_in = '0' then
+				if ADC_IN < trigLevel and ADC_IN<=lastVal then
 						trigCount:=trigCount+1;
 					if trigCount=2 then
 						trigger <= '1';
@@ -50,7 +51,7 @@ trigProc : process(clk) is
 					
 				end if;	
 			end if;
-			lastVal:=trig_in;
+			lastVal:=ADC_IN;
 		end if;
 			
 end process trigProc;
