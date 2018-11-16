@@ -23,13 +23,14 @@ import re
 defaultRate=50
 
 try:
-    for line in open("../lpm_pll.v"):
+    for line in open("../qsys/lpm_pll.qsys"):
         if "gui_output_clock_frequency0" in line:
             result = re.search('%s(.*)%s' % ("value=\"", "\" />"), line).group(1)
             defaultRate=float(result)
+    print("Found PLL file, using a sampling rate of "+result+"MHz")
 except FileNotFoundError:
+    print("PLL file not found, assuming a sampling rate of 50MHz")
     defaultRate=50
-
 
 parser = argparse.ArgumentParser(description='View waveforms coming from UART')
 parser.add_argument('-p','--port', help='The port to listen to', default="/dev/ttyUSB0", required=False)

@@ -26,7 +26,7 @@ import re
 defaultRate=50
 
 try:
-    for line in open("../lpm_pll.v"):
+    for line in open("../qsys/lpm_pll.qsys"):
         if "gui_output_clock_frequency0" in line:
             result = re.search('%s(.*)%s' % ("value=\"", "\" />"), line).group(1)
             defaultRate=float(result)
