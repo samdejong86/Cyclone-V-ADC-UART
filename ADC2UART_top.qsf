@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE 5CGXFC5C6F27C7
 set_global_assignment -name TOP_LEVEL_ENTITY ADC2UART_top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:21:05  SEPTEMBER 20, 2017"
-set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Standard Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
@@ -1784,35 +1784,6 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to ADC_test|gnd -section_id ADC_test
-set_global_assignment -name VHDL_FILE ADC2UART_top.vhd
-set_global_assignment -name SDC_FILE ADC2UART_top.sdc
-set_global_assignment -name SIGNALTAP_FILE ADC2UART_top.stp
-set_global_assignment -name SOURCE_FILE ADC2UART_top.qsf
-set_global_assignment -name QIP_FILE qsys/UART_pll/synthesis/UART_pll.qip
-set_global_assignment -name SIP_FILE qsys/UART_pll/simulation/UART_pll.sip
-set_global_assignment -name QIP_FILE qsys/lpm_pll/synthesis/lpm_pll.qip
-set_global_assignment -name SIP_FILE qsys/lpm_pll/simulation/lpm_pll.sip
-set_global_assignment -name QIP_FILE qsys/FIR_ofc/synthesis/FIR_ofc.qip
-set_global_assignment -name SIP_FILE qsys/FIR_ofc/simulation/FIR_ofc.sip
-set_global_assignment -name QIP_FILE ADC_Mux/ADC_Mux.qip
-set_global_assignment -name VHDL_FILE src/bin2dec.vhd
-set_global_assignment -name VHDL_FILE src/waveformGenerator.vhd
-set_global_assignment -name VHDL_FILE src/unsigner.vhd
-set_global_assignment -name VHDL_FILE src/UART_handler.vhd
-set_global_assignment -name VHDL_FILE src/trigger.vhd
-set_global_assignment -name VHDL_FILE src/trigger_bus.vhd
-set_global_assignment -name VHDL_FILE src/tenCount.vhd
-set_global_assignment -name VHDL_FILE src/signer.vhd
-set_global_assignment -name VHDL_FILE src/signalToUART.vhd
-set_global_assignment -name VHDL_FILE src/flipSwitch.vhd
-set_global_assignment -name VHDL_FILE src/DSP.vhd
-set_global_assignment -name VHDL_FILE src/delayVec.vhd
-set_global_assignment -name VHDL_FILE src/delayArray.vhd
-set_global_assignment -name VHDL_FILE src/charReader.vhd
-set_global_assignment -name VHDL_FILE src/adcSync.vhd
-set_global_assignment -name VHDL_FILE src/ADC_handler.vhd
-set_global_assignment -name VHDL_FILE src/acquireSwitch.vhd
-set_global_assignment -name VHDL_FILE testbench/ADC2UART_tb.vhd
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=76" -section_id ADC_test
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=76" -section_id ADC_test
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=76" -section_id ADC_test
@@ -1870,5 +1841,34 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -t
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to gpioTrigger -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to ADC_test|vcc -section_id ADC_test
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to ADC_test|vcc -section_id ADC_test
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VHDL_FILE ADC2UART_top.vhd
+set_global_assignment -name SDC_FILE ADC2UART_top.sdc
+set_global_assignment -name SIGNALTAP_FILE ADC2UART_top.stp
+set_global_assignment -name SOURCE_FILE ADC2UART_top.qsf
+set_global_assignment -name QIP_FILE qsys/UART_pll/synthesis/UART_pll.qip
+set_global_assignment -name SIP_FILE qsys/UART_pll/simulation/UART_pll.sip
+set_global_assignment -name QIP_FILE qsys/lpm_pll/synthesis/lpm_pll.qip
+set_global_assignment -name SIP_FILE qsys/lpm_pll/simulation/lpm_pll.sip
+set_global_assignment -name QIP_FILE qsys/FIR_ofc/synthesis/FIR_ofc.qip
+set_global_assignment -name SIP_FILE qsys/FIR_ofc/simulation/FIR_ofc.sip
+set_global_assignment -name QIP_FILE ADC_Mux/ADC_Mux.qip
+set_global_assignment -name VHDL_FILE src/bin2dec.vhd
+set_global_assignment -name VHDL_FILE src/waveformGenerator.vhd
+set_global_assignment -name VHDL_FILE src/unsigner.vhd
+set_global_assignment -name VHDL_FILE src/UART_handler.vhd
+set_global_assignment -name VHDL_FILE src/trigger.vhd
+set_global_assignment -name VHDL_FILE src/trigger_bus.vhd
+set_global_assignment -name VHDL_FILE src/tenCount.vhd
+set_global_assignment -name VHDL_FILE src/signer.vhd
+set_global_assignment -name VHDL_FILE src/signalToUART.vhd
+set_global_assignment -name VHDL_FILE src/flipSwitch.vhd
+set_global_assignment -name VHDL_FILE src/DSP.vhd
+set_global_assignment -name VHDL_FILE src/delayVec.vhd
+set_global_assignment -name VHDL_FILE src/delayArray.vhd
+set_global_assignment -name VHDL_FILE src/charReader.vhd
+set_global_assignment -name VHDL_FILE src/adcSync.vhd
+set_global_assignment -name VHDL_FILE src/ADC_handler.vhd
+set_global_assignment -name VHDL_FILE src/acquireSwitch.vhd
+set_global_assignment -name VHDL_FILE testbench/ADC2UART_tb.vhd
 set_global_assignment -name SLD_FILE db/ADC2UART_top_auto_stripped.stp
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -61,7 +61,7 @@
  <module
    name="fir_compiler_ii_0"
    kind="altera_fir_compiler_ii"
-   version="17.1"
+   version="18.1"
    enabled="1">
   <parameter name="L_bandsFilter" value="1" />
   <parameter name="MODE_STRING" value="None Set" />

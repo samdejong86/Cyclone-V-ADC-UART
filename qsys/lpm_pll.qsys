@@ -61,7 +61,7 @@
    dir="start" />
  <interface name="pll_0_refclk" internal="pll_0.refclk" type="clock" dir="end" />
  <interface name="pll_0_reset" internal="pll_0.reset" type="reset" dir="end" />
- <module name="pll_0" kind="altera_pll" version="17.1" enabled="1">
+ <module name="pll_0" kind="altera_pll" version="18.1" enabled="1">
   <parameter name="debug_print_output" value="false" />
   <parameter name="debug_use_rbc_taf_method" value="false" />
   <parameter name="device" value="5CGXFC5C6F27C7" />

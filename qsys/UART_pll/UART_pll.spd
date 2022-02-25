@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <simPackage>
  <file
-   path="simulation/submodules/UART_pll_UART_pll.vo"
-   type="VERILOG"
+   path="simulation/submodules/UART_pll_UART_pll.vho"
+   type="VHDL"
    library="UART_pll" />
  <file path="simulation/UART_pll.vhd" type="VHDL" />
  <topLevel name="UART_pll" />

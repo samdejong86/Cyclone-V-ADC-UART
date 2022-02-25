@@ -1,16 +1,16 @@
-# system info UART_pll on 2018.07.24.10:35:55
+# system info UART_pll on 2022.02.25.11:16:05
 system_info:
 name,value
 DEVICE,5CGXFC5C6F27C7
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1532453736
+GENERATION_ID,1645816549
 #
 #
-# Files generated for UART_pll on 2018.07.24.10:35:55
+# Files generated for UART_pll on 2022.02.25.11:16:05
 files:
 filepath,kind,attributes,module,is_top
 simulation/UART_pll.vhd,VHDL,,UART_pll,true
-simulation/submodules/UART_pll_UART_pll.vo,VERILOG,,UART_pll_UART_pll,false
+simulation/submodules/UART_pll_UART_pll.vho,VHDL,,UART_pll_UART_pll,false
 #
 # Map from instance-path to kind of module
 instances:

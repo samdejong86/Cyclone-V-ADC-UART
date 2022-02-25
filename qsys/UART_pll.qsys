@@ -58,7 +58,7 @@
    internal="UART_pll.reset"
    type="reset"
    dir="end" />
- <module name="UART_pll" kind="altera_pll" version="17.1" enabled="1">
+ <module name="UART_pll" kind="altera_pll" version="18.1" enabled="1">
   <parameter name="debug_print_output" value="false" />
   <parameter name="debug_use_rbc_taf_method" value="false" />
   <parameter name="device" value="5CGXFC5C6F27C7" />
