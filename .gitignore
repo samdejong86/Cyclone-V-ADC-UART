@@ -26,3 +26,4 @@ simulation/modelsim/ADC2UART_top.vo
 *.bak*
 simulation/modelsim/wlf*
 simulation/modelsim/ADC2UART_top.vho
+*.BAK*
